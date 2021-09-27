@@ -1,10 +1,12 @@
 {
   "name": "afkanerd",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "rm -rf dist && yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.3.5",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.3.8",
     "tailwindcss": "^2.2.15",
     "vite": "^2.5.4"
