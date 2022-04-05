@@ -209,6 +209,7 @@ h1.title{
 		text-align: center;
 	}
 
+	/* make margin-left 500px for logo to always be at the right*/
 	.logo{
 		margin-bottom: 25px;
 		margin-left: 800px;
@@ -222,6 +223,8 @@ h1.title{
 		margin-top: 35px;
 	}
 }
+
+
 
 /* arrow */
 .arrow{
