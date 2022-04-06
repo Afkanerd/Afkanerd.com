@@ -76,7 +76,7 @@ h1.title{
 
 /* Banner Image */
 .banner_image{
-	background: url("pinkjpeg") no-repeat top center;
+	background: url("/images/pinkjpeg") no-repeat top center;
 	background-size: cover;
 	width: 100%;
 	height: 700px;
@@ -92,7 +92,7 @@ h1.title{
 
 .banner_content h1{
 	text-transform: uppercase;
-	line-height: 38px;
+	line-height: 48px;
 	margin-bottom: 15px;
 }
 
