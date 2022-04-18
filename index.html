@@ -15,27 +15,7 @@
 </head>
 
 <body>
-	<!--
-<div class="main_container" id="home">
-	<div class="navbar">
-		<div class="logo">
-			<img src="Artboard 9.png" height="60px" width="100px">
-		<div class="navbar_items">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-                <li><a href="#news">News</a></li>
-				<li><a href="#contactus">contact</a></li>
-				<li><a href="#connect">connect</a></li>
-			</ul>
-		</div>
-		</div>
-		</div>
-	</div>
--->
-
-
+<!-- the navbar-->
 	<nav class="navbar navbar-expand-sm navbar-light" id="home">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"> <img src="images/Artboard 9.png" height="60px" width="100px"></a>
@@ -44,8 +24,8 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item">
+				<ul class="navbar-nav ms-auto ">
+					<li class="nav-item ">
 						<a class="nav-link " aria-current="page" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
@@ -76,11 +56,11 @@
 			<h1>We Code<br /><br />
 				<span>For The People.</span>
 			</h1>
-			<!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim placeat fugiat</p>-->
 			<div class="bt"><a href="#projects">Learn More</a></div>
 		</div>
 	</div>
 
+	
 	<!-- About page-->
 	<div class="about" id="about">
 		<h1 class="title">About us</h1>
@@ -94,33 +74,114 @@
 	</div>
 
 
-	<!-- Projects Page-->
-	<div class="projects" id="projects">
-		<h1 class="title">Projects</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum neque, nobis ratione vitae eum quibusdam
-			quidem culpa dolorum autem sequi. Rem at beatae debitis.</p>
 
-		<div class="diff_projects">
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3><a href="https://smswithoutborders.com/">SMS Without Boarders</a></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+<!--Project section-->
+	<!--first card-->
+	<div id="projects">
+		<h1 class="title">Projects</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum neque, nobis ratione vitae eum quibusdam quidem culpa dolorum autem sequi. Rem at beatae debitis.</p>
+
+	<section class="cards-wrapper">
+		<div class="card-grid-space">
+		  <a class="card" href="https://smswithoutborders.com/" style="--bg-img: url(images/pinkjpeg)">
+			<div>
+			  <h1>Smswithoutborders</h1>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+			  <div class="tags">
+				<div class="tag">learn More</div>
+			  </div>
 			</div>
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3>Open API</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3>Web Development</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
+		  </a>
 		</div>
-	</div>
+		<!--second card-->
+		<div class="card-grid-space">
+		  <a class="card" href="afkanerd.github.io" style="--bg-img: url(images/ryan-ancill-aJYO8JmVodY-unsplash.jpg)">
+			<div>
+			  <h1>Open API</h1>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+			  <div class="tags">
+				<div class="tag">learn More</div>
+			  </div>
+			</div>
+		  </a>
+		</div>
+		<!--card 3-->
+		<div class="card-grid-space">
+		  <a class="card" href="#" style="--bg-img: url(images/Artwork.jpeg)">
+			<div>
+			  <h1>GateWayClients</h1>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+			  <div class="tags">
+				<div class="tag">learn morn</div>
+			  </div>
+			</div>
+		  </a>
+		</div>
+		</section>
+
+
+
 
 
 	<!--News Page-->
+
+	<div class="flex" id="news">
+		<div class="container">
+			<div class="card-one">
+			  <div class="card__header">
+				<img src="images/Bilgisayar_Yazılım Mühendisliği Öğrencileri İçin 9 Tavsiye ListeList_com.jpeg"" alt="card__image" class="card__image" width="600">
+			  </div>
+			  <div class="card__body">
+				<span class="tag tag-blue">Technology</span>
+				<h4>What's new in 2022 Tech</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+			  </div>
+			</div>       
+			 <div class="card-one">
+			  <div class="card__header">
+				<img src="images/List of Technical Skills for Resumes, Cover Letters, and Interviews(2).jpeg"  alt="card__image" class="card__image" width="600">
+			  </div>
+			  <div class="card__body">
+				<span class="tag tag-blue">Internship Openings</span>
+				<h4>Learning on the Go. </h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+			  </div>
+			</div>     
+			   <div class="card-one">
+				<div class="card__header">
+					<img src="images/Bilgisayar Programcılığı Okumak.jpeg"  alt="card__image" class="card__image" width="600">
+				</div>
+				<div class="card__body">
+				  <span class="tag tag-blue">Internship Openings</span>
+				  <h4>Learning on the Go. </h4>
+				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+				</div>
+			  </div>
+		  </div>
+		  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 	<div class="projects" id="news">
 		<h1 class="title">News</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum neque, nobis ratione vitae eum quibusdam
@@ -146,6 +207,7 @@
 			</div>
 		</div>
 	</div>
+-->
 
 	<!--contact page -->
 	<div class="contactus" id="contactus">
