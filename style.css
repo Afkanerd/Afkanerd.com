@@ -149,6 +149,9 @@ h1.title {
 }
 
 
+
+
+
 /* About us */
 .about,
 .projects,
@@ -159,7 +162,6 @@ h1.title {
 	background-size: cover;
 	width: 100%;
 	height: 800px;
-	/*display: flex;*/
 	justify-content: center;
 	align-items: center;
 }
@@ -177,30 +179,329 @@ h1.title {
 }
 
 
-/* Services */
-.projects {
-	background: #f5f5f5;
+
+/* project css section */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: linear-gradient(to right, whitesmoke, #c7d0ee,whitesmoke);
 }
 
-.diff_projects {
-	display: flex;
-	margin-top: 35px;
-	justify-content: space-between;
+ .container-fluid .card {
+  position: relative;
+  min-width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  margin: 20px;
+  transition: 0.5s;
 }
 
-.diff_project_item {
-	width: 30%;
+a {
+  text-decoration: none;
 }
 
-.diff_project_item img {
-	width: 100%;
-	margin-bottom: 25px;
+
+.container-fluid .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: url(images/pinkjpeg);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-.diff_project_item h3 {
-	color: #1070a3;
-	margin-bottom: 15px;
+.container-fluid .card .box:hover {
+  transform: translateY(-50px);
 }
+/*
+.container-fluid .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: blue);
+}
+*/
+ .container-fluid .card .box .content {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.container-fluid .card .box .content h2{
+  font-size: 2rem;
+  color: rgb(112, 199, 221);
+  z-index: 1;
+  transition: 2s;
+  margin-bottom: 15px;
+}
+
+.container-fluid .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container-fluid .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgb(16, 156, 156);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.container-fluid .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(170, 191, 206, 0.6);
+  background: #fff;
+  color: rgb(213, 224, 230);
+}
+
+
+/* MEDIA QUERIES */
+  @media screen and (max-width: 1285px) {
+	
+	.container-fluid .card {
+		position: relative;
+		min-width: 300px;
+		height: 350px;
+		border-radius: 15px;
+		margin: 10px;
+		transition: 0.5s;
+	  }
+
+	  .container-fluid .card .box .content {
+		padding: 5px;
+		text-align: center;
+	  }
+	  
+	
+	  .container-fluid .card .box .content h2 {
+		font-size: 1.8rem;
+		color: rgb(112, 199, 221);
+		z-index: 1;
+		transition: 2s;
+		margin-bottom: 15px;
+	  }
+	  
+	  .container-fluid .card .box .content p {
+		font-size: 1%;
+		font-weight: 150;
+		color: rgba(255, 255, 255, 0.9);
+		z-index: 1;
+		transition: 0.5s;
+	  }
+  }
+  
+  @media screen and (max-width: 900px) {
+	.container-fluid .card {
+		position: relative;
+		min-width: 300px;
+		height: 350px;
+		border-radius: 15px;
+		margin: 20px;
+		transition: 0.5s;
+	  }
+
+	  .container-fluid .card .box .content {
+		padding: 10px;
+		text-align: center;
+	  }
+	  
+	  
+	  .container-fluid .card .box .content h2{
+		font-size: 2rem;
+		color: rgb(112, 199, 221);
+		z-index: 1;
+		transition: 2s;
+		margin-bottom: 15px;
+	  }
+	  
+	  .container-fluid .card .box .content p {
+		font-size: 1rem;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.9);
+		z-index: 1;
+		transition: 0.5s;
+	  }
+	}
+
+
+	@media screen and (max-width: 760px) {
+	  .flex {
+		display: grid;
+		place-items: center;
+		background:white;
+		background: linear-gradient(to right, #b8cdec, #98d6e0, #a5a5df);
+	  }  
+
+	  .container-1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 700px;
+		margin-block: 1rem;
+		gap: 1rem;
+	  } 
+	
+  }
+
+  
+  @media screen and (max-width: 500px) {
+	.container-fluid .card {
+		position: relative;
+		min-width: 300px;
+		height: 350px;
+		border-radius: 15px;
+		margin: 20px;
+		transition: 0.5s;
+	  }
+
+	  .container-fluid .card .box .content {
+		padding: 10px;
+		text-align: center;
+	  }
+	  
+	  
+	  .container-fluid .card .box .content h2{
+		font-size: 2rem;
+		color: rgb(112, 199, 221);
+		z-index: 1;
+		transition: 2s;
+		margin-bottom: 15px;
+	  }
+	  
+	  .container-fluid .card .box .content p {
+		font-size: 1rem;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.9);
+		z-index: 1;
+		transition: 0.5s;
+	  }
+  }
+  
+  @media screen and (max-width: 450px) {
+	.container-fluid .card {
+		position: relative;
+		min-width: 300px;
+		height: 350px; 
+		border-radius: 15px;
+		margin: 20px;
+		transition: 0.5s;
+	  }
+
+	  .container-fluid .card .box .content {
+		padding: 10px;
+		text-align: center;
+	  }
+	  
+	  .container-fluid .card .box .content h2{
+		font-size: 2rem;
+		color: rgb(112, 199, 221);
+		z-index: 1;
+		transition: 2s;
+		margin-bottom: 15px;
+	  }
+	  
+	  .container-fluid .card .box .content p {
+		font-size: 1rem;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.9);
+		z-index: 1;
+		transition: 0.5s;
+	  }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+	/* News css section  */
+		/* News css section  */
+	.flex,
+	.flex::before,
+	.flex::after {
+	  box-sizing: border-box;
+	  padding: 0;
+	  margin: 0;
+	}
+	
+	.flex {
+		display: grid;
+		place-items: center;
+		background:white;
+		background: linear-gradient(to right, #b1cdf7, #f0f4f5, #dedefa);
+	  }  
+	  
+	  .container-1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 1200px;
+		margin-block: 2rem;
+		gap: 2rem;
+	  } 
+	  
+	  img {
+		max-width: 100%;
+		display: block;
+		object-fit: cover;
+	  } 
+	  
+	  .card-one {
+		display: flex;
+		flex-direction: column;
+		width: clamp(20rem, calc(20rem + 2vw), 22rem);
+		overflow: hidden;
+		box-shadow: 0 .1rem 1rem rgba(243, 237, 237, 0.1);
+		border-radius: 1em;
+		background:#3c3163;
+	  background: linear-gradient(to right, #faf6f6, #f2f8f8); 
+	 } 
+	  
+	  .card__body {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	  } 
+	  
+	  .card__body h4 {
+		font-size: 1.5rem;
+		text-transform: capitalize;
+	  }
+
+	  /*media for the News section
+
+
+/end of cards section*/
+
+
+
 
 /* Contact Us */
 .form_input {
@@ -363,4 +664,3 @@ h1.title {
 	/*	background: #101111;*/
 	color: white;
 }
-

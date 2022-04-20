@@ -16,37 +16,40 @@
 </head>
 
 <body>
-
-	<nav class="navbar navbar-expand-sm navbar-light" id="home">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"> <img src="images/Artboard 9.png" height="60px" width="100px"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link " aria-current="page" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#news">News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contactus"> Contact Us</a>
-					</li>
-					</li>
-				</ul>
+	<!-- the navbar-->
+		<nav class="navbar navbar-expand-sm navbar-light" id="home">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"> <img src="images/Artboard 9.png" height="60px" width="100px"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto ">
+						<li class="nav-item ">
+							<a class="nav-link " aria-current="page" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#news">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contactus"> Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#connect">Connect</a>
+						</li>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-
+		</nav>
+	
 
 	<!-- For slideshow images
 	<div class="banner_image">
@@ -107,58 +110,64 @@
 	</div>
 
 
-	<!-- Projects Page-->
-	<div class="projects" id="projects">
-		<h1 class="title">Projects</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum neque, nobis ratione vitae eum quibusdam
-			quidem culpa dolorum autem sequi. Rem at beatae debitis.</p>
-
-		<div class="diff_projects">
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3><a href="https://smswithoutborders.com/">SMS Without Boarders</a></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+	<!--Project section-->
+		
+	<div class="container-fluid" id="projects">
+		<div class="card">
+		  <div class="box">
+			<div class="content">
+			  <h3>Smswithoutborders</h3>
+			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+			  <a href="https://smswithoutborders.com/">Read More</a>
 			</div>
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3>Open API</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
-			<div class="diff_project_item">
-				<img src="images/Inside the Artificial Intelligence Revolution Pt_ 2" alt="Project_image">
-				<h3>Web Development</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
+		  </div>
 		</div>
-	</div>
+	  
+		<div class="card">
+		  <div class="box">
+			<div class="content">
+			  <h2>Open API</h2>
+			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+			  <a href="#">Read More</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
 
 
 	<!--News Page-->
-	<div class="projects" id="news">
-		<h1 class="title">News</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum neque, nobis ratione vitae eum quibusdam
-			quidem culpa dolorum autem sequi. Rem at beatae debitis.</p>
 
-		<div class="diff_projects">
-			<div class="diff_project_item">
-				<img src="images/Bilgisayar_Yazılım Mühendisliği Öğrencileri İçin 9 Tavsiye ListeList_com.jpeg"
-					alt="Service_image">
-				<h3><a href="sinternship.html"></a>Internship Openings</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
+	<div class="flex" id="news">
+		<div class="container-1">
+			<div class="card-one">
+			  <div class="card__header">
+				<img src="images/Bilgisayar_Yazılım Mühendisliği Öğrencileri İçin 9 Tavsiye ListeList_com.jpeg"" alt="card__image" class="card__image" width="600">
+			  </div>
+			  <div class="card__body">
+				<h4>What's new in 2022 Tech</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+			  </div>
+			</div>       
+			 <div class="card-one">
+			  <div class="card__header">
+				<img src="images/List of Technical Skills for Resumes, Cover Letters, and Interviews(2).jpeg"  alt="card__image" class="card__image" width="600">
+			  </div>
+			  <div class="card__body">
+				<h4>Learning on the Go. </h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+			  </div>
 			</div>
-			<div class="diff_project_item">
-				<img src="images/List of Technical Skills for Resumes, Cover Letters, and Interviews(2).jpeg"
-					alt="Service_image">
-				<h3>Job Openings</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
-			<div class="diff_project_item">
-				<img src="images/Bilgisayar Programcılığı Okumak.jpeg" alt="Service_image">
-				<h3>Afkanerd News</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, blanditiis.</p>
-			</div>
-		</div>
+		  </div>
 	</div>
+		  
+		  
+
+
+
+
 
 	<!--contact page -->
 	<div class="contactus" id="contactus">
