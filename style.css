@@ -23,7 +23,7 @@ h1.title {
 	font-family: 'Allura', - Ubuntu, sans-serif;
 	text-transform: uppercase;
 	font-size: 38px;
-	word-spacing: 25px;
+	word-spacing: 10px;
 	letter-spacing: 5px;
 }
 
@@ -662,24 +662,6 @@ a {
 	}
 }
 
-/* arrow */
-.arrow {
-	position: fixed;
-	bottom: 25px;
-	right: 25px;
-	width: 60px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	cursor: pointer;
-	background: none
-}
-
-.arrow img {
-	width: 20px;
-	height: 20px;
-	z-index: 1;
-}
 
 /* footer icons*/
 .fa {
@@ -735,8 +717,29 @@ a {
   }
   
   #myBtn:hover {
-	background-color: #555; /* Add a dark-grey background on hover */
+	background-color: #555; 
   }
 
- 
+  .oval {
+	height: 60px;
+	width: 100px;
+	background-color: rgb(39, 110, 190);
+	border-radius: 50%;
+	padding-top: 20px;
+	padding-left: 17px;
+  }
+
+
+  .arrow {
+	border: solid rgb(2, 59, 105);
+	border-width: 0 8px 8px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+  
+  .right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+  }
+	
   
