@@ -10,6 +10,32 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
+
+/*Navigation css section*/
+nav {
+  background:linear-gradient(141deg, #cbcfce 0%, #d2d4d4 30%);
+	text-align: center;
+	position: sticky;
+	top: 0px;
+  }
+  
+  nav a:hover {
+	text-decoration: underline;
+  }
+
+  
+  
+
+ 
+
+
+  /*end of navigation section*/
+
+
+
+
 p {
 	margin-bottom: 15px;
 	font-size: 14px;
@@ -220,7 +246,7 @@ h1.title {
 
  .container-fluid .card {
   position: relative;
-  min-width: 400px;
+  width: clamp(20rem, calc(15rem + 2vw), 20rem);
   height: 500px;
   border-radius: 15px;
   margin: 20px;
@@ -493,11 +519,9 @@ a {
 	  .card-one {
 		display: flex;
 		flex-direction: column;
-		width: clamp(20rem, calc(20rem + 2vw), 22rem);
+		width: clamp(15rem, calc(10rem + 2vw), 15rem);
 		overflow: hidden;
-		box-shadow: 0 .1rem 1rem rgba(243, 237, 237, 0.1);
 		border-radius: 1em;
-		background:#3c3163;
 	  background: linear-gradient(to right, #faf6f6, #f2f8f8); 
 	 } 
 	  
