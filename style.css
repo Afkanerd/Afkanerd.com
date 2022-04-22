@@ -39,6 +39,10 @@ h1.title {
 	text-decoration: none;
 }
 
+.bt {
+	align-self: center;
+}
+
 .bt a {
 	/*display: block;
 	width: 150px;
@@ -163,7 +167,7 @@ h1.title {
 	text-align: center;
 	background-size: cover;
 	width: 100%;
-	height: 800px;
+	height: 100%;
 	justify-content: center;
 	align-items: center;
 }
@@ -171,6 +175,7 @@ h1.title {
 .about img {
 	height: 600px;
 	width: 600px;
+	padding: 20px;
 	animation: slideDown ease .4s forwards .6s;
 	opacity: 0;
 }
@@ -184,7 +189,7 @@ h1.title {
 	font-family: Ubuntu, sans-serif;
 	font-size: 20px;
 	padding-top: 50px;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 15px;
 	line-height: 35px;
 	color: #a9a9a9;
@@ -192,6 +197,7 @@ h1.title {
 	word-spacing: 5px;
 	animation: slideUp ease .5s forwards 1.2s;
 	opacity: 0;
+	
 }
 @keyframes slideUp {
 	0% {transform: translateY(0);}
@@ -302,8 +308,8 @@ a {
 	
 	.container-fluid .card {
 		position: relative;
-		min-width: 300px;
-		height: 350px;
+		min-width: 100%;
+		height: 100%;
 		border-radius: 15px;
 		margin: 10px;
 		transition: 0.5s;
@@ -452,15 +458,6 @@ a {
   }
   
 
-
-
-
-
-
-
-
-
-
 	/* News css section  */
 		/* News css section  */
 	.flex,
@@ -484,7 +481,7 @@ a {
 		justify-content: center;
 		max-width: 1200px;
 		margin-block: 2rem;
-		gap: 2rem;
+		gap: 3rem;
 	  } 
 	  
 	  img {
@@ -530,6 +527,10 @@ a {
 
 }
 
+.contactus{
+	margin-top: 20px;
+}
+
 .form_input input[type="text"] {
 	width: 250px;
 	padding: 12px 20px;
@@ -548,6 +549,10 @@ a {
 	align-self: center;
 }
 
+.contactus img {
+	width: 600px;
+	height: fit-content;
+}
 
 /* footer */
 .footer {
@@ -607,6 +612,14 @@ a {
 		display: none;
 	}
 
+	.about p {
+		text-align: center;
+	}
+
+	.contactus img {
+		display: none;
+	}
+
 	.about,
 	.projects,
 	.news,
@@ -615,7 +628,7 @@ a {
 		text-align: center;
 		background-size: cover;
 		width: 100%;
-		height: 600px;
+		height: 100%;
 		/*display: flex;*/
 		justify-content: center;
 		align-items: center;
@@ -701,3 +714,33 @@ a {
 	/*	background: #101111;*/
 	color: white;
 }
+
+
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+	background-color: transparent;
+	color: rgb(66, 64, 64);
+	cursor: pointer;
+	padding: 10px;
+	width: 10%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content419 {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: transparent;
+  } 
+
+  
