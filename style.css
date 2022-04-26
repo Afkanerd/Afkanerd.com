@@ -45,6 +45,7 @@ h1.title {
 	letter-spacing: 5px;
 }
 
+
 .btn a {
 	display: block;
 	width: 180px;
@@ -189,12 +190,17 @@ h1.title {
 	align-items: center;
 }
 
+.about {
+	
+}
+
 .about img {
 	height: 500px;
-	width: 600px;
+	width: 500px;
 	padding: 20px;
 	animation: slideDown ease .4s forwards .6s;
 	opacity: 0;
+	border-radius: 20%;
 }
 
 @keyframes slideDown {
