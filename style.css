@@ -16,22 +16,28 @@
 /*Navigation css section*/
 nav {
   background:white;
-	text-align: center;
+	text-align: end;
 	position: sticky;
-	top: 0px;
     justify-content: space-between;
+	padding:0px;
 }
-
+img.logo-navbar {
+   
+}
+.navbar-toggle-icon{
+	background-color: #03418c;
+}
 nav ul li{
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
 }
 nav ul li a{
-    color: #f7f7fc;
+    color: #5b5bdf;
     font-weight: 20px;
     position: relative;
     padding: 5px 0;
+	text-decoration: none;
 }
 nav ul li a:hover{
     color: #4787fd;
@@ -53,7 +59,6 @@ nav ul li a:hover:after{
   
 
 
-
   /*end of navigation section*/
 
 
@@ -63,7 +68,7 @@ p {
 	margin-bottom: 15px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #a9a9a9;
+	color: #a9a9a9 ;
 }
 
 h1.title {
