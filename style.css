@@ -40,7 +40,9 @@ nav ul li a{
 	text-decoration: none;
 }
 nav ul li a:hover{
-    color: #4787fd;
+    color: #155ada;
+	box-shadow: 0 10px 20px rgba(45, 42, 231, 0.6);
+	background: rgb(150, 172, 236);
 }
 nav ul li a:after{
     content: "";
@@ -56,7 +58,6 @@ nav ul li a:hover:after{
     width: 100%;
 }
 
-  
 
 
   /*end of navigation section*/
@@ -276,17 +277,17 @@ h1.title {
 /* project css section */
 
 #projects {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 100vh;
-	background: linear-gradient(to right, whitesmoke, #c7d0ee, whitesmoke);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgb(245, 245, 245), #c7d0ee,whitesmoke);
 }
 
  .container-fluid .card {
   position: relative;
-  width: clamp(20rem, calc(15rem + 2vw), 20rem);
+  width: clamp(30rem, calc(15rem + 2vw), 20rem);
   height: 500px;
   border-radius: 15px;
   margin: 20px;
@@ -317,29 +318,18 @@ a {
 	transform: translateY(-50px);
 }
 
-/*
-.container-fluid .card .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: blue);
-}
-*/
-.container-fluid .card .box .content {
-	padding: 10px;
-	text-align: center;
+ .container-fluid .card .box .content {
+  padding: 10px;
+  text-align: center;
 }
 
 
-.container-fluid .card .box .content h2 {
-	font-size: 2rem;
-	color: rgb(112, 199, 221);
-	z-index: 1;
-	transition: 2s;
-	margin-bottom: 15px;
+.container-fluid .card .box .content h3{
+  font-size: 2rem;
+  color: rgb(110, 149, 233);
+  z-index: 1;
+  transition: 2s;
+  margin-bottom: 15px;
 }
 
 .container-fluid .card .box .content p {
@@ -351,22 +341,22 @@ a {
 }
 
 .container-fluid .card .box .content a {
-	position: relative;
-	display: inline-block;
-	padding: 8px 20px;
-	background: rgb(16, 156, 156);
-	border-radius: 5px;
-	text-decoration: none;
-	color: white;
-	margin-top: 20px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background:rgb(6, 32, 177);
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(246, 247, 252);
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(100, 146, 245, 0.2);
+  transition: 0.5s;
 }
 
 .container-fluid .card .box .content a:hover {
-	box-shadow: 0 10px 20px rgba(170, 191, 206, 0.6);
-	background: #fff;
-	color: rgb(213, 224, 230);
+  box-shadow: 0 10px 20px rgba(170, 191, 206, 0.6);
+  background: rgb(246, 247, 250);
+  color: rgb(49, 4, 194);
 }
 
 
@@ -521,6 +511,18 @@ a {
 		color: rgba(255, 255, 255, 0.9);
 		z-index: 1;
 		transition: 0.5s;
+	  }
+  }
+  
+
+	/* News css section  */
+	
+	.flex,
+	.flex::before,
+	.flex::after {
+	  box-sizing: border-box;
+	  padding: 0;
+	  margin: 0;
 	}
 }
 
