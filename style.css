@@ -185,7 +185,7 @@ h1.title {
 	align-items: center;
 }
 
-.about {}
+
 
 .about img {
 	height: 500px;
@@ -583,17 +583,26 @@ img {
 	height: fit-content;
 }
 
-/* footer */
+/* footer 
 .footer {
 	width: 100%;
-	text-align: center;
+	justify-content: center;
 	background: #444444;
 	padding: 20px 0;
+
+}
+
+.footer-title {
+	
+	position: relative;
+	font-size: 20px;
+	color: white;
+	
 }
 
 .footer a {
 	color: #fff;
-}
+}*/
 
 @media (max-width: 720px) {
 	.navbar {
@@ -693,40 +702,33 @@ img {
 	}
 }
 
+/* footer */
 
-/* footer icons*/
-.fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 80px;
-	text-align: center;
-	text-decoration: none;
-}
 
-/* Add a hover effect*/
+
+/* Add a hover effect
 .fa:hover {
 	opacity: 0.7;
 }
 
-/* Set color for each brand */
+/* Set color for each brand 
 
-/*Facebook */
+/*Facebook 
 .fa-facebook {
-	/*background: #3B5998;*/
+	/*background: #3B5998;
 	color: white;
-}
+}*/
 
-/* Twitter */
+ Twitter 
 .fa-twitter {
-	/*background: #55ACEE;*/
 	color: white;
 }
 
-/* github */
+/* github 
 .fa-github {
-	/*	background: #101111;*/
+	/*	background: #101111;
 	color: white;
-}
+ } */
 
 
 #myBtnn {
