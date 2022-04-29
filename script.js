@@ -36,3 +36,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+/*function for active navbar 
+
+var navitemContainer = document.getElementById("navbar");
+var navitem = navlinkContainer.getElementsByClassName("navlink");
+for (var i = 0; i < navlink.length; i++) {
+  link[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+*/
