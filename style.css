@@ -754,11 +754,14 @@ img {
 
 #icons{
 	  width: 15px;
-	  height:auto:
+	  height:auto;
   }
 #image{
-	align-items: block;
+	display: inline-block;
+	width: 25px;
+	height: auto;
+
 }
 #image:hover{
-color:#155ada;
+opacity: 0.2;
   }
