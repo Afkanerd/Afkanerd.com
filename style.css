@@ -154,15 +154,28 @@ h1.title {
 	font-family: -apple-system, Ubuntu, sans-serif;
 }
 
+
 .banner_content h1 {
 	text-transform: uppercase;
 	line-height: 38px;
 	margin-bottom: 25px;
+	color: #02399e;
 }
 
+.span1 {
+	color: #2683f5;
+}
 
-.banner_content h1 span {
-	color: #03418c;
+.span2 {
+	color: #02399e;
+}
+
+.span3 {
+	color: #2683f5;
+}
+
+.span4 {
+	color: #0240b3;
 }
 
 
