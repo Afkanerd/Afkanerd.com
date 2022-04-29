@@ -12,13 +12,16 @@
 
 /*Navigation css section*/
 nav {
-	background: white;
-	text-align: end;
+	background: rgb(255, 255, 255);
+	text-align: start;
 	position: sticky;
 	justify-content: space-between;
 	padding: 0px;
 }
-
+.img-responsive{
+	width: 200px; 
+	height: auto;
+}
 .navbar-toggle-icon {
 	background-color: #03418c;
 }
@@ -47,6 +50,7 @@ a:active{
 }
 nav ul li a:hover {
 	color: #155ada;
+
 
 }
 
@@ -505,7 +509,6 @@ a {
 	padding: 0;
 	margin: 0;
 }
-}
 
 
 /* News css section  */
@@ -746,4 +749,16 @@ img {
 	  
 #myb:hover {
 	background-color: #9EB5F4; 
+  }
+
+
+#icons{
+	  width: 15px;
+	  height:auto:
+  }
+#image{
+	align-items: block;
+}
+#image:hover{
+color:#155ada;
   }
