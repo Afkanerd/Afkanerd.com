@@ -17,7 +17,7 @@
 
 //Arrow up button
 
-mybutton = document.getElementById("myBtnn");
+mybutton = document.getElementById("myb");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
