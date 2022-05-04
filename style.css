@@ -768,13 +768,17 @@ img {
 #icons{
 	  width: 15px;
 	  height:auto;
+	  
   }
 #image{
 	display: inline-block;
 	width: 25px;
 	height: auto;
-
 }
 #image:hover{
 opacity: 0.2;
+color: #2683f5;
   }
+#text{
+	display: block;
+}
