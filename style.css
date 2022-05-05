@@ -110,7 +110,15 @@ h1.title {
 }
 
 .btn {
-	color: #3B2EC8;
+	color: #fbfbfd;
+	background-color: #02399e;
+	
+}
+.btn a{
+	color: white;
+}
+.btn a:hover {
+	color: white !important;
 }
 /*
 .banner_content .btn {
@@ -227,11 +235,30 @@ h1.title {
 	height: 500px;
 	width: 600px;
 	padding: 20px;
-	animation: slideDown ease .4s forwards .6s;
-	opacity: 0;
+	/*animation: slideDown ease .4s forwards .6s;
+	opacity: 0;*/
 	border-radius: 10%;
 }
 
+.about img:hover {
+	animation: vibrate 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+	0% { transform: rotate(0deg); }
+	10% { transform: rotate(-1deg); }
+	20% { transform: rotate(1deg); }
+	30% { transform: rotate(0deg); }
+	40% { transform: rotate(1deg); }
+	50% { transform: rotate(-1deg); }
+	60% { transform: rotate(0deg); }
+	70% { transform: rotate(-1deg); }
+	80% { transform: rotate(1deg); }
+	90% { transform: rotate(0deg); }
+	100% { transform: rotate(-1deg); }
+  }
+/*
 @keyframes slideDown {
 	0% {
 		transform: translateY(0);
@@ -241,7 +268,7 @@ h1.title {
 		transform: translateY(-40px);
 		opacity: 1;
 	}
-}
+}*/
 
 
 .about p {
@@ -617,6 +644,21 @@ img {
 	width: 600px;
 	height: fit-content;
 }
+.contact-2 img {
+	height: 50px;
+	width: 50px;
+	color: #0240b3;
+	margin: auto;
+	
+}
+.contact-2 p{
+	padding-top: 30px;
+	font-size: 20px;
+	color: #051f50;
+	font-weight: 300%;
+	
+}
+
 
  
 .footer {
@@ -752,7 +794,7 @@ img {
 	z-index: 99; 
 	border: none; 
 	outline: none; 
-	background-color: rgb(40, 109, 199); 
+	background-color:#0240b3; 
 	color: white; 
 	cursor: pointer; 
 	padding: 25px; 
@@ -761,7 +803,8 @@ img {
   }
 	  
 #myb:hover {
-	background-color: #9EB5F4; 
+	background-color: #2683f5; 
+
   }
 
 
@@ -777,4 +820,56 @@ img {
 }
 #image:hover{
 opacity: 0.2;
+  }
+
+
+/* New about us page*/
+  * {
+	box-sizing: border-box;
+  }
+  
+  .container {
+	padding: 64px;
+  }
+  
+  /* Clear floats */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both
+  }
+  
+  /* 2/3 column */
+  .column-66 {
+	float: left;
+	width: 66.66666%;
+	padding: 20px;
+  }
+  .column-66 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 10%;
+  }
+  .column-33 p {
+	font-size: 25px;
+	line-height: 35px;
+	color: #686666;
+	text-decoration: none;
+	word-spacing: 5px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+	float: left;
+	width: 33.33333%;
+	padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+	.column-66,
+	.column-33 {
+	  width: 100%;
+	  text-align: center;
+	}
   }
