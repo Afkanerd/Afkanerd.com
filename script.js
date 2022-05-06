@@ -1,19 +1,3 @@
-/*function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  } */
-
 
 //Arrow up button
 
@@ -51,5 +35,3 @@ for (var i = 0; i < navlink.length; i++) {
 }
 */
 
-<FontAwesomeIcon icon="fa-brands fa-github" />
-<font-awesome-icon icon="fa-brands fa-github" />
