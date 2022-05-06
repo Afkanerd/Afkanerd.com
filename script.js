@@ -51,5 +51,5 @@ for (var i = 0; i < navlink.length; i++) {
 }
 */
 
-<FontAwesomeIcon icon="fa-brands fa-github" />
-<font-awesome-icon icon="fa-brands fa-github" />
+<FontAwesomeIcon icon="fa-brands fa-github"/>
+<font-awesome-icon icon="fa-brands fa-github"/>
