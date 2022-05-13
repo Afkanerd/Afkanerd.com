@@ -237,7 +237,7 @@ a {
 	left: 20px;
 	right: 20px;
 	bottom: 20px;
-	background: url(images/cool.jpg);
+	background: linear-gradient(120deg,#040505 30%, #0c08cc 30%,#4340ec, #121818 30%, #000005 );
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 15px;
@@ -587,7 +587,7 @@ img {
 	color: #fff;
 }
 
-.navbar ul {
+
 	@media (max-width: 720px) {
 		.navbar {
 			height: auto;
@@ -685,7 +685,7 @@ img {
 	width: 25px;
 	height:20px;
 	padding-left: 5px;
-	margin-right:10px ;
+	margin-right:10px;
 }
 .icon{
   width: auto;
