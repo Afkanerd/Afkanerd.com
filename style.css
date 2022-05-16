@@ -782,7 +782,7 @@ a {
   @media screen and (max-width: 768px) {
 	.sectionhero {
 		display: flex;
-		background-color: rgb(4, 27, 90);
+		background-color: #0240b3;
 		width: fit-content;	
 		min-height: 500px;
 		margin-top: 20%;	
