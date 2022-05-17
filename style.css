@@ -207,11 +207,7 @@ h1.title {
 	align-items: center;
 }
 
-
 /* project css section */
-
-/* project css section */
-
 #projects {
 	display: flex;
 	justify-content: center;
@@ -254,7 +250,6 @@ a {
 
 .container-fluid .card .box:hover {
 	transform: translateY(-40px);
-	background: url(images/cool.jpg);
 }
 
 .container-fluid .card .box .content {
