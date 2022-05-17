@@ -55,8 +55,6 @@ a:active {
 
 nav ul li a:hover {
 	color: #155ada;
-
-
 }
 
 nav ul li a:after {
@@ -91,12 +89,6 @@ nav ul li a:hover:after {
 
 /*end of navigation section*/
 
-
-/*
-.btnn {
-	color: #5b5bdf;
-}*/
-
 p {
 	margin-bottom: 15px;
 	font-size: 14px;
@@ -117,7 +109,6 @@ h1.title {
 .btn {
 	color: #fbfbfd;
 	background-color: #02399e;
-
 }
 
 .btn a {
@@ -141,20 +132,16 @@ h1.title {
 	scroll-behavior: auto;
 }
 
-
 .banner_content {
 	text-align: center;
 	color: #03418c;
 	font-weight: 100;
-	/*font-family: -apple-system, Ubuntu, sans-serif;*/
 	padding-top: 350px;
 }
-
 
 .banner_content h1 {
 	text-transform: uppercase;
 	line-height: 38px;
-	/*margin-bottom: 25px;*/
 	color: #ffffff;
 }
 
@@ -174,7 +161,6 @@ h1.title {
 	color: #0240b3;
 }
 
-
 @media screen and (min-width: 601px) {
 	div.banner_content {
 		font-size: 80px;
@@ -191,7 +177,6 @@ h1.title {
 		font-size: 30px;
 	}
 }
-
 
 /* About us */
 .about,
@@ -230,7 +215,6 @@ a {
 	text-decoration: none;
 }
 
-
 .container-fluid .card .box {
 	position: absolute;
 	top: 20px;
@@ -256,7 +240,6 @@ a {
 	padding: 10px;
 	text-align: center;
 }
-
 
 .container-fluid .card .box .content h3 {
 	font-size: 2rem;
@@ -291,7 +274,6 @@ a {
 	background: #3B2EC8;
 	color: white !important;
 }
-
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
@@ -359,7 +341,6 @@ a {
 	}
 }
 
-
 @media screen and (max-width: 760px) {
 	.flex {
 		display: grid;
@@ -377,7 +358,6 @@ a {
 		gap: 1rem;
 	}
 }
-
 
 @media screen and (max-width: 500px) {
 	.container-fluid .card {
@@ -444,18 +424,6 @@ a {
 }
 
 /* News css section  */
-
-.flex,
-.flex::before,
-.flex::after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-
-/* News css section  */
-/* News css section  */
 .flex,
 .flex::before,
 .flex::after {
@@ -506,13 +474,6 @@ img {
 	font-size: 1.5rem;
 	text-transform: capitalize;
 }
-
-/*media for the News section
-
-
-/end of cards section*/
-
-
 
 
 /* Contact Us */
@@ -650,9 +611,6 @@ img {
 			font-size: 20px;
 		}
 	}
-
-
-}
 
 #myb {
 	display: none;
