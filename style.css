@@ -178,7 +178,6 @@ a {
 
 .container-fluid .card .box:hover {
 	transform: translateY(-40px);
-	background: url(images/cool.jpg);
 }
 
 .container-fluid .card .box .content {
