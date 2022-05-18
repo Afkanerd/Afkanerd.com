@@ -94,7 +94,7 @@ nav ul li a:hover:after {
 
 
 
-/*General*/
+/*General styling*/
 p {
 	margin-bottom: 15px;
 	font-size: 14px;
@@ -111,7 +111,7 @@ h1.title {
 	word-spacing: 10px;
 	letter-spacing: 5px;
 }
-/* End of general*/
+/* End of general styling*/
 
 
 
@@ -401,7 +401,9 @@ a {
 	width: 50px;
 	color: #0240b3;
 	margin: auto;
-
+}
+.contact-2 img:hover{
+	opacity: 0.2;
 }
 
 .contact-2 p {
@@ -779,6 +781,8 @@ a {
   }
   /*End of hero animation*/
 
+  /*Hero responsiveness*/
+
   @media screen and (max-width: 768px) {
 	.sectionhero {
 		display: flex;
@@ -842,7 +846,7 @@ a {
 		}
 	  }
   }
-
+/*End of hero responsiveness*/
 
   
 
