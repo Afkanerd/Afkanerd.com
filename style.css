@@ -146,6 +146,7 @@ h1.title {
 	background: linear-gradient(to right, rgb(245, 245, 245), #b9c4e7, whitesmoke);
 }
 
+
 .container-fluid .card {
 	position: relative;
 	width: clamp(30rem, calc(15rem + 2vw), 20rem);
@@ -443,8 +444,8 @@ a {
 	color: #fff;
 }
 
-
-@media (max-width: 720px) {
+/* nav responsive */
+@media (max-width: 1280px) {
 	.navbar {
 		height: auto;
 		flex-direction: column;
@@ -465,9 +466,9 @@ a {
 		margin-bottom: 5px;
 	}
 
-	.sectionhero {
+	/* .sectionhero {
 		margin-top: 35px;
-	}
+	} */
 
 
 }
@@ -726,7 +727,9 @@ a {
 
 /*Hero section animation*/
 .sectionhero {
+	margin-top: 50px;
 	display: flex;
+	flex-direction: column;
 	background: #0240b3;
 	min-height: 100vh;
 	align-items: center;
@@ -734,15 +737,15 @@ a {
 	justify-content: center;
 }
 
-.content22 {
+/* .content22 {
 	position: relative;
-}
+	align-items: center;
+} */
 
 .content22 h2 {
 	color: rgb(255, 255, 255);
 	font-family: Ubuntu, sans-serif;
 	font-size: 12em;
-	text-align: center;
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
@@ -785,28 +788,35 @@ a {
 	}
 }
 
+.wctext {
+	font-size: 40px;
+	color: white;
+	margin-top: 150px;
+}
+
 /*End of hero animation*/
 
 /*Hero responsiveness*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
 	.sectionhero {
 		display: flex;
+		flex-direction: column;
 		background-color: #0240b3;
-		width: fit-content;
+		width: 100%;
 		min-height: 500px;
-		margin-top: 20%;
+		padding-top: 20px;
 		justify-content: center;
 	}
 
-	.content22 {
+	 .content22 {
 		position: relative;
 		width: 400px;
 
-	}
+	} 
 
 	.content22 h2 {
-		font-size: 5.5em;
+		font-size: 5.4em;
 		text-align: center;
 		position: absolute;
 		transform: translate(-0%, -100%);
@@ -849,6 +859,14 @@ a {
 					0% 100%);
 		}
 	}
+	.wctext {
+		font-size: 25px;
+		color: white;
+		margin-top: 30px;
+	}
 }
 
+
 /*End of hero responsiveness*/
+
+
