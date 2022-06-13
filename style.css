@@ -133,68 +133,71 @@ h1.title {
 
 /* project css section */
 
-.pro{
+.pro {
 	min-height: 70vh;
-  }
+}
 
-  .cards-list {
+.cards-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-  }
+}
 
-  .card {
+.card {
 	margin: 50px;
 	width: 350px;
 	height: 450px;
 	border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
+	box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
 	cursor: pointer;
 	transition: 0.4s;
-  }
-
-  .title{
-	  text-align: center;
-	  text-transform: uppercase;
-  }
-  p{
-	  color: black;
-  }
-  a {
-	text-decoration: none;
-	font-size:medium;
 }
-  .card .card_image {
-	width:250px;
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	font-size: medium;
+}
+
+.card .card_image {
+	width: 250px;
 	height: auto;
 	border-radius: 20px;
-  }
- 
-  .card .card_image img {
+}
+
+.card .card_image img {
 	width: 300px;
 	height: auto;
 	border-radius: 30px;
 	object-fit: cover;
-  }
-  
-  .card .card_content {
-	  	border-radius: 0px 0px 40px 40px;
+}
+
+.card .card_content {
+	border-radius: 0px 0px 40px 40px;
 	font-weight: bold;
 	font-size: 30px;
 	margin-top: -80px;
 	height: 40px;
 	padding: 10px;
 	text-align: center;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
 	transform: scale(0.9, 0.9);
-	box-shadow: 5px 5px 30px 15px rgba(51, 50, 50, 0.25), 
-	  -5px -5px 30px 15px rgba(78, 77, 77, 0.22);
-  }
-  
- 
+	box-shadow: 5px 5px 30px 15px rgba(51, 50, 50, 0.25),
+		-5px -5px 30px 15px rgba(78, 77, 77, 0.22);
+}
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
@@ -203,24 +206,26 @@ h1.title {
 		width: 350px;
 		height: 450px;
 		border-radius: 40px;
-	  box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
+		box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
 		cursor: pointer;
 		transition: 0.4s;
-	  }
-	  .card .card_content {
+	}
+
+	.card .card_content {
 		border-radius: 0px 0px 40px 40px;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-}
-.card .card_image {
-	width:100px;
-	height: 100pxs;
-	align-items: center;
-  }
+		font-weight: bold;
+		font-size: 30px;
+		margin-top: -80px;
+		height: 40px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.card .card_image {
+		width: 100px;
+		height: 100pxs;
+		align-items: center;
+	}
 }
 
 
@@ -230,25 +235,27 @@ h1.title {
 		width: 350px;
 		height: 450px;
 		border-radius: 40px;
-	  box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
+		box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
 		cursor: pointer;
 		transition: 0.4s;
-	  }
-	  .card .card_content {
+	}
+
+	.card .card_content {
 		border-radius: 0px 0px 40px 40px;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-}
-.card .card_image {
-	width:100px;
-	height: 100pxs;
-	align-items: center;
-  }
-	
+		font-weight: bold;
+		font-size: 30px;
+		margin-top: -80px;
+		height: 40px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.card .card_image {
+		width: 100px;
+		height: 100pxs;
+		align-items: center;
+	}
+
 }
 
 
@@ -258,25 +265,27 @@ h1.title {
 		width: 350px;
 		height: 450px;
 		border-radius: 40px;
-	  box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
+		box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
 		cursor: pointer;
 		transition: 0.4s;
-	  }
-	  .card .card_content {
+	}
+
+	.card .card_content {
 		border-radius: 0px 0px 40px 40px;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-}
-.card .card_image {
-	width:100px;
-	height: 100pxs;
-	align-items: center;
-  }
-	
+		font-weight: bold;
+		font-size: 30px;
+		margin-top: -80px;
+		height: 40px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.card .card_image {
+		width: 100px;
+		height: 100pxs;
+		align-items: center;
+	}
+
 }
 
 @media screen and (max-width: 450px) {
@@ -285,25 +294,27 @@ h1.title {
 		width: 350px;
 		height: 450px;
 		border-radius: 40px;
-	  box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
+		box-shadow: 5px 5px 30px 7px rgba(182, 178, 178, 0.25), -5px -5px 30px 7px rgba(94, 93, 93, 0.22);
 		cursor: pointer;
 		transition: 0.4s;
-	  }
-	  .card .card_content {
+	}
+
+	.card .card_content {
 		border-radius: 0px 0px 40px 40px;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-}
-.card .card_image {
-	width:100px;
-	height: 100pxs;
-	align-items: center;
-  }
-	
+		font-weight: bold;
+		font-size: 30px;
+		margin-top: -80px;
+		height: 40px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.card .card_image {
+		width: 100px;
+		height: 100pxs;
+		align-items: center;
+	}
+
 }
 
 
@@ -513,7 +524,7 @@ h1.title {
 }
 
 .container {
-	padding: 64px;
+	padding: 44px;
 }
 
 /* Clear floats */
@@ -536,6 +547,13 @@ h1.title {
 	border-radius: 0%;
 }
 
+/* .column-66 .big-pic {
+
+	height: 80%;
+	width: 100%;
+	border-radius: 0%;
+} */
+
 .column-66 p {
 	font-size: 18px;
 	line-height: 35px;
@@ -551,20 +569,26 @@ h1.title {
 	.column-66 {
 		width: 100%;
 		text-align: center;
-		padding: 10px;
+		padding: 8px;
 	}
 
 	.column-66 img {
 		margin: 0%;
 	}
 
-	.whatimg {
+	.big-pic {
 		height: 0px;
 		display: none;
 	}
 
-
+	/* .whatimg {
+		height: 0px;
+		visibility: hidden;
+		display: none; */
 }
+
+
+
 
 /*End of new about us page*/
 
@@ -743,14 +767,14 @@ h1.title {
 		justify-content: center;
 	}
 
-	 .content22 {
+	.content22 {
 		position: relative;
-		width: 400px;
+		width: 355px;
 
-	} 
+	}
 
 	.content22 h2 {
-		font-size: 5.4em;
+		font-size: 5.2em;
 		text-align: center;
 		position: absolute;
 		transform: translate(-0%, -100%);
@@ -793,6 +817,7 @@ h1.title {
 					0% 100%);
 		}
 	}
+
 	.wctext {
 		font-size: 25px;
 		color: white;
@@ -801,6 +826,6 @@ h1.title {
 }
 
 
+
+
 /*End of hero responsiveness*/
-
-
