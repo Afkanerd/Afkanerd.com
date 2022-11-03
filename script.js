@@ -22,19 +22,6 @@ function topFunction() {
 }
 
 
-/*function for active navbar 
-
-var navitemContainer = document.getElementById("navbar");
-var navitem = navlinkContainer.getElementsByClassName("navlink");
-for (var i = 0; i < navlink.length; i++) {
-  link[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-*/
-
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
