@@ -112,17 +112,21 @@ h1.title {
 #hero {
 	width: 100%;
 	height: 80vh;
-	background: #37517e;
-  }
+	background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), 
+		url("images/index.jpeg") fixed center center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
   
   #hero .container {
-	padding-top: 72px;
+	padding-top: 50px;
   }
   
   #hero h1 {
 	margin: 0 0 10px 0;
-	font-size: 48px;
-	font-weight: 700;
+	font-size: 45px;
+	font-weight: 900;
 	line-height: 56px;
 	color: #fff;
   }
@@ -130,13 +134,13 @@ h1.title {
   #hero h2 {
 	color: rgba(255, 255, 255, 0.6);
 	margin-bottom: 50px;
-	font-size: 24px;
+	font-size: 30px;
   }
   
   #hero .btn-get-started {
 	font-family: "Jost", sans-serif;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 15px;
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 10px 28px 11px 28px;
@@ -166,14 +170,6 @@ h1.title {
 	  -webkit-animation: none;
 	  animation: none;
 	}
-  
-	#hero .hero-img {
-	  text-align: center;
-	}
-  
-	#hero .hero-img img {
-	  width: 50%;
-	}
   }
   
   @media (max-width: 768px) {
@@ -187,17 +183,9 @@ h1.title {
 	  line-height: 24px;
 	  margin-bottom: 30px;
 	}
-  
-	#hero .hero-img img {
-	  width: 70%;
-	}
   }
   
   @media (max-width: 575px) {
-	#hero .hero-img img {
-	  width: 80%;
-	}
-  
 	#hero .btn-get-started {
 	  font-size: 16px;
 	  padding: 10px 24px 11px 24px;
@@ -223,16 +211,12 @@ h1.title {
 	  transform: translateY(-10px);
 	}
   }
-  
-  
-
 
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-	padding: 60px 0;
 	overflow: hidden;
   }
   
@@ -242,7 +226,8 @@ section {
   
   .section-title {
 	text-align: center;
-	padding-bottom: 30px;
+	line-height: 40px;
+	padding: 20px 0;
   }
   
   .section-title h2 {
@@ -253,6 +238,7 @@ section {
 	padding-bottom: 20px;
 	position: relative;
 	color: #37517e;
+	line-height: 56px;
   }
   
   .section-title h2::before {
@@ -282,13 +268,6 @@ section {
 }
   
 
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # ABOUT US
 --------------------------------------------------------------*/
@@ -310,9 +289,6 @@ p .column {
 	text-decoration: none;
 	word-spacing: 5px;
 }
-
-
-
 
 @media screen and (max-width: 200px) {
 	div .column {
@@ -429,6 +405,7 @@ p .column {
   margin-bottom: 5px;
   font-size: 20px;
   color: #37517e;
+  line-height: 50px;
 }
 
 .project .pro span {
@@ -479,10 +456,9 @@ p .column {
   
 .form_input {
 	margin-bottom: 15px;
-
 }
 
-.contactus {
+.contact {
 	margin-top: 20px;
 }
 
@@ -511,7 +487,6 @@ p .column {
 	font-size: 20px;
 	color: #051f50;
 	font-weight: 300%;
-
 }
 
 /*End of contact page*/
