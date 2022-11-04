@@ -52,7 +52,7 @@ h1.title {
 	padding: 0px;
 	background-color: white;
   }
-  
+
   .navbar ul {
 	margin: 0;
 	padding: 0;
@@ -62,7 +62,6 @@ h1.title {
 	justify-content: space-between;
 	float: right;
   }
-  
   .navbar a,
   .navbar a:focus {
 	display: flex;
@@ -72,22 +71,29 @@ h1.title {
 	font-size: 20px;
 	font-weight: 300;
   }
+  .nav-item,
+  .nav-item a{
+	  color: gray !important;
+	  font-weight: 20px;
+	  position: relative;
+	  padding: 5px 0;
+	  text-decoration: none;
+	  list-style: none;
+	  display: inline-block;
+	  padding: 10px 20px;
+	  align-items: flex-end;
+	  padding-right: 20px;
+  }
 
-.nav-item,
-.nav-item a{
-	color: gray !important;
-	font-weight: 20px;
-	position: relative;
-	padding: 5px 0;
-	text-decoration: none;
-	list-style: none;
-	display: inline-block;
-	padding: 10px 20px;
-	align-items: flex-end;
-	padding-right: 20px;
-}
+  
+.active, .nav-item:hover {
+	background:#dfe0e5;
+	border-left:2px solid #00f;
+	padding:8px;
+	}
 
-.navbar ul li a:hover:after {
+  /*
+.navbar, .active ul li a:hover:after {
 	width: 100%;
 }
 
@@ -97,11 +103,10 @@ h1.title {
 	left: 0;
 	width: 0;
 	height: 3px;
-	background: #4787fd;
 	transition: .3s;
 	bottom: 0;
 }
-/*****end of navbar******/
+*****end of navbar******/
 
 
 
