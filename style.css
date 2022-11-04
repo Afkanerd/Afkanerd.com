@@ -280,7 +280,6 @@ section {
 	padding: 44px;
 }
 
-/* Clear floats */
 .row:after {
 	content: "";
 	display: table;
@@ -296,7 +295,7 @@ p .column {
 }
 
 @media screen and (max-width: 200px) {
-	div .column {
+.column {
 	display: none;
 	}
 	}
@@ -405,7 +404,7 @@ p .column {
   padding-left: 30px;
 }
 
-.project  .pro h4 {
+.project  .pro h3 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
@@ -419,6 +418,7 @@ p .column {
   padding-bottom: 10px;
   position: relative;
   font-weight: 500;
+  color: gray;
 }
 
 .project  .pro span::after {
