@@ -44,35 +44,33 @@ h1.title {
 
 /********** navbar *****************/
 .navbar {
-	padding: 0;
-	margin-right: 0 !important;
+	padding: 5px;
+	margin-right: 0 10px;
 	text-align: start;
 	position: sticky;
 	justify-content: space-between;
-	padding: 0px;
 	background-color: white;
   }
 
-  .navbar ul {
+ .navbar ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 10px;
 	display: inline-block !important;
 	list-style: none;
-	align-items: flex-end;
+	align-items: flex-start;
 	justify-content: space-between;
 	float: right;
   }
-  .navbar a,
-  .navbar a:focus {
-	display: flex;
+  
+  .navbar a{
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 0 10px 30px;
+	padding:0 10px 0 10px;
 	font-size: 20px;
 	font-weight: 300;
   }
-  .nav-item,
-  .nav-item a{
+
+.nav-item a{
 	  color: gray !important;
 	  font-weight: 20px;
 	  position: relative;
@@ -81,32 +79,20 @@ h1.title {
 	  list-style: none;
 	  display: inline-block;
 	  padding: 10px 20px;
-	  align-items: flex-end;
+	  align-items: flex-start;
 	  padding-right: 20px;
   }
 
-  
-.active, .nav-item:hover {
+.active, .navbar a:hover {
 	background:#dfe0e5;
-	border-left:2px solid #00f;
-	padding:8px;
+	border-bottom:2px solid rgb(66, 66, 241);
+	padding: 5px;
 	}
 
-  /*
-.navbar, .active ul li a:hover:after {
-	width: 100%;
+.navbar ul li {
+padding: 0 10px 0 10px;
 }
-
-.navbar ul li a:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 3px;
-	transition: .3s;
-	bottom: 0;
-}
-*****end of navbar******/
+/*****end of navbar******/
 
 
 
@@ -118,7 +104,7 @@ h1.title {
 	width: 100%;
 	height: 80vh;
 	background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), 
-		url("images/index.jpeg") fixed center center no-repeat;
+				url("images/index.jpeg") fixed center center no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -160,7 +146,6 @@ h1.title {
 	background: #3c20d8;
   }
   
- 
   #hero .animated {
 	animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
@@ -384,16 +369,13 @@ p .column {
   border-radius: 5px;
   background: #fff;
   transition: 0.5s;
+  height: 300px;
 }
 
 .project .pro .pic {
   overflow: hidden;
   width: 180px;
   border-radius: 50%;
-}
-
-.project .pro .pic img {
-  transition: ease-in-out 0.3s;
 }
 
 .project .pro:hover {
@@ -474,10 +456,6 @@ p .column {
 	margin: auto;
 }
 
-.contact-2 img:hover {
-	opacity: 0.2;
-}
-
 .contact-2 p {
 	padding-top: 30px;
 	font-size: 20px;
@@ -496,24 +474,15 @@ p .column {
 	justify-content: center;
 	background: #444444;
 	padding: 20px 0;
-
 }
 
 .footer-title {
-
 	position: relative;
 	font-size: 20px;
 	color: white;
-
 }
-
-.footer a {
-	color: #fff;
-}
-
 
 /*Footer icons*/
-
 .icons {
 	width: 25px;
 	height: 20px;
@@ -532,11 +501,6 @@ p .column {
 	display: inline-block;
 	width: 25px;
 	height: auto;
-
-}
-
-#image:hover {
-	opacity: 0.2;
 }
 
 /*--------------------------------------------------------------
@@ -559,7 +523,6 @@ p .column {
 	cursor: pointer;
 	padding: 25px;
 	border-radius: 50px;
-
 }
 
 #myb:hover {
