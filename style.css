@@ -5,7 +5,7 @@
 	padding: 0;
 	font-family: 'Josefin Sans', sans-serif;
 }
-
+/*==============General styling ==============*/
 body{
 margin: 0;
 min-height: 100%;
@@ -16,7 +16,6 @@ color: #123693;
 font-size: 16px;
 line-height: 160%;
 letter-spacing: .25px;
-height:1000px;
 }
 
 .img-responsive {
@@ -40,10 +39,13 @@ h1.title {
 	word-spacing: 10px;
 	letter-spacing: 5px;
 }
+/*============end of general styling==================*/
 
-
-/********** navbar *****************/
+/*==========================================================
+# Navigation Menu
+===========================================================*/
 .navbar {
+	padding: 0 15px;
 	padding: 5px;
 	margin-right: 0 10px;
 	text-align: start;
@@ -54,23 +56,14 @@ h1.title {
 
  .navbar ul {
 	margin: 0;
-	padding: 0 10px;
-	display: inline-block !important;
+	padding-left:10px;
 	list-style: none;
 	align-items: flex-start;
 	justify-content: space-between;
-	float: right;
-  }
-  
-  .navbar a{
-	align-items: center;
-	justify-content: space-between;
-	padding:0 10px 0 10px;
-	font-size: 20px;
-	font-weight: 300;
+	float: left !important;
   }
 
-.nav-item a{
+.navbar a{
 	  color: gray !important;
 	  font-weight: 20px;
 	  position: relative;
@@ -83,19 +76,26 @@ h1.title {
 	  padding-right: 20px;
   }
 
-.active, .navbar a:hover {
+ .navbar .nav-link.active, .nav-link:hover {
 	background:#dfe0e5;
 	border-bottom:2px solid rgb(66, 66, 241);
 	padding: 5px;
 	}
 
-.navbar ul li {
-padding: 0 10px 0 10px;
+@media (max-width: 767px) {
+	.navbar ul {
+		margin: 0;
+		padding-left:10px;
+		list-style: none;
+		align-items: flex-start;
+		justify-content: space-between;
+		float: left !important;
+	  }
 }
-/*****end of navbar******/
 
-
-
+/*****===========================
+end of navbar
+======================******/
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -146,21 +146,13 @@ padding: 0 10px 0 10px;
 	background: #3c20d8;
   }
   
-  #hero .animated {
-	animation: up-down 2s ease-in-out infinite alternate-reverse both;
-  }
   
   @media (max-width: 991px) {
 	#hero {
 	  height: 100vh;
 	  text-align: center;
 	}
-  
-	#hero .animated {
-	  -webkit-animation: none;
-	  animation: none;
-	}
-  }
+}
   
   @media (max-width: 768px) {
 	#hero h1 {
@@ -358,69 +350,105 @@ p .column {
 --------------------------------------------------------------*/
 
 
-
 /*--------------------------------------------------------------
-# projects
+#PROJECTS
 --------------------------------------------------------------*/
-.project .pro {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
-  background: #fff;
-  transition: 0.5s;
-  height: 300px;
+.project{
+	padding: 20px;
 }
 
-.project .pro .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
+.project .card {
+	position: relative;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	border-radius: 5px;
+	background: #fff;
+	transition: 0.5s;
+	height: 300px;
+  }
+  
+  .project .card .pic {
+	overflow: hidden;
+	width: 100px;
+	border-radius: 50%;
+  }
+  
+  .project .card:hover {
+	transform: translateY(-10px);
+  }
+  
+  .project  .card h4 {
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #37517e;
+	line-height: 50px;
+  }
+  
+  .project .card span {
+	display: block;
+	font-size: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: 500;
+	color: gray;
+  }
+  
+  .project  .card span::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 1px;
+	background: #cbd6e9;
+	bottom: 0;
+	left: 0;
+  }
+  
+  .project  .card p {
+	  font-size: 15px;
+	  line-height: 20px;
+	  color: #686666;
+	  text-decoration: none;
+	  word-spacing: 3px;
+  }
+
+  @media only screen and (max-width: 768px){
+	.project .card {
+		background: #fff;
+		transition: 0.5s;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}  
+	.project .card p {
+		font-size: 13px;
+		text-align: start;
+		letter-spacing: 1px;
+		line-height: 2;
+	}
+	  .project .card h4 {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1.5;
+	  }
+	    
+  .project .card span {
+	font-size: 13px;
+	font-weight: 300;
+	margin:5px;
+	word-spacing: 2px;
+  }
+  .project .card .pic {
+	overflow: hidden;
+	width: 50px;
+  }
 }
 
-.project .pro:hover {
-  transform: translateY(-10px);
+@media (max-width: 767px) {
+	.project .card .card-info {
+	font-size: 8px;
+	  }
 }
-
-.project  .pro .pro-info {
-  padding-left: 30px;
-}
-
-.project  .pro h3 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #37517e;
-  line-height: 50px;
-}
-
-.project .pro span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-  color: gray;
-}
-
-.project  .pro span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
-.project  .pro p {
-	font-size: 18px;
-	line-height: 35px;
-	color: #686666;
-	text-decoration: none;
-	word-spacing: 5px;
-}
+  /*==============end of this section ===========================*/
 
 /*--------------------------------------------------------------
 # Contact
@@ -440,11 +468,11 @@ p .column {
 	margin-top: 20px;
 }
 
-.contactus {
+.contact {
 	align-self: center;
 }
 
-.contactus img {
+.contact img {
 	width: 600px;
 	height: fit-content;
 }
@@ -462,8 +490,7 @@ p .column {
 	color: #051f50;
 	font-weight: 300%;
 }
-
-/*End of contact page*/
+/*===================== End of contact page =========================*/
 
 
 /*--------------------------------------------------------------
@@ -480,6 +507,9 @@ p .column {
 	position: relative;
 	font-size: 20px;
 	color: white;
+}
+.text-reset{
+	color: black;
 }
 
 /*Footer icons*/
