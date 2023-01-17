@@ -271,11 +271,17 @@ p .column {
 	word-spacing: 5px;
 }
 
-@media screen and (max-width: 200px) {
+/*@media screen and (max-width: 200px) {
 .column {
 	display: none;
 	}
+	};*/
+
+@media (max-width:800px) {
+	img#optional {
+		display: none;
 	}
+} 
 
 /*About page scroll effect*/
 .js-scroll {
