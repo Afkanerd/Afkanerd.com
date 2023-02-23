@@ -67,7 +67,7 @@ window.addEventListener("scroll", () => {
 
 
 // active navbar
-var btnContainer = document.getElementById("SupportedContent");
+var btnContainer = document.getElementById("navbarCollapse ");
 
 var btns = btnContainer.getElementsByClassName("nav-link");
 
@@ -81,6 +81,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 } 
+
 
 
 

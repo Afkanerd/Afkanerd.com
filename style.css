@@ -6,6 +6,7 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 /*==============General styling ==============*/
+
 body{
 margin: 0;
 min-height: 100%;
@@ -45,54 +46,26 @@ h1.title {
 # Navigation Menu
 ===========================================================*/
 .navbar {
-	padding: 0 15px;
-	padding: 5px;
-	margin-right: 0 10px;
-	text-align: start;
-	position: sticky;
+	position: fixed;
 	justify-content: space-between;
-	background-color: white;
+	float: right;
+
   }
-
- .navbar ul {
-	margin: 0;
-	padding-left: 1000px;
-	list-style: none;
-	align-items: flex-start;
-	justify-content: space-between;
-	float: left !important;
+  
+  .navbar a {
+	display: block;
+	color: gray;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px;
   }
-
-.navbar a{
-	  color: gray !important;
-	  font-weight: 20px;
-	  position: relative;
-	  padding: 5px 0;
-	  text-decoration: none;
-	  list-style: none;
-	  display: inline-block;
-	  padding: 10px 20px;
-	  align-items: flex-start;
-	  padding-right: 20px;
+  
+  .navbar a:hover {
+	background-color: rgb(87, 133, 177);
+	color: white;
   }
-
- .navbar .nav-link.active, .nav-link:hover {
-	background:#dfe0e5;
-	border-bottom:2px solid rgb(66, 66, 241);
-	padding: 5px;
-	}
-
-@media (max-width: 767px) {
-	.navbar ul {
-		margin: 0;
-		padding-left:10px;
-		list-style: none;
-		align-items: flex-start;
-		justify-content: space-between;
-		float: left !important;
-	  }
-}
-
 /*****===========================
 end of navbar
 ======================******/
