@@ -10,6 +10,10 @@ body {
 	  padding: 0.25rem 0.5rem; 
 	  font-size: 0.8rem; 
 	}
+
+  .fab {
+    color: #edf2f6;
+  }
   
 	.custom-toggler:focus {
 	  box-shadow: none; 
