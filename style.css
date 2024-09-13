@@ -70,20 +70,28 @@ body[dir="rtl"] h1, body[dir="rtl"] h4 {
   display: block;
 }
 
-.dropdown-content button {
-  padding: 8px;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: center !important;
-  font-size: 14px;
-}
 .dropdown-content button:hover {
   color: rgb(19, 70, 238);
   background-color: #e2e1dc;
   border-radius: 20%;
 }
 
+
+.dropdown-content button {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.flag-icon {
+  margin-right: 8px;
+
+}
 
 @media (max-width: 991.98px) {
   .navbar-collapse {
