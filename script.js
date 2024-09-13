@@ -1,88 +1,36 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultLang = "en";
+  let currentLang = localStorage.getItem("lang") || defaultLang;
 
-//Arrow up button
-
-mybutton = document.getElementById("myb");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  // Function to load the language file
+  function loadLang(lang) {
+    fetch(`./lang/${lang}.json`)
+      .then((response) => response.json())
+      .then((translations) => {
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          const translation = getTranslationByKey(translations, key);
+          if (translation) {
+            element.textContent = translation;
+          }
+        });
+      });
   }
-}
 
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  // Helper function to get translation from nested JSON keys
+  function getTranslationByKey(translations, key) {
+    return key.split(".").reduce((acc, part) => acc && acc[part], translations);
+  }
 
-
-const scrollElements = document.querySelectorAll(".js-scroll");
-
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
-
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
-
-const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
-}
-
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
-});
-
-
-
-
-// active navbar
-var btnContainer = document.getElementById("navbarCollapse ");
-
-var btns = btnContainer.getElementsByClassName("nav-link");
-
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-    this.className += " active";
+  // Add event listeners to language buttons
+  document.querySelectorAll(".translate").forEach((button) => {
+    button.addEventListener("click", function () {
+      const lang = this.getAttribute("data-lang");
+      currentLang = lang;
+      localStorage.setItem("lang", lang);
+      loadLang(lang);
+    });
   });
-} 
 
-
-
-
-
+  loadLang(currentLang);
+});

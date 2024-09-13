@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "language": "Language",
+    "language.en": "English",
+    "language.fr": "French",
+    "language.fa": "Farsi"
+  },
+  "hero": {
+    "title": "AFKANERD - WE CODE FOR THE PEOPLE",
+    "subtitle1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
+    "subtitle2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out."
+},
+  "about": {
+    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "quote": "Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called \"operators.\" - phillyvoice.com",
+    "description": "We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all."
+  },
+  "project": {
+    "title": "afkanerd@afkanerd: ~$ ./Projects"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for various platforms such as Android, iOS and Linux systems. Some of the work also includes white papers on topics such as cryptography, communications and internet freedom.",
+    "readMore": "Read more"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS is an Android SMS messaging app. It enables 2 users of the app to communicate using end-to-end encryption over SMS messages. The app also contains message forwarding abilities supporting protocols such as SMTP, FTP, and AMQP. The app is built to integrate with RabbitMQ allowing users with messaging queues to set up and make remote communication requests to their apps.",
+    "readMore": "Read more"
+  },
+  "blog": {
+    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+  },
+  "blog1": {
+    "title": "New Alpha Release: Vault 0.1.0",
+    "description":"SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.",
+    "readMore": "Read More"
+  },
+  "blog2": {
+    "title": "Rebranding",
+    "description": "SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools. The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the SMSWithoutBorders project.",
+    "readMore": "Read More"
+  },
+  "footer": {
+    "title": "AFKANERD INFOTECH",
+    "title1": "Follow Us",
+    "Policy": "Privacy Policy",
+    "blog": "Blog",
+    "Project": "Projects"
+  }
+}
