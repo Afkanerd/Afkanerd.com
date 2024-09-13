@@ -17,52 +17,63 @@
   
 </head>
 <body>
-
 <!--============================  Navbar ================================== -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand">
-      <img src="/images/logo.png" alt="Afkanerd" style="width: 35px;">
-      <span class="ms-2 fw-bold" data-i18n="navbar.brand">Afkanerd</span>
-    </a>
-
-    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#hero" data-i18n="navbar.home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about" data-i18n="navbar.about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#project" data-i18n="navbar.projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#blog" data-i18n="navbar.blog">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" data-i18n="navbar.contact">Contact Us</a>
-        </li>
-		<li class="nav-item">
+	<div class="container">
+	  <a class="navbar-brand">
+		<img src="/images/logo.png" alt="Afkanerd" style="width: 35px;">
+		<span class="ms-2 fw-bold" data-i18n="navbar.brand">Afkanerd</span>
+	  </a>
+  
+	  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ms-auto align-items-center">
+		  <li class="nav-item">
+			<a class="nav-link" href="#hero" data-i18n="navbar.home">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#about" data-i18n="navbar.about">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#project" data-i18n="navbar.projects">Projects</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#blog" data-i18n="navbar.blog">Blogs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#contact" data-i18n="navbar.contact">Contact Us</a>
+		  </li>
+		  <li class="nav-item">
 			<a class="nav-link" href="https://github.com/Afkanerd/Afkanerd.com"><i class="fab fa-github"></i></a>
 		  </li>
-        <!-- Translation Dropdown -->
-        <li class="dropdown">
-          <button class="dropdown-btn" data-i18n="navbar.language">Language</button>
-          <ul class="dropdown-content">
-            <li><button class="translate" data-lang="en" data-i18n="navbar.language.en">English</button></li>
-            <li><button class="translate" data-lang="fr" data-i18n="navbar.language.fr">Français</button></li>
-            <li><button class="translate" data-lang="fa" data-i18n="navbar.language.fa">فارسی</button></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+		  <li class="nav-item dropdown">
+		<i class="fas fa-globe" aria-hidden="true"></i>
+			<ul class="dropdown-content">
+			  <li>
+				<button class="translate" data-lang="en" data-i18n="navbar.language.en">
+					English 🇬🇧 
+				</button>
+			  </li>
+			  <li>
+				<button class="translate" data-lang="fr" data-i18n="navbar.language.fr">
+					Français 🇫🇷 
+				</button>
+			  </li>
+			  <li>
+				<button class="translate" data-lang="fa" data-i18n="navbar.language.fa">
+				 فارسی 🇮🇷
+				</button>
+			  </li>
+			</ul>
+		  </li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  
 <hr>
 
 <!--============================= Landing Page =====================================  -->
@@ -227,10 +238,31 @@
 		<!-- "Follow Us -->
 		<div class="d-flex align-items-center">
 		  <h6 data-i18n="footer.title1" class="align-self-start me-3">Follow Us</h6>
-		  <a href="https://x.com/afkanerd?t=wShmLs6wPw9R2GzqWwT5Ww&s=09" ><i class="fab fa-twitter"></i></a>
+		  <a href="https://x.com/afkanerd?t=wShmLs6wPw9R2GzqWwT5Ww&s=09" class="me-3" ><i class="fab fa-twitter"></i></a>
 		  <!-- <a href="#" class="me-4"><i class="fab fa-linkedin"></i></a> -->
-		  <a href="https://github.com/Afkanerd/Afkanerd.com"><i class="fab fa-github"></i></a>
+		  <a href="https://github.com/Afkanerd/Afkanerd.com" class="me-3"><i class="fab fa-github"></i></a>
 		</div>
+		<li class="nav-item dropdown">
+			<a class="nav-link" href="#"><i class="fas fa-globe" aria-hidden="true"></i></a>
+			<ul class="dropdown-content">
+			  <li>
+				<button class="translate" data-lang="en" data-i18n="navbar.language.en">
+				  🇬🇧 English
+				</button>
+			  </li>
+			  <li>
+				<button class="translate" data-lang="fr" data-i18n="navbar.language.fr">
+				  🇫🇷 Français
+				</button>
+			  </li>
+			  <li>
+				<button class="translate" data-lang="fa" data-i18n="navbar.language.fa">
+				  🇮🇷 فارسی
+				</button>
+			  </li>
+			</ul>
+		  </li>
+		  
 	  </div>
 	  
 	  <hr class="w-100">
