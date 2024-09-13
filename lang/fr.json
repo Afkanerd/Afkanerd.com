@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contactez-nous",
+    "language": "Langue",
+    "language.en": "Anglais",
+    "language.fr": "Français",
+    "language.fa": "Persan"
+  },
+  "hero": {
+    "title": "AFKANERD - NOUS CODONS POUR LE PEUPLE",
+    "subtitle1": "Nous créons des logiciels libres de manière ouverte. Nous développons des technologies pour les droits numériques, la sécurité et la vie privée. Nos outils sont librement disponibles pour l'activisme, les soins de santé et l'éducation.",
+    "subtitle2": "Nous consultons également des projets open source et des individus. Nous serons heureux de consulter votre projet s'il sert la communauté open source - n'hésitez pas à nous contacter."
+  },
+  "about": {
+    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "quote": "Source/Los Alamos : ENIAC, le premier ordinateur numérique au monde, dévoilé il y a 70 ans dimanche à l'Université de Pennsylvanie, avait six programmeuses principales : Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas et Ruth Lichterman. Elles étaient initialement appelées \"opératrices.\" - phillyvoice.com",
+    "description": "Nous nous inspirons de nombreuses grandes personnes qui passent à l'action. Nous savons que nous ne pouvons inspirer le changement et promouvoir le développement qu'en montrant l'exemple. Nous travaillons ouvertement et vous encourageons à nous rejoindre dans notre mission pour un monde plus ouvert et accessible à tous."
+  },
+  "project": {
+    "title": "afkanerd@afkanerd: ~$ ./Projets"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders est dédié à la recherche, au développement et à la promotion d'outils de communication sécurisés et accessibles qui fonctionnent même sans connexion internet. Le développement comprend des applications mobiles pour diverses plateformes comme Android, iOS et les systèmes Linux. Certains travaux incluent également des livres blancs sur des sujets tels que la cryptographie, les communications et la liberté sur Internet.",
+    "readMore": "Lire la suite"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS est une application Android de messagerie SMS. Elle permet à deux utilisateurs de l'application de communiquer avec un chiffrement de bout en bout sur des messages SMS. L'application contient également des capacités de transfert de messages, prenant en charge des protocoles comme SMTP, FTP et AMQP. Elle est conçue pour s'intégrer à RabbitMQ, permettant aux utilisateurs de configurer des files d'attente de messages pour effectuer des demandes de communication à distance à leurs applications.",
+    "readMore": "Lire la suite"
+  },
+  "blog": {
+    "title": "afkanerd@afkanerd: ~$ ./Blog/derniers"
+  },
+  "blog1": {
+    "title": "Nouvelle version Alpha : Vault 0.1.0",
+    "description": "SMSWithoutBorders Vault 0.1.0 est désormais disponible en version alpha ! Vault est une technologie développée par l'équipe de SMSWithoutBorders pour sécuriser les jetons d'accès des utilisateurs et faciliter l'utilisation sécurisée de ces jetons pour publier leurs messages.",
+    "readMore": "Lire la suite"
+  },
+  "blog2": {
+    "title": "Rebranding",
+    "description": "SMSWithoutBorders devient le projet principal englobant RelaySMS et d'autres outils de messagerie. Les fonctionnalités principales restent les mêmes, mais les utilisateurs peuvent s'attendre à un nouveau nom, des fonctionnalités de sécurité améliorées et une concentration sur la croissance future sous le projet SMSWithoutBorders.",
+    "readMore": "Lire la suite"
+  },
+  "footer": {
+    "title": "AFKANERD INFOTECH",
+    "title1": "Suivez-nous",
+    "Policy": "Politique de confidentialité",
+    "blog": "Blog",
+    "Project": "Projets"
+  }
+}
