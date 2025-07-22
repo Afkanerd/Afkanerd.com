@@ -16,6 +16,8 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css">
   <title>AFKANERD</title>
 
@@ -130,9 +132,14 @@
       </div>
 
       <div class="col-md-6">
-        <blockquote data-i18n="about.quote" style="
+        <p data-i18n="about.description" style="font-size: 1.1rem; line-height: 1.75; color: #d9dce1;">
+          We are inspired by many great individuals who take action. We know we can only inspire change and drive
+          development by leading the way. We build in the open and encourage you to join us on our mission to make the
+          world more open and more accessible to all.
+        </p>
+		   <blockquote data-i18n="about.quote" style="
           font-style: italic;
-          color: rgb(8, 163, 190);
+          color: rgb(4, 165, 194);
           border-left: 2px solid rgb(8, 163, 190);
           padding-left: 1rem;
           margin-bottom: 2rem;
@@ -143,12 +150,6 @@
           Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas
           and Ruth Lichterman. They were initially called "operators." - phillyvoice.com
         </blockquote>
-
-        <p data-i18n="about.description" style="font-size: 1.1rem; line-height: 1.75; color: #d9dce1;">
-          We are inspired by many great individuals who take action. We know we can only inspire change and drive
-          development by leading the way. We build in the open and encourage you to join us on our mission to make the
-          world more open and more accessible to all.
-        </p>
       </div>
     </div>
   </div>
@@ -241,23 +242,28 @@
   <!--================== Jobs Section ======================-->
   <section id="jobs" class="jobs-section py-5 text-white">
   <div class="container">
-    <!-- Section Title -->
-	<div class="mb-5">
+
+ <div class="container my-5">
+   <div class="mb-5">
   <h3 
     class="fw-semibold mb-2" 
     style="font-size: 1.5rem; color: forestgreen;" 
     data-i18n="jobs.title"
   >
     <span style="color: forestgreen;">afkanerd@afkanerd:</span> 
-    <span>~$ ./Jobs/Current_Job_Openings</span>
+   <span>~$ ./Jobs/Current_Job_Openings</span>
   </h3>
   <div 
     class="rounded" 
     style="width: 90px; height: 3px; background-color: #66bb6a;"
   ></div>
 </div>
+    <div id="jobs-container" class="row">
+      <!-- Jobs will load here -->
+    </div>
+  </div>
+
     <div id="jobs-container" class="row gy-4">
-      <div class="col-12 text-muted small">Loading jobs...</div>
     </div>
   </div>
 </section>

@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+})
+
   // ============ Jobs Section 
   async function loadJobs() {
     const sheetId = '1XVzbedERoqGacuFR9UhwqywKN3Px8WRwspEqECkpwzo';
@@ -37,16 +39,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetName}`;
 
     const container = document.getElementById('jobs-container');
-    container.innerHTML = 'Loading jobs...';
+    container.innerHTML = `
+      <div class="col-12 text-center my-4" id="jobs-loading">
+        <div class="spinner-border text-info" role="status" style="width: 2rem; height: 2rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2 small">Loading jobs...</p>
+      </div>
+    `;
 
     try {
       const response = await fetch(url);
+      if (!response.ok) throw new Error('Network response was not ok');
+
       const text = await response.text();
       const json = JSON.parse(text.substring(47).slice(0, -2));
+      const allRows = json.table.rows || [];
 
-      const rows = json.table.rows;
+      // Automatically detect and skip header if necessary
+      const isHeader = allRows[0]?.c?.some(cell => {
+        const val = cell?.v?.toString().toLowerCase() || '';
+        return ['title', 'job title', 'position'].includes(val);
+      });
+
+      const rows = isHeader ? allRows.slice(1) : allRows;
+
       const jobs = rows.map(row => ({
-        title: row.c[1]?.v || '',
+        title: row.c[1]?.v?.trim() || '',
         location: row.c[2]?.v || '',
         description: row.c[3]?.v || '',
         link: row.c[4]?.v || '',
@@ -56,23 +75,30 @@ document.addEventListener("DOMContentLoaded", function () {
         salaryRange: row.c[8]?.v || '',
         experienceLevel: row.c[9]?.v || '',
         skills: row.c[10]?.v || ''
-      })).filter(job => job.title || job.location || job.description);
+      })).filter(job => job.title.length > 0);
 
       container.innerHTML = '';
 
       if (jobs.length === 0) {
-        container.innerHTML = '<p class="no-jobs">We currently have no job openings. Please check back later.</p>';
+        container.innerHTML = `
+          <div class="col-12 text-center my-5">
+            <span
+              class="badge bg-primary d-inline-flex align-items-center gap-2 px-4 py-2 fs-5 fst-italic"
+              style="border-radius: 1rem; max-width: 400px; cursor: default;"
+            >
+              <i class="fas fa-info-circle" aria-hidden="true"></i>
+              No job vacancy for now.
+            </span>
+          </div>
+        `;
         return;
       }
 
       jobs.forEach(job => {
         const jobCard = document.createElement('div');
-        jobCard.className = 'job-card fade-in';
+        jobCard.className = 'col-12 job-card fade-in';
         jobCard.innerHTML = `
-<h3 class="card-title fw-bold mb-2 text-uppercase"
-    style="width: fit-content; font-size: 0.95rem; letter-spacing: 0.03em; color:rgb(233, 245, 250); background: #1bb4f07e; padding: 0.3rem 0.6rem; border-radius: 0.25rem;">
-  ${job.title}
-</h3>
+          <h3 class="job-title fw-bold mb-2 text-uppercase">${job.title}</h3>
           <p>${job.description}</p>
           <p><strong>Location:</strong> ${job.location}</p>
           ${job.experienceLevel ? `<p><strong>Experience Level:</strong> ${job.experienceLevel}</p>` : ''}
@@ -80,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ${job.skills ? `<p><strong>Skills Needed:</strong> ${job.skills}</p>` : ''}
           ${job.requirements ? `<p><strong>Requirements:</strong> ${job.requirements}</p>` : ''}
           ${job.responsibilities ? `<p><strong>Responsibilities:</strong> ${job.responsibilities}</p>` : ''}
-          ${job.link ? `<a href="${job.link}" class="apply-btn" target="_blank" rel="noopener">Apply Now</a>` : ''}
+          ${job.link ? `<a href="${job.link}" class="btn btn-outline-primary mt-3" target="_blank" rel="noopener">Apply Now</a>` : ''}
         `;
         container.appendChild(jobCard);
       });
@@ -89,10 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     } catch (err) {
       console.error('Error loading jobs:', err);
-      container.innerHTML = '<p class="no-jobs">Could not load job listings. Please try again later.</p>';
+      container.innerHTML = '<p class="text-danger text-center">Could not load job listings. Please try again later.</p>';
     }
   }
-
 
   const appearOptions = {
     threshold: 0.15,
@@ -113,11 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-
-  document.querySelectorAll('.hero-subtitle').forEach(el => el.classList.add('fade-in'));
-
-
-  loadLang(currentLang);
-  loadJobs();
-  observeFadeIns();
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    loadJobs();
+    observeFadeIns();
+  });
