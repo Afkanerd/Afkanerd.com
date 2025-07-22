@@ -13,6 +13,7 @@
   },
   "hero": {
     "title": "AFKANERD",
+    "code": "We Code For The People",
     "subtitle1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
     "subtitle2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out."
 },
@@ -46,6 +47,12 @@
     "title": "Rebranding",
     "description": "SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools. The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the SMSWithoutBorders project.",
     "readMore": "Read More"
+  },
+   "jobs": {
+    "sectionTitle": "Current Job Openings",
+    "location": "Location",
+    "noJobs": "We currently have no job openings. Please check back later.",
+    "apply": "Apply Now"
   },
   "footer": {
     "title": "AFKANERD INFOTECH",
