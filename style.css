@@ -1,12 +1,17 @@
-/* ========== Base ========== */
 body {
   font-family: 'Share Tech', monospace;
   background: #111d29;
   color: #edf2f6;
   scroll-behavior: smooth;
+  direction: ltr;
+  text-align: left;
 }
 
-/* ========== Typography ========== */
+body [dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
 h3 {
   font-weight: 600;
   margin-bottom: 1rem;
@@ -190,21 +195,21 @@ section#blog {
 
 /* ========== Jobs Section ========== */
 .job-card {
-  background-color: #161b22;
+  background-color: #1d2530;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 20px rgba(6, 67, 75, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .job-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(29, 155, 209, 0.7);
+  box-shadow: 0 0 10px rgba(12, 71, 73, 0.8);
 }
 
 .apply-btn {
-  background-color: #1d9bf0;
+  background-color: #1db4f07e;
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 30px;

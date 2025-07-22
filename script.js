@@ -69,7 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const jobCard = document.createElement('div');
         jobCard.className = 'job-card fade-in';
         jobCard.innerHTML = `
-          <h3>${job.title}</h3>
+<h3 class="card-title fw-bold mb-2 text-uppercase"
+    style="width: fit-content; font-size: 0.95rem; letter-spacing: 0.03em; color:rgb(233, 245, 250); background: #1bb4f07e; padding: 0.3rem 0.6rem; border-radius: 0.25rem;">
+  ${job.title}
+</h3>
           <p>${job.description}</p>
           <p><strong>Location:</strong> ${job.location}</p>
           ${job.experienceLevel ? `<p><strong>Experience Level:</strong> ${job.experienceLevel}</p>` : ''}
