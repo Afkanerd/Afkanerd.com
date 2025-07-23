@@ -32,6 +32,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
+// =========================== navbar
+ window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNavbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+// ============== typing effects==================
+  const text = 'AFKANERD';
+  const target = document.getElementById('typed-text');
+  let index = 0;
+
+  function typeChar() {
+    if (index < text.length) {
+      target.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeChar, 100);
+    } else {
+      target.classList.add('typed-complete');
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', typeChar);
+
   // ============ Jobs Section 
   async function loadJobs() {
     const sheetId = '1XVzbedERoqGacuFR9UhwqywKN3Px8WRwspEqECkpwzo';
@@ -81,15 +108,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (jobs.length === 0) {
         container.innerHTML = `
-          <div class="col-12 text-center my-5">
-            <span
-              class="badge bg-primary d-inline-flex align-items-center gap-2 px-4 py-2 fs-5 fst-italic"
-              style="border-radius: 1rem; max-width: 400px; cursor: default;"
-            >
-              <i class="fas fa-info-circle" aria-hidden="true"></i>
-              No job vacancy for now.
-            </span>
-          </div>
+<div class="col-12 d-flex justify-content-center my-5">
+  <div 
+    class="d-flex align-items-center gap-4 p-4 rounded-4 shadow-sm border position-relative bg-white"
+    style="
+      max-width: 600px;
+      width: 100%;
+      border: 1px solid #e0e0e0;
+      background: linear-gradient(to right, #f9f9f9, #ffffff);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    "
+  >
+    <!-- Icon container -->
+    <div 
+      class="d-flex justify-content-center align-items-center rounded-circle bg-light text-success" 
+      style="width: 50px; height: 50px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+    >
+      <i class="fas fa-info-circle fs-5"></i>
+    </div>
+
+    <!-- Message content -->
+    <div class="text-start">
+      <h6 class="mb-1 fw-semibold text-dark">No job openings</h6>
+      <p class="mb-0 text-muted small">
+        We're not hiring right now. Please check back soon or follow us for updates.
+      </p>
+    </div>
+  </div>
+</div>
         `;
         return;
       }
@@ -97,17 +143,55 @@ document.addEventListener("DOMContentLoaded", function () {
       jobs.forEach(job => {
         const jobCard = document.createElement('div');
         jobCard.className = 'col-12 job-card fade-in';
-        jobCard.innerHTML = `
-          <h3 class="job-title fw-bold mb-2 text-uppercase">${job.title}</h3>
-          <p>${job.description}</p>
-          <p><strong>Location:</strong> ${job.location}</p>
-          ${job.experienceLevel ? `<p><strong>Experience Level:</strong> ${job.experienceLevel}</p>` : ''}
-          ${job.salaryRange ? `<p><strong>Salary Range:</strong> ${job.salaryRange}</p>` : ''}
-          ${job.skills ? `<p><strong>Skills Needed:</strong> ${job.skills}</p>` : ''}
-          ${job.requirements ? `<p><strong>Requirements:</strong> ${job.requirements}</p>` : ''}
-          ${job.responsibilities ? `<p><strong>Responsibilities:</strong> ${job.responsibilities}</p>` : ''}
-          ${job.link ? `<a href="${job.link}" class="btn btn-outline-primary mt-3" target="_blank" rel="noopener">Apply Now</a>` : ''}
-        `;
+jobCard.innerHTML = `
+  <div class="job-card rounded-4 p-4 mb-4 text-white shadow-lg"
+       style="
+         background: linear-gradient(145deg, rgba(45, 47, 51, 0.39), rgba(22, 59, 73, 0.43));
+         border: 1px solid rgba(64, 93, 104, 0.4);
+         backdrop-filter: blur(6px);
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+         transition: all 0.3s ease-in-out;
+       "
+       onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.6)'"
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.5)'"
+  >
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <div>
+        <h5 class="fw-bold mb-1" style="color: #9BE3FF;">
+          <i class="bi bi-briefcase-fill me-1"></i>${job.title}
+        </h5>
+        <span class="small text-light">
+          <i class="bi bi-geo-alt-fill me-1"></i>${job.location}
+        </span>
+      </div>
+      ${job.salaryRange ? `<span class="badge bg-info bg-opacity-25 text-info border border-info">${job.salaryRange}</span>` : ''}
+    </div>
+
+    <!-- Description -->
+    <p class="mb-3 text-light">${job.description}</p>
+
+    <!-- Tags -->
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      ${job.experienceLevel ? `<span class="badge rounded-pill bg-dark border border-light text-light">${job.experienceLevel}</span>` : ''}
+      ${job.skills ? `<span class="badge rounded-pill bg-dark border border-light text-light">${job.skills}</span>` : ''}
+    </div>
+
+    <!-- Responsibilities and Requirements -->
+    <div class="small text-light mb-3">
+      ${job.requirements ? `<p class="mb-1"><strong>Requirements:</strong> ${job.requirements}</p>` : ''}
+      ${job.responsibilities ? `<p class="mb-0"><strong>Responsibilities:</strong> ${job.responsibilities}</p>` : ''}
+    </div>
+
+    <!-- Button -->
+    ${job.link ? `
+      <div class="text-end mt-3">
+        <a href="${job.link}" class="btn btn-outline-info btn-sm px-3" target="_blank" rel="noopener">
+          Apply Now →
+        </a>
+      </div>` : ''}
+  </div>
+`;
         container.appendChild(jobCard);
       });
 

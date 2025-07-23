@@ -27,9 +27,9 @@
 <body>
 
 <!-- ======= navbar ======= -->
-	<nav class="navbar navbar-expand-lg">
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <a class="navbar-brand d-flex align-items-center">
       <img src="/images/logo.png" alt="Logo" />
       <span class="ms-2 fw-bold" style="color:#ccc;">Afkanerd</span>
     </a>
@@ -47,7 +47,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center gap-3">
-        <li class="nav-item">
+      <li class="nav-item">
 			<a class="nav-link" href="#hero" data-i18n="navbar.home">Home</a>
 		  </li>
 		  <li class="nav-item">
@@ -85,25 +85,22 @@
 </nav>
 
   <!--=================== Landing Page =========================-->
-<section id="hero" class="landing-page py-5">
+  <section id="hero" class="landing-page">
   <div class="container text-center">
-    <h1 class="hero-title" data-i18n="hero.title">AFKANERD</h1>
-    <h2 class="mb-4 fw-light" data-i18n="hero.code">We Code For The People</h2>
+    <h1 class="hero-title" data-i18n="hero.title" id="typed-text"></h1>
+    <h2 class="hero-subtitle-light" data-i18n="hero.code">We Code For The People</h2>
+
     <h4 class="hero-subtitle" data-i18n="hero.subtitle1">
-      We build open source in the open.<br /><br />
-      We build technology for digital rights, security, and privacy. Our tools are openly available for advocacy,
-      healthcare, and educational purposes.
+      We build open source in the open. We build technology for digital rights, security, and privacy. Our tools are openly available for advocacy, healthcare, and educational purposes.
     </h4>
+
     <h4 class="hero-subtitle" data-i18n="hero.subtitle2">
-      We also consult with open source projects and individuals. We will happily consult on your project if it serves
-      the open source community - feel free to reach out.
+      We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community – feel free to reach out.
     </h4>
   </div>
 </section>
 
-
   <!-- ========================About Section ===========================-->
-
   <section id="about" class="about-section py-5" style=" color: #d9dce1;">
   <div class="container">
    	<div class="mb-5">
@@ -117,15 +114,15 @@
   </h3>
   <div 
     class="rounded" 
-    style="width: 90px; height: 3px; background-color: #66bb6a;"
+    style="width: 90px; height: 3px; background-color: forestgreen;"
   ></div>
 </div>
 	
-    <div class="row align-items-center gy-4">
+    <div class="row align-items-center gy-4 gx-5">
       <div class="col-md-6">
-        <div style="position: relative; max-width: 100%; border-radius: 15px; overflow: hidden; box-shadow:
-          0 8px 20px rgba(13, 202, 240, 0.3),
-          0 0 50px rgba(13, 202, 240, 0.15);">
+        <div style="position: relative; max-width: 100%; border-radius: 5px; overflow: hidden; box-shadow:
+          0 8px 20px rgba(37, 53, 57, 0.3),
+          0 0 50px rgba(11, 33, 48, 0.15);">
           <img src="./images/lovelace.jpg" alt="About Image" class="img-fluid" style="display: block; width: 100%; height: auto;" />
           <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(13,202,240,0.25), transparent);" aria-hidden="true"></div>
         </div>
@@ -139,8 +136,8 @@
         </p>
 		   <blockquote data-i18n="about.quote" style="
           font-style: italic;
-          color: rgb(4, 165, 194);
-          border-left: 2px solid rgb(8, 163, 190);
+          color: rgb(127, 199, 225);
+          border-left: 2px solid rgb(127, 199, 225);
           padding-left: 1rem;
           margin-bottom: 2rem;
           font-size: 1.125rem;
@@ -156,49 +153,33 @@
 </section>
 
 
-
-  <!--================ Project Section =======================-->
- <section id="project" class="project-section py-5" style="color: #d9dce1;">
+<!--================ Project Section =======================-->
+<section id="project" class="project-section py-5 text-white">
   <div class="container">
-	<div class="mb-5">
-  <h3 
-    class="fw-semibold mb-2" 
-    style=" font-size: 1.5rem; color: forestgreen;" 
-    data-i18n="project.title"
-  >
-    <span style="color: forestgreen;">afkanerd@afkanerd:</span> 
-    <span>~$ ./Projects</span>
-  </h3>
-  <div 
-    class="rounded" 
-    style="width: 90px; height: 3px; background-color: #66bb6a;"
-  ></div>
-</div>
+    <div class="mb-5">
+      <h3 class="fw-semibold mb-2" style="font-size: 1.6rem; color: forestgreen;" data-i18n="project.title">
+        <span>afkanerd@afkanerd:</span>
+        <span>~$ ./Projects</span>
+      </h3>
+      <div class="rounded" style="width: 90px; height: 3px; background-color: forestgreen;"></div>
+    </div>
 
-    <!-- Cards Row -->
     <div class="row g-4">
-      <!-- Project 1 -->
       <div class="col-md-6">
-        <div class="card h-100 text-white border-0 shadow-lg bg-gradient" style="background: linear-gradient(135deg, #1f1f1f, #4c98b6); transition: transform 0.3s;">
+        <div class="card h-100 border-0 shadow-lg bg-dark" style="border-radius: 1rem;">
           <div class="card-body d-flex flex-column p-4">
-<h5 
-  class="card-title fw-bold badge bg-success mb-2 text-uppercase" 
-  style="width: fit-content; font-size: 0.95rem;" 
-  data-i18n="project1.title"
->
-  SMSWithoutBorders
-</h5>
-            <p class="card-text flex-grow-1 small opacity-75 mt-2" data-i18n="project1.description">
+            <h5 class="card-title text-uppercase fw-bold badge bg-success mb-3" style="width: fit-content;" data-i18n="project1.title">SMSWithoutBorders</h5>
+            <p class="card-text flex-grow-1 text-white small" data-i18n="project1.description">
               SMSWithoutBorders is dedicated to researching, developing, and promoting secure communication tools that
               work without internet. Development includes Android, iOS, and Linux apps, plus white papers on cryptography and freedom tech.
             </p>
             <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary">
-              <a href="https://smswithoutborders.com" class="text-info text-decoration-none fw-semibold small" data-i18n="project1.readMore">Read more →</a>
+              <a href="https://smswithoutborders.com"  class="text-white text-decoration-none fw-semibold small" data-i18n="project1.readMore">Read more → </a>
               <div>
-                <a href="https://github.com/smswithoutborders" class="text-white me-3" target="_blank" rel="noopener" aria-label="GitHub">
+                <a href="https://github.com/smswithoutborders" class="text-white me-3" target="_blank" aria-label="GitHub">
                   <i class="fab fa-github fa-lg"></i>
                 </a>
-                <a href="https://x.com/RelaySMS" class="text-white" target="_blank" rel="noopener" aria-label="Twitter">
+                <a href="https://x.com/RelaySMS" class="text-white" target="_blank" aria-label="Twitter">
                   <i class="fab fa-twitter fa-lg"></i>
                 </a>
               </div>
@@ -207,25 +188,20 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="col-md-6">
-        <div class="card h-100 text-white border-0 shadow-lg bg-gradient" style="background: linear-gradient(135deg, #1f1f1f, #2c2c2c); transition: transform 0.3s;">
-          <div class="card-body d-flex flex-column p-4">
-        <h5 
-  class="card-title fw-bold badge bg-success mb-2 text-uppercase" 
-  style="width: fit-content; font-size: 0.95rem;" 
-  data-i18n="project2.title"
->DekuSMS</h5>
-            <p class="card-text flex-grow-1 small opacity-75 mt-2" data-i18n="project2.description">
+        <div class="card h-100 border-0 shadow-lg bg-dark" style="border-radius: 1rem;">
+          <div class="card-body flex-column p-4">
+            <h5 class="card-title text-uppercase fw-bold badge bg-success mb-3" style="width: fit-content;" data-i18n="project2.title">DekuSMS</h5>
+            <p class="card-text flex-grow-1 text-white small" data-i18n="project2.description">
               DekuSMS enables encrypted SMS messaging between users, with forwarding support (SMTP, FTP, AMQP) and RabbitMQ integration for remote queue-based communication.
             </p>
             <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary">
-              <a href="https://github.com/deku-messaging/Deku-SMS-Android/blob/master/README.md" class="text-info text-decoration-none fw-semibold small" data-i18n="project2.readMore">Read more →</a>
+              <a href="https://github.com/deku-messaging/Deku-SMS-Android/blob/master/README.md" class="text-white text-decoration-none fw-semibold small" data-i18n="project2.readMore">Read more →</a>
               <div>
-                <a href="https://github.com/deku-messaging/Deku-SMS-Android" class="text-white me-3" target="_blank" rel="noopener" aria-label="GitHub">
+                <a href="https://github.com/deku-messaging/Deku-SMS-Android" class="text-white me-3" target="_blank" aria-label="GitHub">
                   <i class="fab fa-github fa-lg"></i>
                 </a>
-                <a href="https://t.me/deku_sms" class="text-white" target="_blank" rel="noopener" aria-label="Telegram">
+                <a href="https://t.me/deku_sms" class="text-white" target="_blank" aria-label="Telegram">
                   <i class="fab fa-telegram fa-lg"></i>
                 </a>
               </div>
@@ -233,35 +209,21 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
 </section>
 
   <!--================== Jobs Section ======================-->
   <section id="jobs" class="jobs-section py-5 text-white">
   <div class="container">
-
- <div class="container my-5">
-   <div class="mb-5">
-  <h3 
-    class="fw-semibold mb-2" 
-    style="font-size: 1.5rem; color: forestgreen;" 
-    data-i18n="jobs.title"
-  >
-    <span style="color: forestgreen;">afkanerd@afkanerd:</span> 
-   <span>~$ ./Jobs/Current_Job_Openings</span>
-  </h3>
-  <div 
-    class="rounded" 
-    style="width: 90px; height: 3px; background-color: #66bb6a;"
-  ></div>
-</div>
-    <div id="jobs-container" class="row">
-      <!-- Jobs will load here -->
+        <div class="mb-5">
+      <h3 class="fw-semibold mb-2" style="font-size: 1.6rem; color: forestgreen;" data-i18n="project.title">
+        <span>afkanerd@afkanerd:</span>
+       <span>~$ ./Jobs/Current Job Openings</span>
+      </h3>
+      <div class="rounded" style="width: 90px; height: 3px; background-color: forestgreen;"></div>
     </div>
-  </div>
-
-    <div id="jobs-container" class="row gy-4">
+     <div id="jobs-container" class="row gy-4">
     </div>
   </div>
 </section>
@@ -270,88 +232,83 @@
   <!--======== Blog Section ==================-->
 <section id="blog" class="blog-section py-5">
   <div class="container">
-<div class="mb-5">
-  <h3 
-    class="fw-semibold mb-2" 
-    style="font-size: 1.5rem; color: forestgreen;" 
-    data-i18n="blog.title"
-  >
-    <span style="color: forestgreen;">afkanerd@afkanerd:</span> 
-    <span>~$ ./Blog/latest</span>
-  </h3>
-  <div 
-    class="rounded" 
-    style="width: 90px; height: 3px; background-color: #66bb6a;"
-  ></div>
-</div>
+    <div class="mb-5 text-center text-md-start">
+      <h3 class="fw-semibold mb-2" style="font-size: 1.5rem;" data-i18n="blog.title">
+        <span style="color:#228b22;">afkanerd@afkanerd:</span>
+        <span style="color: forestgreen;">~$ ./Blog/latest</span>
+      </h3>
+      <div class="mx-auto mx-md-0" style="width: 100px; height: 4px; background: linear-gradient(to right, forestgreen, forestgreen); border-radius: 5px;"></div>
+    </div>
     <div class="row g-4">
-      <div class="col-md-6 d-flex align-items-stretch">
-        <div class="card bg-dark text-white shadow flex-grow-1 d-flex flex-column">
-          <div class="card-body d-flex flex-column justify-content-between">
+
+      <!-- Blog Post 1 -->
+      <div class="col-md-6 d-flex">
+        <div class="card bg-dark text-white shadow-lg border-0 flex-grow-1 hover-shadow transition-all" style="border-radius: 1rem;">
+          <div class="card-body d-flex flex-column justify-content-between p-4">
             <div>
-              <h5 class="card-title" data-i18n="blog1.title">New Alpha Release: Vault 0.1.0</h5>
-              <p class="card-text" data-i18n="blog1.description">
-                SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to
-                secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.
+              <h5 class="card-title mb-3" data-i18n="blog1.title">New Alpha Release: Vault 0.1.0</h5>
+              <p class="card-text text-light small" data-i18n="blog1.description">
+                SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed to
+                secure users' access tokens and facilitate secure message publishing.
               </p>
             </div>
 
             <div>
               <div class="d-flex align-items-center mt-4">
-                <img src="https://www.gravatar.com/avatar/?d=mp&s=100" alt="Default Avatar" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;" />
+                <img src="https://www.gravatar.com/avatar/?d=mp&s=100" alt="Promise Fru" class="rounded-circle me-3 shadow-sm" style="width: 45px; height: 45px; object-fit: cover;" />
                 <div>
                   <h6 class="mb-0">Promise Fru</h6>
+                  <small>2 min read</small>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="read-time" style="font-size: 10px;">2 min read</span>
-                <a href="https://blog.smswithoutborders.com/releases/vault-0-1-0" class="text-info text-decoration-none fw-semibold" data-i18n="blog1.readMore">Read more →</a>
+              <div class="mt-3 text-end">
+                <a href="https://blog.smswithoutborders.com/releases/vault-0-1-0" class="text-white text-decoration-none fw-semibold" data-i18n="blog1.readMore">Read more →</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-6 d-flex align-items-stretch">
-        <div class="card bg-dark text-white shadow flex-grow-1 d-flex flex-column">
-          <div class="card-body d-flex flex-column justify-content-between">
+
+      <!-- Blog Post 2 -->
+      <div class="col-md-6 d-flex">
+        <div class="card bg-dark text-white shadow-lg border-0 flex-grow-1 hover-shadow transition-all" style="border-radius: 1rem; ">
+          <div class="card-body d-flex flex-column justify-content-between p-4">
             <div>
-              <h5 class="card-title" data-i18n="blog2.title">Rebranding</h5>
-              <p class="card-text" data-i18n="blog2.description">
-                SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools.
-                The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the
-                SMSWithoutBorders project.
+              <h5 class="card-title mb-3" data-i18n="blog2.title">Rebranding</h5>
+              <p class="card-text text-light small" data-i18n="blog2.description">
+                SMSWithoutBorders is evolving into the umbrella project for RelaySMS and more. Expect a new name, enhanced security, and broader focus.
               </p>
             </div>
 
             <div>
               <div class="d-flex align-items-center mt-4">
-                <img src="https://www.gravatar.com/avatar/?d=mp&s=100" alt="Default Avatar" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;" />
+                <img src="https://www.gravatar.com/avatar/?d=mp&s=100" alt="Aysha Musa" class="rounded-circle me-3 shadow-sm" style="width: 45px; height: 45px; object-fit: cover;" />
                 <div>
                   <h6 class="mb-0">Aysha Musa</h6>
+                  <small >2 min read</small>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="read-time" style="font-size: 10px;">2 min read</span>
-                <a href="https://blog.smswithoutborders.com/posts/rebranding" class="text-info text-decoration-none fw-semibold" data-i18n="blog2.readMore">Read more →</a>
+              <div class="mt-3 text-end">
+                <a href="https://blog.smswithoutborders.com/posts/rebranding" class="text-white text-decoration-none fw-semibold" data-i18n="blog2.readMore">Read more →</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
     </div>
+
   </div>
 </section>
 
+
+  
 <!-- Footer -->
 <footer id="contact" class="footer bg-dark text-light py-5">
   <div class="container">
-
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mb-4">
-
       <div class="d-flex align-items-center gap-4">
         <h5 class="mb-0 fw-semibold" data-i18n="footer.followUs">Follow Us</h5>
         <a href="https://x.com/afkanerd?t=wShmLs6wPw9R2GzqWwT5Ww&s=09" target="_blank" rel="noopener" aria-label="Twitter" class="footer-icon-link">
@@ -361,7 +318,6 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-
       <div class="dropdown">
         <button
           class="btn btn-outline-light dropdown-toggle d-flex align-items-center gap-2"
@@ -379,24 +335,18 @@
           <li><button class="dropdown-item translate" data-lang="fa">فارسی 🇮🇷</button></li>
         </ul>
       </div>
-
     </div>
 
     <hr class="border-secondary" />
-
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mt-4">
-
       <h6 class="mb-0 fw-bold" data-i18n="footer.companyName">AFKANERD INFOTECH</h6>
-
       <nav class="footer-links d-flex gap-4 flex-wrap">
         <a href="#blog" class="text-light text-decoration-none" data-i18n="footer.blog">Blog</a>
         <a href="#project" class="text-light text-decoration-none" data-i18n="footer.project">Project</a>
         <a href="#" class="text-light text-decoration-none" data-i18n="footer.policy">Privacy Policy</a>
       </nav>
-
       <small>&copy; 2025 Afkanerd. All rights reserved.</small>
     </div>
-
   </div>
 </footer>
 
