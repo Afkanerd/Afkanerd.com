@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Home",
+    "about": "Over",
+    "projects": "Projecten",
+    "blog": "Blog",
+    "contact": "Contact",
+    "language": "Taal",
+    "language.en": "Engels",
+    "language.fr": "Frans",
+    "language.fa": "Perzisch"
+  },
+  "hero": {
+    "title": "AFKANERD",
+    "code": "Wij coderen voor de mensen",
+    "subtitle1": "Wij bouwen open source transparant. Wij ontwikkelen technologie voor digitale rechten, beveiliging en privacy. Onze tools zijn beschikbaar voor belangenbehartiging, gezondheidszorg en onderwijs.",
+    "subtitle2": "We adviseren ook open source projecten en individuen. We helpen graag mee aan jouw project als het de open source-gemeenschap dient – neem gerust contact op."
+  },
+  "about": {
+    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "quote": "Bron/Los Alamos: ENIAC, de eerste digitale computer ter wereld, werd 70 jaar geleden onthuld aan de University of Pennsylvania en had zes hoofdprogrammeurs: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas en Ruth Lichterman. Aanvankelijk werden ze “operators” genoemd. - phillyvoice.com",
+    "description": "We laten ons inspireren door veel geweldige mensen die in actie komen. We weten dat we verandering kunnen inspireren en ontwikkeling kunnen stimuleren door het voortouw te nemen. We bouwen in het openbaar en nodigen je uit om deel te nemen aan onze missie om de wereld toegankelijker en opener te maken."
+  },
+  "project": {
+    "title": "afkanerd@afkanerd: ~$ ./Projects"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders toegewijd aan onderzoek, ontwikkeling en promotie van veilige en toegankelijke communicatiemiddelen die zelfs zonder internetverbinding functioneren. De ontwikkeling omvat mobiele apps voor Android, iOS en Linux-systemen, evenals whitepapers over cryptografie, communicatie en internetvrijheid.",
+    "readMore": "Lees meer"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS is een SMS‑berichtenapp voor Android waarmee twee gebruikers met end‑to‑end encryptie via SMS kunnen communiceren. De app ondersteunt ook berichtdoorsturing via SMTP, FTP en AMQP, en kan geïntegreerd worden met RabbitMQ voor het verzenden van externe communicatieverzoeken.",
+    "readMore": "Lees meer"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "Binnenkort .................",
+    "readMore": "Lees meer"
+  },
+  "blog": {
+    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+  },
+  "blog1": {
+    "title": "Nieuwe alfa‑release: Vault 0.1.0",
+    "description": "SMSWithoutBorders Vault 0.1.0 is nu beschikbaar als alfa‑release! Vault is een technologie ontwikkeld door het SMSWithoutBorders‑team om toegangstokens te beveiligen en veilig te gebruiken bij het publiceren van gebruikersberichten.",
+    "readMore": "Lees meer"
+  },
+  "blog2": {
+    "title": "Rebranding",
+    "description": "SMSWithoutBorders wordt het overkoepelende project voor RelaySMS en andere berichttools. De kernfunctionaliteit blijft gelijk, maar gebruikers kunnen een nieuwe naam, verbeterde beveiliging en focus op groeimogelijkheden verwachten.",
+    "readMore": "Lees meer"
+  },
+  "jobs": {
+    "sectionTitle": "Huidige vacatures",
+    "location": "Locatie",
+    "noJobs": "Momenteel hebben we geen vacatures. Kom later terug.",
+    "apply": "Solliciteer nu"
+  },
+  "job": {
+    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+  },
+  "footer": {
+    "language": "Taal",
+    "title": "AFKANERD INFOTECH",
+    "title1": "Volg ons",
+    "Policy": "Privacybeleid",
+    "blog": "Blog",
+    "Project": "Projecten"
+  }
+}

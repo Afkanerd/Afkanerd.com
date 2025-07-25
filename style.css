@@ -1,4 +1,8 @@
-    body {
+html, body {
+  overflow-x: hidden;
+}
+   
+   body {
       font-family: 'Share Tech', monospace;
 background-color: #1a1919;
 	color: #FFFFFF;
@@ -132,6 +136,16 @@ background-color: #1a1919;
       50% { opacity: 0; }
     }
 
+    #typed-text {
+  display: inline-block;
+  max-width: 90vw;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+    
     @media (max-width: 992px) {
       .hero-title { font-size: 3.5rem; }
       .hero-subtitle-light { font-size: 2.25rem; }

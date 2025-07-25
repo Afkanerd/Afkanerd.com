@@ -64,21 +64,51 @@
     });
 
     // Typing effect
-  const text = 'We Code For The People';
+const translations = {
+  en: { hero: { code: "We Code For The People" } },
+  fr: { hero: { code: "Nous codons pour les gens" } },
+  fa: { hero: { code: "ما برای مردم برنامه‌نویسی می‌کنیم" } },
+  ar: { hero: { code: "نحن نبرمج من أجل الناس" } },
+  es: { hero: { code: "Programamos para la gente" } },
+  it: { hero: { code: "Programmiamo per le persone" } },
+  nl: { hero: { code: "Wij programmeren voor het volk" } },
+  de: { hero: { code: "Wir programmieren für die Menschen" } },
+  pt: { hero: { code: "Codificamos para as pessoas" } },
+  ru: { hero: { code: "Мы пишем код для людей" } },
+  zh: { hero: { code: "我们为人民编码" } },
+  hi: { hero: { code: "हम लोगों के लिए कोड करते हैं" } }
+};
+
 const target = document.getElementById('typed-text');
 let index = 0;
+let currentLang = localStorage.getItem('lang'); 
 
-function typeChar() {
-  if (index < text.length) {
-    target.textContent += text.charAt(index);
-    index++;
-    setTimeout(typeChar, 100); // Typing speed
-  } else {
-    target.classList.add('typed-complete');
+function typeText(text) {
+  target.textContent = ''; 
+  index = 0;
+
+  function typeChar() {
+    if (index < text.length) {
+      target.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeChar, 100);
+    } else {
+      target.classList.add('typed-complete');
+    }
   }
+
+  typeChar();
 }
 
-window.addEventListener('DOMContentLoaded', typeChar);
+typeText(translations[currentLang]?.hero?.code || translations.en.hero.code);
+
+document.querySelectorAll('.translate').forEach(button => {
+  button.addEventListener('click', () => {
+    currentLang = button.getAttribute('data-lang');
+    localStorage.setItem('lang', currentLang);
+    typeText(translations[currentLang]?.hero?.code || translations.en.hero.code);
+  });
+});
 
 
     // Jobs loader
