@@ -35,6 +35,11 @@
     "description": "DekuSMS est une application Android de messagerie SMS. Elle permet à deux utilisateurs de l'application de communiquer avec un chiffrement de bout en bout sur des messages SMS. L'application contient également des capacités de transfert de messages, prenant en charge des protocoles comme SMTP, FTP et AMQP. Elle est conçue pour s'intégrer à RabbitMQ, permettant aux utilisateurs de configurer des files d'attente de messages pour effectuer des demandes de communication à distance à leurs applications.",
     "readMore": "Lire la suite"
   },
+  "project3": {
+  "title": "ShortMesh",
+  "description": "Bientôt disponible .................",
+  "readMore": "En savoir plus"
+},
   "blog": {
     "title": "afkanerd@afkanerd: ~$ ./Blog/derniers"
   },
@@ -48,6 +53,9 @@
     "description": "SMSWithoutBorders devient le projet principal englobant RelaySMS et d'autres outils de messagerie. Les fonctionnalités principales restent les mêmes, mais les utilisateurs peuvent s'attendre à un nouveau nom, des fonctionnalités de sécurité améliorées et une concentration sur la croissance future sous le projet SMSWithoutBorders.",
     "readMore": "Lire la suite"
   },
+"job": {
+  "title": "afkanerd@afkanerd: ~$ ./Emplois/ Postes ouverts actuels"
+},
   "footer": {
      "language": "Langue",
     "title": "AFKANERD INFOTECH",

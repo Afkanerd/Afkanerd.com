@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contáctanos",
+    "language": "Idioma",
+    "language.en": "Inglés",
+    "language.fr": "Francés",
+    "language.fa": "Persa"
+  },
+  "hero": {
+    "title": "AFKANERD",
+    "code": "Codificamos para la gente",
+    "subtitle1": "Construimos código abierto de forma transparente. Desarrollamos tecnología para derechos digitales, seguridad y privacidad. Nuestras herramientas están disponibles para defensa, salud y educación.",
+    "subtitle2": "También asesoramos proyectos de código abierto e individuos. Estaremos encantados de participar en tu proyecto si sirve a la comunidad de código abierto – no dudes en contactarnos."
+  },
+  "about": {
+    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "quote": "Fuente/Los Alamos: ENIAC, la primera computadora digital del mundo, fue presentada hace 70 años en la Universidad de Pensilvania y tuvo seis programadoras principales: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas y Ruth Lichterman. Inicialmente se llamaban “operators.” - phillyvoice.com",
+    "description": "Nos inspiran muchas personas grandes que actúan. Sabemos que solo podemos inspirar el cambio y promover el desarrollo liderando el camino. Construimos en abierto y te animamos a unirte a nuestra misión de hacer el mundo más accesible y abierto a todos."
+  },
+  "project": {
+    "title": "afkanerd@afkanerd: ~$ ./Projects"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders está dedicado a investigar, desarrollar y promover herramientas de comunicación seguras y accesibles que funcionen incluso sin conexión a Internet. El desarrollo incluye aplicaciones móviles para Android, iOS y Linux, además de documentos técnicos sobre criptografía, comunicaciones y libertad en Internet.",
+    "readMore": "Leer más"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS es una aplicación de mensajería SMS para Android que permite a dos usuarios comunicarse mediante cifrado de extremo a extremo a través de SMS. La aplicación también soporta reenvío de mensajes mediante protocolos como SMTP, FTP y AMQP, e integración con RabbitMQ para solicitudes remotas.",
+    "readMore": "Leer más"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "Próximamente .................",
+    "readMore": "Leer más"
+  },
+  "blog": {
+    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+  },
+  "blog1": {
+    "title": "Nueva versión alfa: Vault 0.1.0",
+    "description": "¡SMSWithoutBorders Vault 0.1.0 ya está disponible en versión alfa! Vault es una tecnología desarrollada por el equipo de SMSWithoutBorders para asegurar tokens de acceso y facilitar su uso seguro al publicar mensajes de usuarios.",
+    "readMore": "Leer más"
+  },
+  "blog2": {
+    "title": "Rebranding",
+    "description": "SMSWithoutBorders como proyecto principal ahora incluye RelaySMS y otras herramientas. La funcionalidad central sigue siendo la misma, pero los usuarios pueden esperar un nuevo nombre, mayor seguridad y un enfoque en el crecimiento futuro.",
+    "readMore": "Leer más"
+  },
+  "jobs": {
+    "sectionTitle": "Ofertas de Trabajo Actuales",
+    "location": "Ubicación",
+    "noJobs": "Actualmente no tenemos vacantes. Por favor, vuelve más tarde.",
+    "apply": "Aplica ahora"
+  },
+  "job": {
+    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+  },
+  "footer": {
+    "language": "Idioma",
+    "title": "AFKANERD INFOTECH",
+    "title1": "Síguenos",
+    "Policy": "Política de Privacidad",
+    "blog": "Blog",
+    "Project": "Proyectos"
+  }
+}

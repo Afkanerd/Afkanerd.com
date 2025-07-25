@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Home",
+    "about": "Chi siamo",
+    "projects": "Progetti",
+    "blog": "Blog",
+    "contact": "Contattaci",
+    "language": "Lingua",
+    "language.en": "Inglese",
+    "language.fr": "Francese",
+    "language.fa": "Persiano"
+  },
+  "hero": {
+    "title": "AFKANERD",
+    "code": "Programmiamo per le persone",
+    "subtitle1": "Sviluppiamo open source a cielo aperto. Creiamo tecnologia per diritti digitali, sicurezza e privacy. I nostri strumenti sono disponibili per advocacy, sanità e istruzione.",
+    "subtitle2": "Consuliamo anche progetti open source e individui. Saremo felici di aiutare il tuo progetto se serve la comunità open source – contattaci liberamente."
+  },
+  "about": {
+    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "quote": "Fonte/Los Alamos: ENIAC, il primo computer digitale al mondo, fu svelato 70 anni fa all’University of Pennsylvania e aveva sei programmatrici principali: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas e Ruth Lichterman. Inizialmente venivano chiamate “operators.” - phillyvoice.com",
+    "description": "Siamo ispirati da molte persone straordinarie che agiscono. Sappiamo che possiamo ispirare il cambiamento e guidare lo sviluppo solo dando l’esempio. Costruiamo in modo aperto e ti invitiamo a unirti alla nostra missione di rendere il mondo più accessibile e trasparente per tutti."
+  },
+  "project": {
+    "title": "afkanerd@afkanerd: ~$ ./Projects"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders è dedicato alla ricerca, sviluppo e promozione di strumenti di comunicazione sicuri e accessibili che funzionano anche senza connessione Internet. Lo sviluppo include app mobile per Android, iOS e sistemi Linux, oltre a documenti tecnici su crittografia, comunicazioni e libertà su Internet.",
+    "readMore": "Leggi di più"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS è un’app di messaggistica SMS per Android che consente a due utenti di comunicare tramite crittografia end‑to‑end via SMS. L’app supporta anche l’inoltro dei messaggi tramite protocolli come SMTP, FTP e AMQP e si integra con RabbitMQ per inviare richieste di comunicazione remota.",
+    "readMore": "Leggi di più"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "Prossimamente .................",
+    "readMore": "Leggi di più"
+  },
+  "blog": {
+    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+  },
+  "blog1": {
+    "title": "Nuovo rilascio alfa: Vault 0.1.0",
+    "description": "SMSWithoutBorders Vault 0.1.0 è ora disponibile in versione alpha! Vault è una tecnologia sviluppata dal team SMSWithoutBorders per proteggere i token di accesso e facilitare l’uso sicuro durante la pubblicazione dei messaggi degli utenti.",
+    "readMore": "Leggi di più"
+  },
+  "blog2": {
+    "title": "Rebranding",
+    "description": "SMSWithoutBorders sta diventando il progetto ombrello che comprende RelaySMS e altri strumenti di messaggistica. Le funzionalità principali rimangono le stesse, ma gli utenti possono aspettarsi un nuovo nome, funzionalità di sicurezza migliorate e un focus sulla crescita futura.",
+    "readMore": "Leggi di più"
+  },
+  "jobs": {
+    "sectionTitle": "Offerte di lavoro attuali",
+    "location": "Località",
+    "noJobs": "Attualmente non abbiamo posizioni aperte. Torna più tardi.",
+    "apply": "Candidati ora"
+  },
+  "job": {
+    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+  },
+  "footer": {
+    "language": "Lingua",
+    "title": "AFKANERD INFOTECH",
+    "title1": "Seguici",
+    "Policy": "Politica sulla Privacy",
+    "blog": "Blog",
+    "Project": "Progetti"
+  }
+}
