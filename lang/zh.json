@@ -23,7 +23,7 @@
     "description": "我们受到许多行动者的启发。我们知，在领导中才能激发变革与推动发展。我们以开放方式构建，并鼓励你加入我们的使命，让世界更加开放与普及。"
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./项目"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,7 @@
     "readMore": "阅读更多"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title":  "afkanerd@afkanerd: ~$ ./博客/最新"
   },
   "blog1": {
     "title": "新 Alpha 发布：Vault 0.1.0",
@@ -60,7 +60,7 @@
     "apply": "立即申请"
   },
   "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ 当前招聘职位"
+    "title": "afkanerd@afkanerd: ~$ ./职位/ 当前职位空缺"
   },
   "footer": {
     "language": "语言",

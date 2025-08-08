@@ -23,7 +23,7 @@
     "description": "We laten ons inspireren door veel geweldige mensen die in actie komen. We weten dat we verandering kunnen inspireren en ontwikkeling kunnen stimuleren door het voortouw te nemen. We bouwen in het openbaar en nodigen je uit om deel te nemen aan onze missie om de wereld toegankelijker en opener te maken."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./Projecten"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,7 @@
     "readMore": "Lees meer"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "afkanerd@afkanerd: ~$ ./Blog/laatste"
   },
   "blog1": {
     "title": "Nieuwe alfa‑release: Vault 0.1.0",
@@ -60,7 +60,7 @@
     "apply": "Solliciteer nu"
   },
   "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+    "title":"afkanerd@afkanerd: ~$ ./Banen/ Huidige vacatures"
   },
   "footer": {
     "language": "Taal",
