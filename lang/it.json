@@ -23,7 +23,7 @@
     "description": "Siamo ispirati da molte persone straordinarie che agiscono. Sappiamo che possiamo ispirare il cambiamento e guidare lo sviluppo solo dando l’esempio. Costruiamo in modo aperto e ti invitiamo a unirti alla nostra missione di rendere il mondo più accessibile e trasparente per tutti."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./Progetti"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,8 @@
     "readMore": "Leggi di più"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "afkanerd@afkanerd: ~$ ./Blog/ultimi"
+
   },
   "blog1": {
     "title": "Nuovo rilascio alfa: Vault 0.1.0",
@@ -60,7 +61,7 @@
     "apply": "Candidati ora"
   },
   "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+    "title":  "afkanerd@afkanerd: ~$ ./Lavori/ Offerte di lavoro attuali"
   },
   "footer": {
     "language": "Lingua",

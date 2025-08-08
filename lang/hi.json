@@ -23,7 +23,7 @@
     "description": "हम उन महान लोगों से प्रेरित हैं जो कार्रवाई करते हैं। हमें पता है कि हम केवल नेतृत्व करके ही बदलाव ला सकते हैं और विकास को आगे बढ़ा सकते हैं। हम खुले तौर पर निर्माण करते हैं और आपको हमारे मिशन में शामिल होने के लिए प्रोत्साहित करते हैं – दुनिया को सभी के लिए अधिक खुला और सुलभ बनाने के लिए।"
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./परियोजनाएं"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,7 @@
     "readMore": "और पढ़ें"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "afkanerd@afkanerd: ~$ ./ब्लॉग/नवीनतम"
   },
   "blog1": {
     "title": "नया अल्फा रिलीज़: Vault 0.1.0",
@@ -60,7 +60,7 @@
     "apply": "अभी अप्लाई करें"
   },
   "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
+    "title":  "afkanerd@afkanerd: ~$ ./नौकरियां/ वर्तमान नौकरी की रिक्तियाँ"
   },
   "footer": {
     "language": "भाषा",

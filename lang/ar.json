@@ -23,7 +23,7 @@
     "description": "نستلهم من العديد من الأفراد العظام الذين يتحركون. نعلم أننا لا نستطيع أن نلهم التغيير وندفع التقدم إلا بالقيادة. نبني بشكل مفتوح ونشجعك على الانضمام إلى مهمتنا لجعل العالم أكثر شفافية ووصولاً للجميع."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./المشاريع"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,7 @@
     "readMore": "اقرأ المزيد"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "afkanerd@afkanerd: ~$ ./مدونة/الأحدث"
   },
   "blog1": {
     "title": "إصدار ألفا الجديد: Vault 0.1.0",
@@ -59,9 +59,9 @@
     "noJobs": "لا توجد وظائف حالياً. يرجى العودة لاحقًا.",
     "apply": "قدّم الآن"
   },
-  "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings"
-  },
+"job": {
+     "title": "afkanerd@afkanerd: ~$ ./وظائف/ الوظائف الحالية المتاحة"
+    },
   "footer": {
     "language": "اللغة",
     "title": "AFKANERD INFOTECH",

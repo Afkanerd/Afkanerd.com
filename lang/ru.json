@@ -23,7 +23,7 @@
     "description": "Нас вдохновляют великие люди, которые действуют. Мы знаем, что можем вдохновить изменения и стимулировать развитие, только ведя за собой. Мы строим открыто и приглашаем вас присоединиться к нашему миссии сделать мир более открытым и доступным для всех."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "afkanerd@afkanerd: ~$ ./Проекты"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -41,7 +41,7 @@
     "readMore": "Подробнее"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "afkanerd@afkanerd: ~$ ./Блог/последнее"
   },
   "blog1": {
     "title": "Новый альфа‑релиз: Vault 0.1.0",
@@ -60,7 +60,7 @@
     "apply": "Откликнуться"
   },
   "job": {
-    "title": "afkanerd@afkanerd: ~$ ./Jobs/ Текущие вакансии"
+    "title": "afkanerd@afkanerd: ~$ ./Вакансии/ Текущие вакансии"
   },
   "footer": {
     "language": "Язык",
