@@ -49,15 +49,16 @@ DekuSMS provides:
 
 **Offline-first, peer-to-peer communication mesh.**
 
-ShortMesh supports:  
+ShortMesh aims to provide:  
 - Decentralized message delivery during internet outages  
 - Low-power mesh networking for remote or censored environments  
 - Community-driven communication tools  
 
-Currently in **Beta**  
+This project is currently **in progress**.  
 🔗 [Read More](https://shortmesh.com)
 
 ---
+
 
 ## 🤝 How to Contribute
 
