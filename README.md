@@ -8,13 +8,21 @@ Explore our projects, contribute, and join us in making technology more accessib
 
 ---
 
-## 🚀 Our Projects
+## 🚀 Afkanerd Projects
+
+### 🌍 [SMSWithoutBorders](https://smswithoutborders.com)
+
+SMSWithoutBorders (SWOB) is dedicated to researching, developing, and promoting secure and accessible communication tools that function even without an internet connection.
+
+---
+
+## SMSWithoutBorders Sub-Projects
 
 ### 🌍 [RelaySMS](https://relay.smswithoutborders.com/Download)
 
 **Stay connected — even without internet.**
 
-SMSWithoutBorders allows you to:
+RelaySMS enables you to:  
 - Send **emails**, **tweets**, and **Telegram messages** via SMS  
 - Communicate under low or no connectivity conditions  
 - Empower communities in remote, disaster-affected, or surveillance-heavy areas  
@@ -27,7 +35,7 @@ SMSWithoutBorders allows you to:
 
 **A secure and developer-friendly SMS gateway.**
 
-DekuSMS enables:
+DekuSMS provides:  
 - SMS-to-Email, SMS-to-RabbitMQ, and other integrations  
 - End-to-end encryption for sensitive messages  
 - Full control through a dashboard and API  
@@ -41,7 +49,7 @@ DekuSMS enables:
 
 **Offline-first, peer-to-peer communication mesh.**
 
-ShortMesh supports:
+ShortMesh supports:  
 - Decentralized message delivery during internet outages  
 - Low-power mesh networking for remote or censored environments  
 - Community-driven communication tools  
@@ -63,7 +71,7 @@ Here’s how to get started:
 4. **Make** your changes and test them  
 5. **Submit** a pull request with a clear description  
 
-We also welcome:
+We also welcome:  
 - UI/UX suggestions  
 - Accessibility improvements  
 - Translations  
@@ -83,7 +91,7 @@ We also welcome:
 
 - 🌍 **Website**: [Afkanerd.com](https://afkanerd.com)  
 - 💬 **SMSWithoutBorders**: [smswithoutborders.com](https://smswithoutborders.com)  
-- 📡 **RelaySMS**: [RelaySMS.com](https://relay.smswithoutborders.com)  
+- 📡 **RelaySMS**: [relay.smswithoutborders.com](https://relay.smswithoutborders.com)  
 - 🔐 **DekuSMS**: [dekusms.com](https://dekusms.com)  
 - 🌐 **ShortMesh**: [shortmesh.com](https://shortmesh.com)
 
