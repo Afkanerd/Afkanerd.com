@@ -59,7 +59,6 @@ This project is currently **in progress**.
 
 ---
 
-
 ## 🤝 How to Contribute
 
 We welcome contributions from everyone! Whether you're a developer, designer, writer, or advocate — your help makes a difference.

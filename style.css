@@ -59,7 +59,7 @@ background-color: #1a1919;
     /*================= Navbar =========================*/
     .navbar {
       transition: background-color 0.4s ease, box-shadow 0.4s ease;
-      color: white;
+      color: rgb(253, 254, 255) !important;
       z-index: 1030;
     border-bottom: 1px solid #2b2f33; 
     }
@@ -75,7 +75,7 @@ background-color: #1a1919;
     }
 
     .social-icons a {
-      color: white !important;
+      color: rgb(255, 255, 255) !important;
       margin-left: 15px;
       font-size: 1.2rem;
     }
