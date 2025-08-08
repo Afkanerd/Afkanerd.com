@@ -81,7 +81,7 @@ We also welcome:
 
 ## 📬 Get In Touch
 
-- 📧 **Email Us**: [contact@afkanerd.com](mailto:info@afkanerd.com)  
+- 📧 **Email Us**: [info@afkanerd.com](mailto:info@afkanerd.com)  
 - 🐙 **GitHub**: [Afkanerd GitHub](https://github.com/Afkanerd)  
 - 🐦 **Twitter**: [Afkanerd Twitter](https://twitter.com/afkanerd)
 
