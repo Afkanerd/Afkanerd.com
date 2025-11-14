@@ -1,36 +1,74 @@
-import React from 'react';
-import { Box, Container, Grid, Typography, Button, Card, CardContent } from '@mui/material';
+import React from "react";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 export default function Hero() {
   return (
-    <Box className="hero bg-light">
-      <Container>
+    <Box
+    id="home"
+      sx={{
+        bgcolor: "#1E1E1E",
+        color: "white",
+        py: { xs: 6, md: 12 },
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        fontFamily: "ShareTech, monospace",
+        gap: 3 
+      }}
+    >
+      <Container
+        sx={{
+          width: "100%",
+          maxWidth: "80vw"
+        }}
+      >
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={7}>
-            <Typography variant="h3" component="h1" gutterBottom>
-              Build. Ship. Empower Africa.
+            <Typography
+              variant="h1"
+              sx={{
+                fontFamily: "Silkscreen, monospace",
+                fontWeight: 400,
+                mb: 3 
+              }}
+            >
+              AFKANERD
             </Typography>
-            <Typography variant="h6" paragraph>
-              Afkanerd is pioneering developer-first solutions — showcasing projects, offering jobs, and connecting talent across the continent.
+
+            <Typography
+              variant="h5"
+              spacing={4}
+              sx={{
+                fontFamily: "ShareTech, monospace",
+                fontWeight: 200,
+                 mb: 3 
+              }}
+            >
+              WE CODE FOR THE PEOPLE
             </Typography>
-            <Box className="d-flex gap-2">
-              <Button variant="contained" color="primary" href="#projects">See Projects</Button>
-              <Button variant="outlined" color="inherit" href="#jobs">Work with us</Button>
+
+        
+            <Box sx={{ maxWidth: "55vw"}}>
+              <Typography
+                variant="body1"
+                paragraph
+                sx={{ opacity: 0.85, mb: 2 }}
+              >
+                We build open source in the open. We build technology for 
+                digital rights, security and privacy. Our tools are openly available 
+                for advocacy, healthcare and educational purposes.
+              </Typography>
+
+              <Typography
+                variant="body1"
+                paragraph
+                sx={{ opacity: 0.85, mb: 3 }}
+              >
+                We also consult with open source projects and individuals. 
+                We will happily consult on your project if it serves the 
+                open source community — feel free to reach out.
+              </Typography>
             </Box>
-          </Grid>
-          <Grid item xs={12} md={5}>
-            <Card elevation={3} className="p-3">
-              <CardContent>
-                <Typography variant="subtitle1">Newsletter</Typography>
-                <Typography variant="body2" paragraph>
-                  Get updates about new projects and openings.
-                </Typography>
-                <Box component="form" className="d-flex">
-                  <input className="form-control me-2" placeholder="you@domain.com" />
-                  <Button variant="contained">Subscribe</Button>
-                </Box>
-              </CardContent>
-            </Card>
           </Grid>
         </Grid>
       </Container>

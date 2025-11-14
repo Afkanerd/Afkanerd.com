@@ -1,23 +1,37 @@
-import React from 'react';
-import NavBar from './components/Navbar';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.rtl.min.css";
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
-import Jobs from './components/Jobs';
 import Footer from './components/Footer';
-import { Box } from '@mui/material';
+import Contact from './components/Contact';
+import Jobs from './components/Jobs'
 
-export default function App() {
+function App() {
   return (
-    <Box>
-      <NavBar />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Jobs />
-      </main>
+    <Router>
+      <Navbar />
+      
+      <Routes>
+        <Route 
+          path="/" 
+          element={
+            <>
+              <Hero />
+              <About />
+              <Projects />
+              <Jobs />
+              <Contact />
+            </>
+          } 
+        />
+      </Routes>
+      
       <Footer />
-    </Box>
+    </Router>
   );
 }
+
+export default App;

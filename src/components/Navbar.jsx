@@ -1,26 +1,40 @@
-import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Button, Box } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import React from "react";
+import { Box, Button, IconButton, AppBar, Toolbar } from "@mui/material";
+import LanguageIcon from "@mui/icons-material/Language";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
-export default function NavBar() {
+export default function Navbar() {
+  const location = useLocation();
+
+  // Scroll to section if on homepage
+  const handleScroll = (id) => {
+    if (location.pathname === "/") {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <AppBar position="sticky" color="inherit" elevation={2}>
-      <Toolbar className="container d-flex justify-content-between">
-        <Box className="d-flex align-items-center">
-          <img src="https://via.placeholder.com/40" alt="Afkanerd" style={{ borderRadius: 8, marginRight: 12 }} />
-          <Typography variant="h6" component="div">Afkanerd</Typography>
+    <AppBar position="sticky" sx={{ bgcolor: "#1E1E1E", color: "white" }} elevation={2}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <img src="/logo.png" alt="Afkanerd" style={{ width: 50, height: 30, borderRadius: 8 }} />
         </Box>
 
-        <Box className="d-none d-md-flex align-items-center">
-          <Button href="#about">About</Button>
-          <Button href="#projects">Projects</Button>
-          <Button href="#jobs">Jobs</Button>
-          <Button variant="contained" color="primary" href="#contact" sx={{ ml: 2 }}>Contact</Button>
+        <Box sx={{ display: "flex", gap: 2 }}>
+          <Button onClick={() => handleScroll("home")} sx={{ color: "white", textTransform: "none" }}>Home</Button>
+          <Button onClick={() => handleScroll("about")} sx={{ color: "white", textTransform: "none" }}>About</Button>
+          <Button onClick={() => handleScroll("projects")} sx={{ color: "white", textTransform: "none" }}>Projects</Button>
+          <Button component={RouterLink} to="/jobs" sx={{ color: "white", textTransform: "none" }}>Jobs</Button>
+          <Button onClick={() => handleScroll("contact")} sx={{ color: "white", textTransform: "none" }}>Contact</Button>
+          <IconButton sx={{ color: "white" }}>
+            <LanguageIcon />
+          </IconButton>
+          <IconButton sx={{ color: "white", display: { md: "none" } }}>
+            <MenuIcon />
+          </IconButton>
         </Box>
-
-        <IconButton edge="end" className="d-md-none" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
       </Toolbar>
     </AppBar>
   );
