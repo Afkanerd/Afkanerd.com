@@ -30,7 +30,7 @@ export default function ProjectSection() {
               <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
             </Box>
 
-             <Box component="img" src="/SWOB.png" alt="Card Layers" sx={{ width: '20%', objectFit: 'cover', mx: 10, mt: 2 }} />
+             <Box component="img" src="/SWOB.png" alt="Card Layers" sx={{ width: '10%', objectFit: 'cover', mx: 10, mt: 2 }} />
 
             <CardContent sx={{ p: 4, position: 'relative' }}>
              
