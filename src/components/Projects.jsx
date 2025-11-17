@@ -12,18 +12,27 @@ export default function ProjectSection() {
       sx={{ py: 8, bgcolor: "#1E1E1E", color: "white" }}
     >
       <Container>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Silkscreen, monospace",
-            fontWeight: 200,
-             color: "#1F6E1F",
-            mb: 6
-          }}
-        >
-          afkanerd@afkanerd: ~$ ./PROJECTS
-        </Typography>
-  {/*section , Card 1 */}
+    <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen, monospace",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: { xs: 4, sm: 5, md: 6 },  
+    fontSize: {
+      xs: "1.2rem",  
+      sm: "1.5rem", 
+      md: "1.75rem",  
+      lg: "2rem",     
+      xl: "2.25rem",  
+    },
+    lineHeight: 1.3, 
+  }}
+>
+  afkanerd@afkanerd: ~$ ./PROJECTS
+</Typography>
+
+
         <Box sx={{ width: "100%", maxWidth: 1200, mx: 'auto', mb: 10, position: 'relative' }}>
           <Card sx={{ display: 'flex', flexDirection: 'column', boxShadow: 1, color: "white", background: "#2F2F30", overflow: 'hidden', position: 'relative' }}>
             <Box sx={{ display: 'flex', gap: 1, position: 'absolute', top: 8, right: 8 }}>

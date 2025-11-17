@@ -9,10 +9,23 @@ export default function ArticlesSection() {
       sx={{ py: 2, bgcolor: "#1E1E1E", color: "white" }}
     >
       <Container>
-               <Typography variant="h4" sx={{ fontFamily: "Silkscreen, monospace",
-                      fontWeight: 200,
-                       color: "#1F6E1F",
-                      mb: 8  }}>
+                  <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen, monospace",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: { xs: 4, sm: 5, md: 6 },  
+    fontSize: {
+      xs: "1.2rem",  
+      sm: "1.5rem", 
+      md: "1.75rem",  
+      lg: "2rem",     
+      xl: "2.25rem",  
+    },
+    lineHeight: 1.3, 
+  }}
+>
          afkanerd@afkanerd: ~$ ./AFKANERD
         </Typography>
 

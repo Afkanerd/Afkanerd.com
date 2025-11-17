@@ -25,7 +25,7 @@ export default function Hero() {
       <Container
         sx={{
           width: "100%",
-          maxWidth: "80vw"
+          maxWidth: "100vw"
         }}
       >
         <Grid container spacing={4} alignItems="center">

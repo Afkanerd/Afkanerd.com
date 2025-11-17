@@ -27,12 +27,12 @@ export default function Jobs() {
 
       const rows = isHeader ? allRows.slice(1) : allRows;
 
-      // ✅ Correct column mapping based on your actual Google Sheet
+    
       const jobsData = rows.map(row => ({
         title: row.c[1]?.v?.trim() || '',
         description: row.c[2]?.v || '',
         link: row.c[3]?.v || '',
-        requirements: row.c[4]?.v || '',      // bullet list column
+        requirements: row.c[4]?.v || '',     
         datePosted: row.c[5]?.v || '',
         salary: row.c[6]?.v || '',
         experienceLevel: row.c[7]?.v || '',
@@ -143,7 +143,7 @@ export default function Jobs() {
                   {job.description}
                 </Typography>
 
-                {/* Requirements (Bullet List) */}
+              
                 {job.requirements && (
                   <Box sx={{ mb: 2 }}>
                     <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
