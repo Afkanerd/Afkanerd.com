@@ -12,7 +12,7 @@ export default function ArticlesSection() {
                <Typography variant="h4" sx={{ fontFamily: "Silkscreen, monospace",
                       fontWeight: 200,
                        color: "#1F6E1F",
-                      mb: 3  }}>
+                      mb: 8  }}>
          afkanerd@afkanerd: ~$ ./AFKANERD
         </Typography>
 
@@ -29,42 +29,44 @@ export default function ArticlesSection() {
           }}
         >
  
-          <Grid item xs={12} md={6}>
-            <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
-           
-<Box
-  sx={{
-    position: "absolute",
-    bottom: -30,
-    right: -30,
-    width: 350,
-    height: 350,
-    backgroundImage: `
-      radial-gradient(#2F2F30 1px, transparent 1px),
-      radial-gradient(#2F2F30 1px, transparent 1px)
-    `,
-    backgroundPosition: "0 0, 10px 10px",
-    backgroundSize: "18px 18px",
-    zIndex: 0,
-    pointerEvents: "none"
-  }}
-/>
+<Grid item xs={12} md={6}>
+  <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
 
-    
-              <Box
-                component="img"
-                src="/lovelace.jpg"
-                alt="Modern Interior"
-                sx={{
-                  width: "100%",
-                  borderRadius: 2,
-                  position: "relative",
-                  zIndex: 1,
-                  display: "block",
-                }}
-              />
-            </Box>
-          </Grid>
+    {/* More + denser dots */}
+    <Box
+      sx={{
+        position: "absolute",
+        bottom: -30,
+        right: -30,
+        width: 380,    
+        height: 380,
+        backgroundImage: `
+          radial-gradient(#2F2F30 3px, transparent 3px),
+          radial-gradient(#2F2F30 3px, transparent 3px)
+        `,
+        backgroundPosition: "0 0, 10px 10px",
+        backgroundSize: "20px 20px", 
+        zIndex: 0,
+        pointerEvents: "none",
+      }}
+    />
+
+    {/* Image */}
+    <Box
+      component="img"
+      src="/lovelace.jpg"
+      alt="Modern Interior"
+      sx={{
+        width: "100%",
+        borderRadius: 2,
+        position: "relative",
+        zIndex: 1,
+      }}
+    />
+  </Box>
+</Grid>
+
+
 
 
           <Grid item xs={12} md={6}>
