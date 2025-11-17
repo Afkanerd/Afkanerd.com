@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Button, IconButton, Menu, MenuItem } from "@mui/material";
+import { AppBar, Toolbar, Box, Button, IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -15,6 +15,8 @@ const navItems = [
 export default function Navbar() {
   const location = useLocation();
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const handleOpenMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -35,8 +37,8 @@ export default function Navbar() {
     <AppBar
       position="sticky"
       sx={{
-        bgcolor: "#1E1E1E",
-        color: "white",
+        bgcolor: prefersDarkMode ? "#1E1E1E" : "#ffffff",
+        color: prefersDarkMode ? "white" : "black",
         boxShadow: "none",
         borderBottom: "none",
         px: { xs: 2, md: 4 },
@@ -51,7 +53,7 @@ export default function Navbar() {
           mx: "auto",
         }}
       >
-        {/* Logo */}
+      
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <img
             src="/logo.png"
@@ -60,7 +62,6 @@ export default function Navbar() {
           />
         </Box>
 
-        {/* Desktop Links */}
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
           {navItems.map((item) =>
             item.path ? (
@@ -68,7 +69,7 @@ export default function Navbar() {
                 key={item.label}
                 component={RouterLink}
                 to={item.path}
-                sx={{ color: "white", textTransform: "none" }}
+                sx={{ color: prefersDarkMode ? "white" : "black", textTransform: "none" }}
               >
                 {item.label}
               </Button>
@@ -76,19 +77,19 @@ export default function Navbar() {
               <Button
                 key={item.label}
                 onClick={() => handleScroll(item.id)}
-                sx={{ color: "white", textTransform: "none" }}
+                sx={{ color: prefersDarkMode ? "white" : "black", textTransform: "none" }}
               >
                 {item.label}
               </Button>
             )
           )}
-          <IconButton sx={{ color: "white" }}>
+          <IconButton sx={{ color: prefersDarkMode ? "white" : "black" }}>
             <LanguageIcon />
           </IconButton>
         </Box>
 
-        {/* Mobile Hamburger */}
-        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+     
+        <Box sx={{ display: { xs: "flex", md: "none",   bgcolor: prefersDarkMode ? "#1E1E1E" : "#ffffff"} }}>
           <IconButton color="inherit" onClick={handleOpenMenu}>
             <MenuIcon />
           </IconButton>
@@ -101,11 +102,24 @@ export default function Navbar() {
           >
             {navItems.map((item) =>
               item.path ? (
-                <MenuItem key={item.label} onClick={handleCloseMenu} component={RouterLink} to={item.path}>
+                <MenuItem
+                  key={item.label}
+                  onClick={handleCloseMenu}
+                  component={RouterLink}
+                  to={item.path}
+                  sx={{ color: prefersDarkMode ? "black" : "black" }}
+                >
                   {item.label}
                 </MenuItem>
               ) : (
-                <MenuItem key={item.label} onClick={() => { handleScroll(item.id); handleCloseMenu(); }}>
+                <MenuItem
+                  key={item.label}
+                  onClick={() => {
+                    handleScroll(item.id);
+                    handleCloseMenu();
+                  }}
+                  sx={{ color: prefersDarkMode ? "black" : "black" }}
+                >
                   {item.label}
                 </MenuItem>
               )

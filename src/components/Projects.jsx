@@ -32,17 +32,20 @@ export default function ProjectSection() {
               <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
             </Box>
 
-             <Box
+<Box
   component="img"
   src="/SWOB.png"
   alt="Card Layers"
   sx={{
-    width: '9%',
-    height: 100,   
-    mx: 4,
-    mt: 2
+    width: { xs: '30%', sm: '20%', md: '14%' },  
+    height: { xs: 60, sm: 80, md: 100 },       
+    mx: { xs: 2, sm: 3, md: 4 },                 
+    mt: { xs: 1, sm: 2, md: 2 },               
+    objectFit: "contain",                      
   }}
 />
+
+
 
             <CardContent sx={{ p: 4, position: 'relative' }}>
               <Typography
@@ -88,7 +91,7 @@ export default function ProjectSection() {
 
         <Box sx={{ width: "100%", maxWidth: 1200, mx: 'auto', display: 'grid', gridTemplateColumns: { xs: '1fr', md: '2fr 1fr' }, gap: 4, mb: 8 }}>
 
-         {/*section 2, Card 1 */}
+    
           <Card sx={{ display: 'flex', flexDirection: 'column', color: "white", boxShadow: 1, background: "#2f2f30", overflow: 'hidden', position: 'relative' }}>
             <Box sx={{ display: 'flex', gap: 1, position: 'absolute', top: 8, right: 8 }}>
               <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'red' }} />
@@ -96,17 +99,19 @@ export default function ProjectSection() {
               <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
             </Box>
 
-             <Box
+<Box
   component="img"
- src="/qdroid.png"
+  src="/qdroid.png"
   alt="Card Layers"
   sx={{
-    width: '14%',
-    height: 100,   
-    mx: 4,
-    mt: 2
+    width: { xs: '30%', sm: '20%', md: '14%' },  
+    height: { xs: 60, sm: 80, md: 100 },       
+    mx: { xs: 2, sm: 3, md: 4 },                 
+    mt: { xs: 1, sm: 2, md: 2 },               
+    objectFit: "contain",                      
   }}
 />
+
 
             <CardContent sx={{ p: 4, position: 'relative' }}>
                  <Typography
@@ -157,7 +162,7 @@ export default function ProjectSection() {
 
             </CardContent>
           </Card>
-          {/* ========= */}
+    
 
     <Card
       sx={{
@@ -175,7 +180,7 @@ export default function ProjectSection() {
         "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
       }}
     >
-      {/* Top circles */}
+     
       <Box
         sx={{
           display: "flex",
@@ -189,25 +194,20 @@ export default function ProjectSection() {
         <Box sx={{ width: 12, height: 12, borderRadius: "50%", bgcolor: "yellow" }} />
         <Box sx={{ width: 12, height: 12, borderRadius: "50%", bgcolor: "green" }} />
       </Box>
+<Box
+  component="img"
+src="/shortmesh.png"
+  alt="Card Layers"
+  sx={{
+    width: { xs: '30%', sm: '20%', md: '14%' },  
+    height: { xs: 60, sm: 80, md: 100 },       
+    mx: { xs: 2, sm: 3, md: 4 },                 
+    mt: { xs: 1, sm: 2, md: 2 },               
+    objectFit: "contain",                      
+  }}
+/>
 
-      {/* Project Image */}
-      <Box sx={{ width: "100%", height: 350}}>
-        <Box
-          component="img"
-          src="/shortmesh.png"
-          alt="SHORTMESH Project"
-          loading="lazy"
-          sx={{
-            width: "50%",
-            height: 150,
-            borderRadius: 0,
-             mx: 4,
-    mt: 2
-          }}
-        />
-      </Box>
-
-      {/* Card Content */}
+  
       <CardContent sx={{ p: 4, position: "relative" }}>
         <Typography
           variant="h5"
@@ -220,7 +220,7 @@ export default function ProjectSection() {
           ShortMesh is a Messaging bridge API that lets you send and receive messages across different platforms.
         </Typography>
 
-        {/* External link icon */}
+      
         <Box
           component="a"
           href="https://example.com"

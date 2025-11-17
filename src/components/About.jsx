@@ -31,27 +31,27 @@ export default function ArticlesSection() {
  
 <Grid item xs={12} md={6}>
   <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
+    
 
-    {/* More + denser dots */}
     <Box
       sx={{
         position: "absolute",
-        bottom: -30,
-        right: -30,
-        width: 380,    
-        height: 380,
+        bottom: { xs: -20, sm: -25, md: -30 },   
+        right: { xs: -20, sm: -25, md: -30 },   
+        width: { xs: 200, sm: 280, md: 380 },   
+        height: { xs: 200, sm: 280, md: 380 },   
         backgroundImage: `
           radial-gradient(#2F2F30 3px, transparent 3px),
           radial-gradient(#2F2F30 3px, transparent 3px)
         `,
         backgroundPosition: "0 0, 10px 10px",
-        backgroundSize: "20px 20px", 
+        backgroundSize: { xs: "10px 10px", sm: "15px 15px", md: "20px 20px" },
         zIndex: 0,
         pointerEvents: "none",
       }}
     />
 
-    {/* Image */}
+   
     <Box
       component="img"
       src="/lovelace.jpg"
@@ -61,12 +61,12 @@ export default function ArticlesSection() {
         borderRadius: 2,
         position: "relative",
         zIndex: 1,
+        height: { xs: "auto", sm: "auto", md: "100%" }, 
+        objectFit: "cover",                             
       }}
     />
   </Box>
 </Grid>
-
-
 
 
           <Grid item xs={12} md={6}>

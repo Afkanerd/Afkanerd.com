@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Typography, Box, Chip, Button, CircularProgress } from "@mui/material";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -26,15 +27,16 @@ export default function Jobs() {
 
       const rows = isHeader ? allRows.slice(1) : allRows;
 
+      // ✅ Correct column mapping based on your actual Google Sheet
       const jobsData = rows.map(row => ({
         title: row.c[1]?.v?.trim() || '',
-        location: row.c[2]?.v || '',
-        description: row.c[3]?.v || '',
-        link: row.c[4]?.v || '',
-        requirements: row.c[5]?.v || '',
-        responsibilities: row.c[6]?.v || '',
-        experienceLevel: row.c[9]?.v || '',
-        skills: row.c[10]?.v || ''
+        description: row.c[2]?.v || '',
+        link: row.c[3]?.v || '',
+        requirements: row.c[4]?.v || '',      // bullet list column
+        datePosted: row.c[5]?.v || '',
+        salary: row.c[6]?.v || '',
+        experienceLevel: row.c[7]?.v || '',
+        skills: row.c[8]?.v || ''
       })).filter(job => job.title.length > 0);
 
       setJobs(jobsData);
@@ -54,10 +56,18 @@ export default function Jobs() {
     <Box sx={{ bgcolor: "#1E1E1E", color: "white", py: 5 }}>
       <Container>
         <Typography
-          variant="h4"
-          sx={{ fontFamily: "Silkscreen, monospace", fontWeight: 200, color: "#1F6E1F", mb: 4 }}
+          variant="h1"
+          sx={{
+            fontFamily: "Silkscreen, monospace",
+            fontWeight: 400,
+            mb: 3
+          }}
         >
-          afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings
+          Jobs
+        </Typography>
+
+        <Typography variant="body1" sx={{ fontWeight: 400, mb: 8 }}>
+          You’ll find all available jobs and opportunity listings here
         </Typography>
 
         {loading && (
@@ -77,45 +87,112 @@ export default function Jobs() {
           </Box>
         )}
 
-        <Box sx={{ display: 'grid', gap: 3 }}>
+        <Box sx={{ display: 'grid', gap: 3, width: "100%", maxWidth: 800 }}>
           {jobs.map((job, idx) => (
             <Box
               key={idx}
               sx={{
-                p: 3,
-                background: "#2f2f30",
+                position: "relative",
+                borderRadius: 2,
+                overflow: "visible",
               }}
             >
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-                <Box>
-                  <Typography variant="h6" sx={{ color: '#9BE3FF' }}>{job.title}</Typography>
-                  {job.location && <Typography variant="body2" color="white">{job.location}</Typography>}
+
+               <Box
+                  sx={{
+                    position: "absolute",
+                    bottom: { xs: -20, sm: -25, md: -30 },   
+                    right: { xs: -20, sm: -25, md: -30 },   
+                    width: { xs: 200, sm: 280, md: 380 },   
+                    height: { xs: 200, sm: 280, md: 380 },   
+                    backgroundImage: `
+                      radial-gradient(#2F2F30 3px, transparent 3px),
+                      radial-gradient(#2F2F30 3px, transparent 3px)
+                    `,
+                    backgroundPosition: "0 0, 10px 10px",
+                    backgroundSize: { xs: "10px 10px", sm: "15px 15px", md: "20px 20px" },
+                    zIndex: 0,
+                    pointerEvents: "none",
+                  }}
+                />
+
+        
+              <Box
+                sx={{
+                  p: 3,
+                  background: "#2f2f30",
+                  borderRadius: 2,
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
+                  <Box>
+                    <Typography variant="h6" sx={{ color: '#9BE3FF' }}>{job.title}</Typography>
+                    {job.datePosted && (
+                      <Typography variant="body2" color="white">
+                     {job.datePosted}
+                      </Typography>
+                    )}
+                  </Box>
+
+          
                 </Box>
-                {job.experienceLevel && <Chip label={job.experienceLevel} color="default" variant="outlined" />}
+
+                <Typography variant="body2" sx={{ color: 'white', mb: 2 }}>
+                  {job.description}
+                </Typography>
+
+                {/* Requirements (Bullet List) */}
+                {job.requirements && (
+                  <Box sx={{ mb: 2 }}>
+                    <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+                      Requirements:
+                    </Typography>
+
+                    <ul style={{ marginTop: 4, paddingLeft: 20 }}>
+                      {job.requirements
+                        .split(/<br\s*\/?>|\r?\n/)
+                        .map(line => line.trim())
+                        .filter(line => line.length > 0)
+                        .map((req, i) => (
+                          <li key={i} style={{ marginBottom: 4 }}>
+                            <Typography variant="body2">
+                              {req.replace(/^•\s*/, '')}
+                            </Typography>
+                          </li>
+                        ))}
+                    </ul>
+                  </Box>
+                )}
+
+                  {job.link && (
+                    <Box sx={{ textAlign: "right", mb: 8 }}>
+                      <Box
+                        component="a"
+                        href={job.link.startsWith("mailto:") ? job.link : `mailto:${job.link}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          position: "absolute",
+                          bottom: 16,
+                          right: 16,
+                          color: "white",
+                          cursor: "pointer",
+                          textDecoration: "none",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: 1,
+                          padding: "6px 8px",
+                          fontSize: "14px"
+                        }}
+                      >
+                        Apply Now
+                        <ArrowOutwardIcon sx={{ fontSize: 18 }} />
+                      </Box>
+                    </Box>
+                  )}
               </Box>
-
-              <Typography variant="body2" sx={{ color: 'white', mb: 2 }}>{job.description}</Typography>
-
-              {job.requirements && (
-                <Typography variant="body2" sx={{ mb: 1 }}><strong>Requirements:</strong> {job.requirements}</Typography>
-              )}
-              {job.responsibilities && (
-                <Typography variant="body2" sx={{ mb: 2 }}><strong>Responsibilities:</strong> {job.responsibilities}</Typography>
-              )}
-
-              {job.skills && (
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
-                  {job.skills.split(',').map((skill, i) => (
-                    <Chip key={i} label={skill.trim()} variant="outlined" color="default" />
-                  ))}
-                </Box>
-              )}
-
-              {job.link && (
-                <Box sx={{ textAlign: 'right' }}>
-                  <Button href={job.link} target="_blank" variant="outlined" color="info">Apply Now →</Button>
-                </Box>
-              )}
             </Box>
           ))}
         </Box>
