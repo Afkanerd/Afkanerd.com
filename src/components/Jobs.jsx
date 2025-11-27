@@ -66,7 +66,7 @@ export default function Jobs() {
           Jobs
         </Typography>
 
-        <Typography variant="body1" sx={{ fontWeight: 400, mb: 8 }}>
+        <Typography variant="body1" sx={{ fontWeight: 400, mb: 4 }}>
           You’ll find all available jobs and opportunity listings here
         </Typography>
 
@@ -128,22 +128,19 @@ export default function Jobs() {
               >
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
                   <Box>
-                    <Typography variant="h6" sx={{ color: '#9BE3FF' }}>{job.title}</Typography>
+                    <Typography variant="h5" sx={{  fontFamily: "Silkscreen, monospace", color: '#ebf5f8ff', pb: 4 }}>{job.title}</Typography>
                     {job.datePosted && (
                       <Typography variant="body2" color="white">
                      {job.datePosted}
                       </Typography>
                     )}
                   </Box>
-
-          
                 </Box>
 
                 <Typography variant="body2" sx={{ color: 'white', mb: 2 }}>
                   {job.description}
                 </Typography>
 
-              
                 {job.requirements && (
                   <Box sx={{ mb: 2 }}>
                     <Typography variant="body2" sx={{ fontWeight: 'bold' }}>

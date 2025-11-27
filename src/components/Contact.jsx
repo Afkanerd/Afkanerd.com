@@ -6,7 +6,7 @@ export default function AboutSection() {
     <Box
      id="contact"
        component="main"
-      sx={{ py: 8, bgcolor: "#1E1E1E", color: "white" }}
+      sx={{ py: 5, bgcolor: "#1E1E1E", color: "white" }}
     >
       <Container>
         <Grid container spacing={4} alignItems="center">
@@ -35,7 +35,7 @@ export default function AboutSection() {
                        </Typography>
               </Box>
               <Typography
-                variant="body1"
+                variant="h6"
                 sx={{ color: "#f4f0f0ff", lineHeight: 2, mb: 4 }}
               >
                developers@afkanerd.com
