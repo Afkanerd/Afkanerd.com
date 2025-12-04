@@ -1,104 +1,208 @@
-import React from "react";
-import { Box, Typography, Container, Stack, TextField, Button } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import {
+  Container,
+  Typography,
+  Box,
+  Button,
+  CircularProgress,
+} from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-export default function LandingSections() {
+export default function Jobs() {
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  async function loadJobs() {
+    const sheetId = "1XVzbedERoqGacuFR9UhwqywKN3Px8WRwspEqECkpwzo";
+    const sheetName = "AfknerdJobs";
+    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetName}`;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Network response was not ok");
+
+      const text = await response.text();
+      const json = JSON.parse(text.substring(47).slice(0, -2));
+      const allRows = json.table.rows || [];
+
+      const isHeader = allRows[0]?.c?.some((cell) => {
+        const val = cell?.v?.toString().toLowerCase() || "";
+        return ["title", "job title", "position"].includes(val);
+      });
+
+      const rows = isHeader ? allRows.slice(1) : allRows;
+
+      const jobsData = rows
+        .map((row) => ({
+          title: row.c[1]?.v?.trim() || "",
+          location: row.c[2]?.v || "",
+          description: row.c[3]?.v || "",
+          link: row.c[4]?.v || "",
+          requirements: row.c[5]?.v || "",
+          responsibilities: row.c[6]?.v || "",
+          experienceLevel: row.c[9]?.v || "",
+          skills: row.c[10]?.v || "",
+        }))
+        .filter((job) => job.title.length > 0);
+
+      setJobs(jobsData);
+    } catch (err) {
+      console.error(err);
+      setError("Could not load job listings. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    loadJobs();
+  }, []);
+
   return (
-    <>
-
-      <Box sx={{ py: 10 ,    bgcolor: "#1E1E1E", 
-        color: "white",}}>
-        <Container maxWidth="lg">
-          <Stack
-            direction={{ xs: "column", md: "row" }}
-            spacing={6}
-            alignItems="center"
-          >
-
-<Box sx={{ position: "relative", width: "100%", maxWidth: 400, overflow: "visible" }}>
-  {/* Dot Grid */}
-  <Box
-    sx={{
-      position: "absolute",
-      bottom: -25,
-      right: -19,
-      width: "85%",
-      height: "85%",
-      backgroundImage: `
-        radial-gradient(#2F2F30 1px, transparent 1px),
-        radial-gradient(#2F2F30 1px, transparent 1px)
-      `,
-      backgroundPosition: "0 0, 10px 10px",
-      backgroundSize: "18px 18px",
-      zIndex: 0,
-      pointerEvents: "none",
-      borderRadius: 2,
-    }}
-  />
-
-  {/* Image */}
-  <Box
-    component="img"
-    src="/woman.jpg"
-    alt="Modern Interior"
-    sx={{
-      width: "100%",
-      borderRadius: 2,
-      position: "relative",
-      zIndex: 1,
-      display: "block",
-      boxShadow: 4,
-    }}
-  />
-</Box>
+    <Box id="jobs" sx={{ bgcolor: "#1E1E1E", color: "white", py: 5 }}>
+      <Container>
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "Silkscreen, monospace",
+            fontWeight: 200,
+            color: "#1F6E1F",
+            mb: 4,
+          }}
+        >
+          afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings
+        </Typography>
 
 
+        {loading && (
+          <Box sx={{ textAlign: "center", my: 4 }}>
+            <CircularProgress color="info" />
+            <Typography
+              variant="body2"
+              sx={{ mt: 1, fontFamily: "'Share Tech'" }}
+            >
+              Loading jobs...
+            </Typography>
+          </Box>
+        )}
 
-       
-            <Box sx={{ maxWidth: 500 }}>
-              <Typography
-                variant="h5"
-                sx={{ color: "#31475e", mb: 3, textAlign: { xs: "center", md: "left" } }}
-              >
-                We are a digital agency. We work on positioning, content, and
-                aesthetics — always focused on conversion.
-              </Typography>
-
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#6a7c92",
-                  lineHeight: 1.8,
-                  textAlign: { xs: "center", md: "left" },
-                }}
-              >
-                At our digital agency, we’re more than pixel pushers—we’re
-                strategists, storytellers, and conversion professionals. We
-                dissect your brand, audience, and market. Then, armed with
-                insights, we position you for digital victory.
-              </Typography>
-            </Box>
-
-          </Stack>
-        </Container>
-      </Box>
-
-      <Box sx={{ py: 6, textAlign: "start",    bgcolor: "#1E1E1E", 
-        color: "white", }}>
-        <Container maxWidth="md">
+        {/* Error state */}
+        {error && (
           <Typography
-            variant="h6"
+            color="error"
+            sx={{ textAlign: "center", fontFamily: "'Share Tech'" }}
+          >
+            {error}
+          </Typography>
+        )}
+
+        {/* Empty state */}
+        {!loading && jobs.length === 0 && !error && (
+          <Box
             sx={{
-              fontStyle: "italic",
-              fontWeight: 300,
-              fontSize: 22,
+              textAlign: "center",
+              my: 5,
+              p: 3,
+              borderRadius: 1,
+              background: "#2f2f30",
             }}
           >
-            With years of experience in web development and marketing automation,{" "}
-            <b>Danki Code</b> brings solutions that help your team sell more in
-            both B2C and B2B segments.
-          </Typography>
-        </Container>
-      </Box>
-    </>
+            <Typography>No job openings at the moment. Please check back soon.</Typography>
+          </Box>
+        )}
+
+        {/* Job listings */}
+        <Box sx={{ display: "grid", gap: 3 }}>
+          {jobs.map((job, idx) => (
+            <Box
+              key={idx}
+              sx={{
+                p: 3,
+                background: "#2f2f30",
+                borderRadius: 1,
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  mb: 2,
+                  mx: 2,
+                  fontFamily: "'Share Tech'",
+                }}
+              >
+                <Box>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      color: "#f1f9fcff",
+                      mb: 1,
+                      fontFamily: "'Share Tech'",
+                    }}
+                  >
+                    {job.title}
+                  </Typography>
+                  {job.location && (
+                    <Typography variant="body2" color="white">
+                      {job.location}
+                    </Typography>
+                  )}
+                </Box>
+              </Box>
+
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "white",
+                  mb: 2,
+                  mx: 2,
+                  fontFamily: "'Share Tech'",
+                }}
+              >
+                {job.description}
+              </Typography>
+
+              {/* Requirements */}
+              {job.requirements &&
+                job.requirements.split(",").map((req, index) => (
+                  <Typography
+                    key={index}
+                    variant="body2"
+                    sx={{ mb: 1, mx: 2, fontFamily: "'Share Tech'" }}
+                  >
+                    • {req.trim()}
+                  </Typography>
+                ))}
+
+              {/* Apply button */}
+              {job.link && (
+                <Box sx={{ textAlign: "right", mx: 2 }}>
+                  <Button
+                    href={job.link}
+                    target="_blank"
+                    variant="text"
+                    sx={{
+                      color: "white",
+                      textTransform: "none",
+                      fontSize: "1rem",
+                      p: 0,
+                      gap: 1,
+                      "&:hover": {
+                        backgroundColor: "transparent",
+                        textDecoration: "underline",
+                      },
+                    }}
+                  >
+                    Apply Now
+                    <ArrowOutwardIcon sx={{ fontSize: 22 }} />
+                  </Button>
+                </Box>
+              )}
+            </Box>
+          ))}
+        </Box>
+      </Container>
+    </Box>
   );
 }

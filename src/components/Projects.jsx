@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-// Reusable dots
 function CardDots() {
   return (
     <Box

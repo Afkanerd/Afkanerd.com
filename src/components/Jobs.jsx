@@ -1,17 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  Container,
-  Typography,
   Box,
+  Typography,
+  Paper,
   Button,
   CircularProgress,
 } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-export default function Jobs() {
+
+
+
+function JobCard({ title, description, location, link, requirements }) {
+  return (
+    <Paper
+      sx={{
+        p: 4,
+        bgcolor: "#2E2E30",
+        color: "white",
+        position: "relative",
+        borderRadius: 2,
+      }}
+    >
+      <CardDots />
+
+      <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
+        {title}
+      </Typography>
+
+      {location && (
+        <Typography variant="body2" sx={{ opacity: 0.8, mb: 1 }}>
+          {location}
+        </Typography>
+      )}
+
+      <Typography variant="body2" sx={{ opacity: 0.9, mb: 2 }}>
+        {description}
+      </Typography>
+
+      {requirements &&
+        requirements.split(",").map((req, i) => (
+          <Typography key={i} variant="body2" sx={{ mb: 1 }}>
+            • {req.trim()}
+          </Typography>
+        ))}
+
+      {link && (
+        <Box sx={{ textAlign: "right" }}>
+          <Button
+            href={link}
+            target="_blank"
+            sx={{
+              color: "white",
+              textTransform: "none",
+              "&:hover": {
+                textDecoration: "underline",
+                background: "transparent",
+              },
+            }}
+          >
+            Apply Now <ArrowOutwardIcon sx={{ ml: 1 }} />
+          </Button>
+        </Box>
+      )}
+    </Paper>
+  );
+}
+
+export default function ProjectSection() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
 
   async function loadJobs() {
     const sheetId = "1XVzbedERoqGacuFR9UhwqywKN3Px8WRwspEqECkpwzo";
@@ -60,59 +120,54 @@ export default function Jobs() {
   }, []);
 
   return (
-    <Box id="jobs" sx={{ bgcolor: "#1E1E1E", color: "white", py: 5 }}>
-      <Container>
+    <Box sx={{ py: 12, background: "#1E1E1E", overflowX: "hidden" }}>
+      <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
+
+    
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Silkscreen, monospace",
+            fontFamily: "Silkscreen",
             fontWeight: 200,
             color: "#1F6E1F",
-            mb: 4,
+            mb: 6,
           }}
         >
-          afkanerd@afkanerd: ~$ ./Jobs/ Current Job Openings
+          ~/Jobs
         </Typography>
 
-        {/* Loading state */}
-        {loading && (
-          <Box sx={{ textAlign: "center", my: 4 }}>
-            <CircularProgress color="info" />
-            <Typography
-              variant="body2"
-              sx={{ mt: 1, fontFamily: "'Share Tech'" }}
-            >
-              Loading jobs...
+
+        <Box sx={{ mb: 8 }}>
+          {loading && (
+            <Box sx={{ textAlign: "center", my: 4 }}>
+              <CircularProgress color="info" />
+              <Typography sx={{ mt: 1 }}>Loading jobs...</Typography>
+            </Box>
+          )}
+
+          {error && (
+            <Typography color="error" sx={{ textAlign: "center" }}>
+              {error}
             </Typography>
-          </Box>
-        )}
+          )}
 
-        {/* Error state */}
-        {error && (
-          <Typography
-            color="error"
-            sx={{ textAlign: "center", fontFamily: "'Share Tech'" }}
-          >
-            {error}
-          </Typography>
-        )}
+          {!loading && jobs.length === 0 && !error && (
+            <Box
+              sx={{
+                textAlign: "center",
+                p: 3,
+                background: "#2F2F30",
+                borderRadius: 2,
+              }}
+            >
+              <Typography>No job openings right now.</Typography>
+            </Box>
+          )}
 
-        {/* Empty state */}
-        {!loading && jobs.length === 0 && !error && (
-          <Box
-            sx={{
-              textAlign: "center",
-              my: 5,
-              p: 3,
-              borderRadius: 1,
-              background: "#2f2f30",
-            }}
-          >
-            <Typography>No job openings at the moment. Please check back soon.</Typography>
-          </Box>
-        )}
+          {/* Jobs Grid */}
 
-        {/* Job listings */}
+
+            {/* Job listings */}
         <Box sx={{ display: "grid", gap: 3 }}>
           {jobs.map((job, idx) => (
             <Box
@@ -202,7 +257,9 @@ export default function Jobs() {
             </Box>
           ))}
         </Box>
-      </Container>
+       
+        </Box>
+      </Box>
     </Box>
   );
 }
