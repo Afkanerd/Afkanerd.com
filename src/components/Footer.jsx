@@ -1,7 +1,10 @@
 import React from 'react';
 import { Box, Container, Grid, Typography, Divider } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="footer"
@@ -31,16 +34,15 @@ export default function Footer() {
             gap: { xs: 1, md: 0 }
           }}
         >
-
           <Grid item xs={12} md="auto">
             <Typography variant="h6" sx={{ fontFamily: "'Share Tech'" }}>
-              Afkanerd InfoTech
+              {t('footer.company')}
             </Typography>
           </Grid>
 
           <Grid item xs={12} md="auto">
             <Typography variant="body2" sx={{ fontFamily: "'Share Tech'" }}>
-              © Afkanerd.
+              {t('footer.rights')}
             </Typography>
           </Grid>
         </Grid>

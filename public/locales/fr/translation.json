@@ -1,8 +1,61 @@
 {
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "jobs": "Emplois",
+    "contact": "Contact"
+  },
+"landing": {
+    "title": "AFKANERD",
+    "subtitle": "NOUS CODONS POUR LE PEUPLE",
+    "p1": "Nous développons de l’open source au grand jour. Nous créons des technologies pour les droits numériques, la sécurité et la confidentialité. Nos outils sont librement accessibles pour le plaidoyer, la santé et l’éducation.",
+    "p2": "Nous conseillons également des projets open source et des individus. Nous serons ravis de vous accompagner si votre projet sert la communauté open source — n’hésitez pas à nous contacter."
+  },
   "hero": {
-     "title": "AFKANERD",
-    "subtitle": "Nous codons pour le peuple",
-    "paragraph1": "Nous construisons de l’open source de manière ouverte. Nous créons des technologies pour les droits numériques, la sécurité et la confidentialité. Nos outils sont librement accessibles pour la sensibilisation, les soins de santé et l’éducation.",
-    "paragraph2": "Nous conseillons également des projets open source et des individus. Nous serons ravis de vous accompagner si votre projet sert la communauté open source — n’hésitez pas à nous contacter."
+    "terminal": "afkanerd@afkanerd: ~$ ./PROJECTS",
+    "imageAlt": "Intérieur moderne",
+    "description": "Nous nous inspirons de nombreuses personnes remarquables qui agissent. Nous savons que nous ne pouvons inspirer le changement et stimuler le développement qu’en montrant l’exemple. Nous travaillons de manière ouverte et vous encourageons à nous rejoindre dans notre mission pour rendre le monde plus ouvert et accessible à tous.",
+    "sourceLabel": "Source/Los Alamos : ",
+    "sourceText": "ENIAC, le premier ordinateur numérique au monde, dévoilé il y a 70 ans à l’Université de Pennsylvanie, comptait six programmeuses principales : Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas et Ruth Lichterman. Elles étaient initialement appelées « opératrices ». - phillyvoice.com"
+  },
+   "projects": {
+    "sectionTitle": "~/PROJETS",
+
+    "swb": {
+      "title": "SMSWITHOUTBORDERS",
+      "description": "SMSWithoutBorders se consacre à la recherche, au développement et à la promotion d’outils de communication sécurisés et accessibles fonctionnant même sans connexion Internet. Le développement inclut des applications mobiles pour Android, iOS et Linux, ainsi que des documents techniques sur la cryptographie, les communications et la liberté numérique."
+    },
+
+    "queuedroid": {
+      "title": "QUEUEDROID",
+      "description": "QueueDroid est une plateforme SMS auto-hébergeable, puissante et flexible, conçue pour l’accessibilité et l’optimisation locale. Elle permet de mettre en file d’attente, programmer et envoyer des SMS en masse avec un routage intelligent et un coût optimisé."
+    },
+
+    "shortmesh": {
+      "title": "SHORTMESH",
+      "description": "Un pont de messagerie multiplateforme permettant d’envoyer et de recevoir des messages sur plusieurs protocoles de manière transparente."
+    }
+  },
+   "jobs": {
+    "title": "Emplois",
+    "loading": "Chargement des offres...",
+    "error": "Impossible de charger les offres d'emploi. Veuillez réessayer plus tard.",
+    "noOpenings": "Aucune offre d'emploi pour le moment.",
+    "apply": "Postuler",
+    "location": "Lieu",
+    "requirements": "Exigences",
+    "responsibilities": "Responsabilités",
+    "experience": "Niveau d'expérience",
+    "skills": "Compétences"
+  },
+   "contact": {
+    "sectionTitle": "~/Contact",
+    "email": "developers@afkanerd.com"
+  },
+  "footer": {
+    "company": "Afkanerd InfoTech",
+    "rights": "© Afkanerd."
   }
+
 }

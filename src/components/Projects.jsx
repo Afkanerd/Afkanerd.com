@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { useTranslation } from "react-i18next";
 
 function CardDots() {
   return (
@@ -59,7 +60,7 @@ function ProjectCard({ title, description, image }) {
           WebkitLineClamp: 3,
           WebkitBoxOrient: "vertical",
           flexGrow: 1,
-          fontFamily: "'Share Tech'"
+          fontFamily: "'Share Tech'",
         }}
       >
         {description}
@@ -73,10 +74,13 @@ function ProjectCard({ title, description, image }) {
 }
 
 export default function ProjectSection() {
+  const { t } = useTranslation();
+
   return (
-    <Box sx={{  background: "#1E1E1E", overflowX: "hidden" }}>
+    <Box sx={{ background: "#1E1E1E", overflowX: "hidden" }}>
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
 
+        {/* SECTION TITLE */}
         <Typography
           variant="h4"
           sx={{
@@ -86,26 +90,28 @@ export default function ProjectSection() {
             mb: 6,
           }}
         >
-          ~/PROJECTS
+          {t("projects.sectionTitle")}
         </Typography>
 
+        {/* MAIN LARGE CARD */}
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr",
             gap: 5,
-            mb: 8
+            mb: 8,
           }}
         >
-          <Box sx={{ gridColumn: "1 / -1",   fontFamily: "'Share Tech'" }}>
+          <Box sx={{ gridColumn: "1 / -1", fontFamily: "'Share Tech'" }}>
             <ProjectCard
-              title="SMSWITHOUTBORDERS"
+              title={t("projects.swb.title")}
               image="/SWOB.png"
-              description="SMSWithoutBorders is dedicated to researching, developing and promoting secure and  accessible communication tools that function even without an internet  connection. The development includes mobile apps for various platforms  such as Android, iOS and Linux systems. Some of the work also includes  white papers on topics such as cryptography, communications and internet freedom."
+              description={t("projects.swb.description")}
             />
           </Box>
         </Box>
 
+        {/* GRID OF TWO */}
         <Box
           sx={{
             display: "grid",
@@ -118,18 +124,18 @@ export default function ProjectSection() {
           }}
         >
 
-          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" },   fontFamily: "'Share Tech'" }}>
+          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" }, fontFamily: "'Share Tech'" }}>
             <ProjectCard
-              title="QUEUEDROID"
+              title={t("projects.queuedroid.title")}
               image="/qdroid.png"
-              description="QueueDroid is a powerful, self-hostable SMS API platform built for affordability, flexibility, and local optimization. Its core purpose is to enable organizations and developers to queue, schedule, and deliver bulk SMS messages with intelligent routing and cost-effective delivery."
+              description={t("projects.queuedroid.description")}
             />
           </Box>
 
           <ProjectCard
-            title="SHORTMESH"
+            title={t("projects.shortmesh.title")}
             image="/shortmesh.png"
-            description="A cross-platform messaging bridge that lets you send and receive messages across multiple protocols seamlessly."
+            description={t("projects.shortmesh.description")}
           />
         </Box>
       </Box>

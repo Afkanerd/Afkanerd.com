@@ -1,17 +1,62 @@
 {
-  "navbar":{
+  "nav": {
     "home": "Home",
     "about": "About",
     "projects": "Projects",
     "jobs": "Jobs",
-    "contact": "Contact",
-    "language": "Language"
+    "contact": "Contact"
+  },
+"landing": {
+    "title": "AFKANERD",
+    "subtitle": "WE CODE FOR THE PEOPLE",
+    "p1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
+    "p2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community — feel free to reach out."
+  },
+   "hero": {
+    "terminal": "afkanerd@afkanerd: ~$ ./PROJECTS",
+    "imageAlt": "Modern Interior",
+    "description": "We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all.",
+    "sourceLabel": "Source/Los Alamos: ",
+    "sourceText": "ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called \"operators.\" - phillyvoice.com"
+  },
+   "projects": {
+    "sectionTitle": "~/PROJECTS",
+
+    "swb": {
+      "title": "SMSWITHOUTBORDERS",
+      "description": "SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for Android, iOS and Linux systems, along with white papers on cryptography, communications and internet freedom."
     },
 
-  "hero": {
-    "title": "AFKANERD",
-    "subtitle": "We Code For The People",
-    "paragraph1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
-    "paragraph2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community — feel free to reach out."
-  }
+    "queuedroid": {
+      "title": "QUEUEDROID",
+      "description": "QueueDroid is a powerful, self-hostable SMS API platform designed for affordability, flexibility, and local optimization. It enables organizations and developers to queue, schedule, and deliver bulk SMS messages with intelligent routing and cost-effective delivery."
+    },
+
+    "shortmesh": {
+      "title": "SHORTMESH",
+      "description": "A cross-platform messaging bridge that lets you send and receive messages across multiple protocols seamlessly."
+    }
+  },
+   "jobs": {
+    "title": "Jobs",
+    "loading": "Loading jobs...",
+    "error": "Could not load job listings. Please try again later.",
+    "noOpenings": "No job openings right now.",
+    "apply": "Apply Now",
+    "location": "Location",
+    "requirements": "Requirements",
+    "responsibilities": "Responsibilities",
+    "experience": "Experience Level",
+    "skills": "Skills"
+  },
+  "contact": {
+    "sectionTitle": "~/Contact",
+    "email": "developers@afkanerd.com"
+  },
+  "footer": {
+    "company": "Afkanerd InfoTech",
+    "rights": "© Afkanerd."
+
+}
+
 }

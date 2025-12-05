@@ -7,9 +7,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-
-
-
+import { useTranslation } from "react-i18next";
 
 function JobCard({ title, description, location, link, requirements }) {
   return (
@@ -20,27 +18,56 @@ function JobCard({ title, description, location, link, requirements }) {
         color: "white",
         position: "relative",
         borderRadius: 2,
+        fontFamily: "'Share Tech'",
       }}
     >
-      <CardDots />
-
-      <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
+      <Typography
+        variant="h6"
+        sx={{
+          fontWeight: 800,
+          mb: 1,
+          fontFamily: "Silkscreen",
+          color: "#f1f9fcff",
+        }}
+      >
         {title}
       </Typography>
 
       {location && (
-        <Typography variant="body2" sx={{ opacity: 0.8, mb: 1 }}>
+        <Typography
+          variant="body2"
+          sx={{
+            opacity: 0.8,
+            mb: 1,
+            fontFamily: "'Share Tech'",
+          }}
+        >
           {location}
         </Typography>
       )}
 
-      <Typography variant="body2" sx={{ opacity: 0.9, mb: 2 }}>
+      <Typography
+        variant="body2"
+        sx={{
+          opacity: 0.9,
+          mb: 2,
+          fontFamily: "'Share Tech'",
+          lineHeight: 2,
+        }}
+      >
         {description}
       </Typography>
 
       {requirements &&
         requirements.split(",").map((req, i) => (
-          <Typography key={i} variant="body2" sx={{ mb: 1 }}>
+          <Typography
+            key={i}
+            variant="body2"
+            sx={{
+              mb: 1,
+              fontFamily: "'Share Tech'",
+            }}
+          >
             • {req.trim()}
           </Typography>
         ))}
@@ -53,6 +80,7 @@ function JobCard({ title, description, location, link, requirements }) {
             sx={{
               color: "white",
               textTransform: "none",
+              fontFamily: "'Share Tech'",
               "&:hover": {
                 textDecoration: "underline",
                 background: "transparent",
@@ -68,10 +96,10 @@ function JobCard({ title, description, location, link, requirements }) {
 }
 
 export default function ProjectSection() {
+  const { t } = useTranslation();
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
 
   async function loadJobs() {
     const sheetId = "1XVzbedERoqGacuFR9UhwqywKN3Px8WRwspEqECkpwzo";
@@ -84,6 +112,7 @@ export default function ProjectSection() {
 
       const text = await response.text();
       const json = JSON.parse(text.substring(47).slice(0, -2));
+
       const allRows = json.table.rows || [];
 
       const isHeader = allRows[0]?.c?.some((cell) => {
@@ -120,10 +149,16 @@ export default function ProjectSection() {
   }, []);
 
   return (
-    <Box sx={{ py: 12, background: "#1E1E1E", overflowX: "hidden", fontFamily: "'Share Tech'" }}>
+    <Box
+      sx={{
+        py: 12,
+        background: "#1E1E1E",
+        overflowX: "hidden",
+        fontFamily: "'Share Tech'",
+        color: "white",
+      }}
+    >
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
-
-    
         <Typography
           variant="h4"
           sx={{
@@ -133,20 +168,24 @@ export default function ProjectSection() {
             mb: 6,
           }}
         >
-          ~/Jobs
+          ~/{t("jobs.title")}
         </Typography>
-
 
         <Box sx={{ mb: 2 }}>
           {loading && (
             <Box sx={{ textAlign: "center", my: 4 }}>
               <CircularProgress color="info" />
-              <Typography sx={{ mt: 1, color: "white" }}>Loading jobs...</Typography>
+              <Typography sx={{ mt: 1, color: "white", fontFamily: "'Share Tech'" }}>
+                {t("jobs.loading")}
+              </Typography>
             </Box>
           )}
 
           {error && (
-            <Typography color="error" sx={{ textAlign: "center" }}>
+            <Typography
+              color="error"
+              sx={{ textAlign: "center", fontFamily: "'Share Tech'" }}
+            >
               {error}
             </Typography>
           )}
@@ -158,102 +197,111 @@ export default function ProjectSection() {
                 p: 3,
                 background: "#2F2F30",
                 borderRadius: 2,
+                fontFamily: "'Share Tech'",
               }}
             >
-              <Typography>No job openings right now.</Typography>
+              <Typography>{t("jobs.noOpenings")}</Typography>
             </Box>
           )}
 
-        <Box sx={{ display: "grid", gap: 3 }}>
-          {jobs.map((job, idx) => (
-            <Box
-              key={idx}
-              sx={{
-                p: 3,
-                background: "#2f2f30",
-                borderRadius: 1,
-              }}
-            >
+          <Box sx={{ display: "grid", gap: 3 }}>
+            {jobs.map((job, idx) => (
               <Box
+                key={idx}
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  mb: 2,
-                  mx: 2,
-                  fontFamily: "'Share Tech'",
+                  p: 3,
+                  background: "#2f2f30",
+                  borderRadius: 1,
                 }}
               >
-                <Box>
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      color: "#f1f9fcff",
-                      mb: 1,
-                    fontFamily: "Silkscreen" 
-                    }}
-                  >
-                    {job.title}
-                  </Typography>
-                  {job.location && (
-                    <Typography variant="body2" color="white" sx={{fontFamily: "'Share Tech'"}}>
-                      {job.location}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    mb: 2,
+                    mx: 2,
+                    fontFamily: "'Share Tech'",
+                  }}
+                >
+                  <Box>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        color: "#f1f9fcff",
+                        mb: 1,
+                        fontFamily: "Silkscreen",
+                      }}
+                    >
+                      {job.title}
                     </Typography>
-                  )}
+
+                    {job.location && (
+                      <Typography
+                        variant="body2"
+                        color="white"
+                        sx={{ fontFamily: "'Share Tech'" }}
+                      >
+                        {job.location}
+                      </Typography>
+                    )}
+                  </Box>
                 </Box>
+
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: "white",
+                    mb: 2,
+                    mx: 2,
+                    fontFamily: "'Share Tech'",
+                  }}
+                >
+                  {job.description}
+                </Typography>
+
+                {job.requirements &&
+                  job.requirements.split(",").map((req, index) => (
+                    <Typography
+                      key={index}
+                      variant="body2"
+                      sx={{
+                        mb: 1,
+                        mx: 2,
+                        fontFamily: "'Share Tech'",
+                        color: "white",
+                      }}
+                    >
+                      • {req.trim()}
+                    </Typography>
+                  ))}
+
+                {job.link && (
+                  <Box sx={{ textAlign: "right", mx: 2 }}>
+                    <Button
+                      href={job.link}
+                      target="_blank"
+                      variant="text"
+                      sx={{
+                        fontFamily: "'Share Tech'",
+                        color: "white",
+                        textTransform: "none",
+                        fontSize: 16,
+                        p: 0,
+                        gap: 1,
+                        "&:hover": {
+                          backgroundColor: "transparent",
+                          textDecoration: "underline",
+                        },
+                      }}
+                    >
+                      Apply Now
+                      <ArrowOutwardIcon sx={{ fontSize: 16 }} />
+                    </Button>
+                  </Box>
+                )}
               </Box>
-
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "white",
-                  mb: 2,
-                  mx: 2,
-                  fontFamily: "'Share Tech'",
-                }}
-              >
-                {job.description}
-              </Typography>
-
-              {job.requirements &&
-                job.requirements.split(",").map((req, index) => (
-                  <Typography
-                    key={index}
-                    variant="body2"
-                    sx={{ mb: 1, mx: 2, fontFamily: "'Share Tech'", color: "white" }}
-                  >
-                    • {req.trim()}
-                  </Typography>
-                ))}
-
-            
-              {job.link && (
-                <Box sx={{ textAlign: "right", mx: 2 }}>
-                  <Button
-                    href={job.link}
-                    target="_blank"
-                    variant="text"
-                    sx={{
-                      fontFamily: "'Share Tech'",
-                      color: "white",
-                      textTransform: "none",
-                      fontSize: 16,
-                      p: 0,
-                      gap: 1,
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                        textDecoration: "underline",
-                      },
-                    }}
-                  >
-                    Apply Now
-                    <ArrowOutwardIcon sx={{ fontSize: 16 }} />
-                  </Button>
-                </Box>
-              )}
-            </Box>
-          ))}
-        </Box>
-       
+            ))}
+          </Box>
         </Box>
       </Box>
     </Box>

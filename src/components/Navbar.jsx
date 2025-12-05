@@ -14,10 +14,19 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import LanguageSwitcher from "./LanguageSwitcher";
-
-const navLinks = ["Home", "About", "Projects", "Jobs", "Contact"];
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { key: "home", label: t("nav.home") },
+    { key: "about", label: t("nav.about") },
+    { key: "projects", label: t("nav.projects") },
+    { key: "jobs", label: t("nav.jobs") },
+    { key: "contact", label: t("nav.contact") },
+  ];
+
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [elevate, setElevate] = useState(false);
 
@@ -45,6 +54,7 @@ export default function Navbar() {
           <Box component="img" src="/logo.png" alt="Logo" sx={{ height: 40, cursor: "pointer" }} />
         </Typography>
 
+        {/* Desktop */}
         <Box
           sx={{
             display: { xs: "none", md: "flex" },
@@ -52,18 +62,23 @@ export default function Navbar() {
             alignItems: "center",
           }}
         >
-          {navLinks.map((item) => (
+          {navLinks.map((link) => (
             <Typography
-              key={item}
-              sx={{ cursor: "pointer", "&:hover": { color: "#f5f5f5" }, fontFamily: "'Share Tech'" }}
+              key={link.key}
+              sx={{
+                cursor: "pointer",
+                "&:hover": { color: "#f5f5f5" },
+                fontFamily: "'Share Tech'",
+              }}
             >
-              {item}
+              {link.label}
             </Typography>
           ))}
 
           <LanguageSwitcher />
         </Box>
 
+        {/* Mobile menu button */}
         <IconButton
           onClick={() => setDrawerOpen(true)}
           sx={{ display: { xs: "block", md: "none" }, color: "white" }}
@@ -72,6 +87,7 @@ export default function Navbar() {
         </IconButton>
       </Toolbar>
 
+      {/* Mobile Drawer */}
       <Drawer
         anchor="right"
         open={drawerOpen}
@@ -85,10 +101,13 @@ export default function Navbar() {
         </Box>
 
         <List sx={{ fontFamily: "'Share Tech'" }}>
-          {navLinks.map((text) => (
-            <ListItem key={text} disablePadding>
+          {navLinks.map((link) => (
+            <ListItem key={link.key} disablePadding>
               <ListItemButton sx={{ fontFamily: "'Share Tech'" }}>
-                <ListItemText primary={text} primaryTypographyProps={{ fontFamily: "'Share Tech'" }} />
+                <ListItemText
+                  primary={link.label}
+                  primaryTypographyProps={{ fontFamily: "'Share Tech'" }}
+                />
               </ListItemButton>
             </ListItem>
           ))}
