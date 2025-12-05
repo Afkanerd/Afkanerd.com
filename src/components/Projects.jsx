@@ -25,6 +25,7 @@ function ProjectCard({ title, description, image }) {
   return (
     <Paper
       sx={{
+        fontFamily: "'Share Tech'",
         p: 4,
         bgcolor: "#2E2E30",
         height: 260,
@@ -45,7 +46,7 @@ function ProjectCard({ title, description, image }) {
         sx={{ width: 60, height: 60, borderRadius: 2, mb: 2, objectFit: "cover" }}
       />
 
-      <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
+      <Typography variant="h6" sx={{ fontWeight: 400, mb: 1, fontFamily: "Silkscreen" }}>
         {title}
       </Typography>
 
@@ -58,6 +59,7 @@ function ProjectCard({ title, description, image }) {
           WebkitLineClamp: 3,
           WebkitBoxOrient: "vertical",
           flexGrow: 1,
+          fontFamily: "'Share Tech'"
         }}
       >
         {description}
@@ -72,7 +74,7 @@ function ProjectCard({ title, description, image }) {
 
 export default function ProjectSection() {
   return (
-    <Box sx={{ py: 12, background: "#1E1E1E", overflowX: "hidden" }}>
+    <Box sx={{  background: "#1E1E1E", overflowX: "hidden" }}>
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
 
         <Typography
@@ -92,10 +94,10 @@ export default function ProjectSection() {
             display: "grid",
             gridTemplateColumns: "1fr",
             gap: 5,
-            mb: 8,
+            mb: 8
           }}
         >
-          <Box sx={{ gridColumn: "1 / -1" }}>
+          <Box sx={{ gridColumn: "1 / -1",   fontFamily: "'Share Tech'" }}>
             <ProjectCard
               title="SMSWITHOUTBORDERS"
               image="/SWOB.png"
@@ -116,7 +118,7 @@ export default function ProjectSection() {
           }}
         >
 
-          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" } }}>
+          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" },   fontFamily: "'Share Tech'" }}>
             <ProjectCard
               title="QUEUEDROID"
               image="/qdroid.png"

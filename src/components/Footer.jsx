@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography, Divider } from '@mui/material';
 
 export default function Footer() {
   return (
@@ -12,15 +12,11 @@ export default function Footer() {
         mt: 'auto',
       }}
     >
-      <Box
-        component="img"
-        src="/dots.svg"
-        alt="Modern Interior"
+      <Divider
         sx={{
-          width: "90%",
-          display: "block",
-          mx: "auto",
-          mb: 2,
+          borderColor: "#b3b3b4ff",
+          opacity: 0.4,
+          my: 3
         }}
       />
 
@@ -29,14 +25,23 @@ export default function Footer() {
           container
           alignItems="center"
           justifyContent="space-between"
-          sx={{ flexDirection: { xs: "column", md: "row" } }}
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            textAlign: { xs: "center", md: "left" },
+            gap: { xs: 1, md: 0 }
+          }}
         >
-          <Grid item sx={{ mb: { xs: 1, md: 0 } }}> 
-            <Typography variant="h6" sx={{fontFamily: "'Share Tech'"}}>Afkanerd InfoTech</Typography>
+
+          <Grid item xs={12} md="auto">
+            <Typography variant="h6" sx={{ fontFamily: "'Share Tech'" }}>
+              Afkanerd InfoTech
+            </Typography>
           </Grid>
 
-          <Grid item>
-            <Typography variant="body2" sx={{fontFamily: "'Share Tech'" }}>© Afkanerd.</Typography>
+          <Grid item xs={12} md="auto">
+            <Typography variant="body2" sx={{ fontFamily: "'Share Tech'" }}>
+              © Afkanerd.
+            </Typography>
           </Grid>
         </Grid>
       </Container>

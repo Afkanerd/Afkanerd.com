@@ -14,8 +14,7 @@ export default function Hero() {
         py: 8, 
       }}
     >
-      <Container maxWidth="lg">
-     
+      <Container maxWidth="lg" sx={{  mb: 2}}>
         <Typography
           variant="h4"
           sx={{
@@ -78,10 +77,10 @@ export default function Hero() {
                        textAlign: { xs: "center", md: "left" },
                      }}
                    >
-                     At our digital agency, we’re more than pixel pushers—we’re
-                     strategists, storytellers, and conversion professionals. We
-                     dissect your brand, audience, and market. Then, armed with
-                     insights, we position you for digital victory.
+                    We are inspired by many great  individuals who take action. We know we can only 
+                    inspire change and  drive development by leading the way.
+                    We build in the open and encourage you to join us on our mission
+                    to make the world more open and more  accessible to all.
                    </Typography>
                  </Box>
         </Stack>
@@ -95,9 +94,10 @@ export default function Hero() {
                      fontFamily: "'Share Tech'",
                   }}
                 >
-                  With years of experience in web development and marketing automation,{" "}
-                  <b>Danki Code</b> brings solutions that help your team sell more in
-                  both B2C and B2B segments.
+                <b> Source/Los Alamos:</b>Source/Los Alamos: ENIAC, the world's first digital computer, 
+                 unveiled  70 years ago Sunday at the University of Pennsylvania, had six primary  
+                 programmers:<b>  Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff,  Fran Bilas and Ruth 
+                 Lichterman</b>. They were initially called "operators." - phillyvoice.com
                 </Typography>
             </Box>
       </Container>

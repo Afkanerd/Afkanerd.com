@@ -120,7 +120,7 @@ export default function ProjectSection() {
   }, []);
 
   return (
-    <Box sx={{ py: 12, background: "#1E1E1E", overflowX: "hidden" }}>
+    <Box sx={{ py: 12, background: "#1E1E1E", overflowX: "hidden", fontFamily: "'Share Tech'" }}>
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
 
     
@@ -137,11 +137,11 @@ export default function ProjectSection() {
         </Typography>
 
 
-        <Box sx={{ mb: 8 }}>
+        <Box sx={{ mb: 2 }}>
           {loading && (
             <Box sx={{ textAlign: "center", my: 4 }}>
               <CircularProgress color="info" />
-              <Typography sx={{ mt: 1 }}>Loading jobs...</Typography>
+              <Typography sx={{ mt: 1, color: "white" }}>Loading jobs...</Typography>
             </Box>
           )}
 
@@ -164,10 +164,6 @@ export default function ProjectSection() {
             </Box>
           )}
 
-          {/* Jobs Grid */}
-
-
-            {/* Job listings */}
         <Box sx={{ display: "grid", gap: 3 }}>
           {jobs.map((job, idx) => (
             <Box
@@ -193,13 +189,13 @@ export default function ProjectSection() {
                     sx={{
                       color: "#f1f9fcff",
                       mb: 1,
-                      fontFamily: "'Share Tech'",
+                    fontFamily: "Silkscreen" 
                     }}
                   >
                     {job.title}
                   </Typography>
                   {job.location && (
-                    <Typography variant="body2" color="white">
+                    <Typography variant="body2" color="white" sx={{fontFamily: "'Share Tech'"}}>
                       {job.location}
                     </Typography>
                   )}
@@ -218,19 +214,18 @@ export default function ProjectSection() {
                 {job.description}
               </Typography>
 
-              {/* Requirements */}
               {job.requirements &&
                 job.requirements.split(",").map((req, index) => (
                   <Typography
                     key={index}
                     variant="body2"
-                    sx={{ mb: 1, mx: 2, fontFamily: "'Share Tech'" }}
+                    sx={{ mb: 1, mx: 2, fontFamily: "'Share Tech'", color: "white" }}
                   >
                     • {req.trim()}
                   </Typography>
                 ))}
 
-              {/* Apply button */}
+            
               {job.link && (
                 <Box sx={{ textAlign: "right", mx: 2 }}>
                   <Button
@@ -238,9 +233,10 @@ export default function ProjectSection() {
                     target="_blank"
                     variant="text"
                     sx={{
+                      fontFamily: "'Share Tech'",
                       color: "white",
                       textTransform: "none",
-                      fontSize: "1rem",
+                      fontSize: 16,
                       p: 0,
                       gap: 1,
                       "&:hover": {
@@ -250,7 +246,7 @@ export default function ProjectSection() {
                     }}
                   >
                     Apply Now
-                    <ArrowOutwardIcon sx={{ fontSize: 22 }} />
+                    <ArrowOutwardIcon sx={{ fontSize: 16 }} />
                   </Button>
                 </Box>
               )}
