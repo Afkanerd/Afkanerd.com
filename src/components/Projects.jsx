@@ -1,144 +1,168 @@
 import React from "react";
-import { Box, Typography, Card, CardContent, Container } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box, Typography, Paper, IconButton } from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { useTranslation } from "react-i18next";
 
-export default function ProjectSection() {
+function CardDots() {
   return (
     <Box
-      id="projects"
-      component="main"
-      sx={{ py: 8, bgcolor: "#1E1E1E", color: "white" }}
+      sx={{
+        position: "absolute",
+        top: 16,
+        right: 16,
+        display: "flex",
+        gap: 1,
+        zIndex: 2,
+      }}
     >
-      <Container>
+      <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#EF4444" }} />
+      <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#F59E0B" }} />
+      <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#22C55E" }} />
+    </Box>
+  );
+}
+
+function ProjectCard({ title, description, image, link }) {
+  return (
+    <Paper
+      sx={{
+        fontFamily: "'Share Tech'",
+        p: 4,
+        bgcolor: "#2E2E30",
+        height: 260,
+        color: "white",
+        position: "relative",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        boxSizing: "border-box",
+      }}
+    >
+      <CardDots />
+
+      <Box
+        component="img"
+        src={image}
+        alt={title}
+        sx={{ width: 40, height: 40, mb: 2 }}
+      />
+
+      <Typography
+        variant="h6"
+        sx={{ fontWeight: 400, mb: 1, fontFamily: "Silkscreen" }}
+      >
+        {title}
+      </Typography>
+
+      <Typography
+        sx={{
+          fontSize: 14,
+          opacity: 0.8,
+          overflow: "hidden",
+          display: "-webkit-box",
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: "vertical",
+          flexGrow: 1,
+          fontFamily: "'Share Tech'",
+        }}
+      >
+        {description}
+      </Typography>
+
+      {link && (
+        <IconButton
+          component="a"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${title}`}
+          sx={{
+            position: "absolute",
+            bottom: 16,
+            right: 16,
+            "& svg": {
+              transition: "transform 0.2s ease",
+            },
+            "&:hover svg": {
+              transform: "translate(2px, -2px)",
+            },
+          }}
+        >
+          <ArrowOutwardIcon sx={{ fontSize: 18, color: "white" }} />
+        </IconButton>
+      )}
+    </Paper>
+  );
+}
+
+export default function ProjectSection() {
+  const { t } = useTranslation();
+
+  return (
+    <Box id="projects" sx={{ background: "#1E1E1E", overflowX: "hidden" }}>
+      <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Silkscreen, monospace",
+            fontFamily: "Silkscreen",
             fontWeight: 200,
-             color: "#1F6E1F",
-            mb: 6
+            color: "#1F6E1F",
+            mb: 6,
+            fontSize: {
+              xs: "1.4rem",
+              sm: "1.6rem",
+              md: "1.9rem",
+              lg: "2.1rem",
+            },
           }}
         >
-          afkanerd@afkanerd: ~$ ./PROJECTS
+          {t("projects.sectionTitle")}
         </Typography>
-  {/*section , Card 1 */}
-        <Box sx={{ width: "100%", maxWidth: 1200, mx: 'auto', mb: 10, position: 'relative' }}>
-          <Card sx={{ display: 'flex', flexDirection: 'column', boxShadow: 1, color: "white", background: "#2f2f30", overflow: 'hidden', position: 'relative' }}>
-            <Box sx={{ display: 'flex', gap: 1, position: 'absolute', top: 8, right: 8 }}>
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'red' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'yellow' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
-            </Box>
 
-             <Box component="img" src="/SWOB.png" alt="Card Layers" sx={{ width: '20%', objectFit: 'cover', mx: 10, mt: 2 }} />
-
-            <CardContent sx={{ p: 4, position: 'relative' }}>
-             
-              <Typography
-          variant="h4"
+        <Box
           sx={{
-            fontFamily: "Silkscreen, monospace",
-            mb: 6
+            display: "grid",
+            gridTemplateColumns: "1fr",
+            gap: 5,
+            mb: 8,
           }}
-           gutterBottom
         >
-        SMSWITHOUTBORDERS
-        </Typography>
-           
-              <Typography variant="body1"  sx={{ mb: 2 }}>
-            SMSWithoutBorders is dedicated to researching, developing and promoting secure and 
-             accessible communication tools that function even without an internet  connection. 
-            
-              </Typography>
-              <Typography variant="body1" >
-              The development includes mobile apps for various platforms  such as Android, iOS and Linux systems.
-              Some of the work also includes  white papers on topics such as cryptography, 
-            communications and internet freedom.
-              </Typography>
-              <ArrowForwardIcon sx={{ position: 'absolute', bottom: 16, right: 16, color: 'white', cursor: 'pointer' }} />
-            </CardContent>
-          </Card>
+          <ProjectCard
+            title={t("projects.swb.title")}
+            image="/SWOB.png"
+            description={t("projects.swb.description")}
+            link="https://smswithoutborders.com"
+          />
         </Box>
 
-
-        <Box sx={{ width: "100%", maxWidth: 1200, mx: 'auto', display: 'grid', gridTemplateColumns: { xs: '1fr', md: '2fr 1fr' }, gap: 4, mb: 8 }}>
-
-         {/*section 2, Card 1 */}
-          <Card sx={{ display: 'flex', flexDirection: 'column', color: "white", boxShadow: 1, background: "#2f2f30", overflow: 'hidden', transition: 'transform 0.3s', '&:hover': { transform: 'translateY(-8px)' }, position: 'relative' }}>
-            <Box sx={{ display: 'flex', gap: 1, position: 'absolute', top: 8, right: 8 }}>
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'red' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'yellow' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
-            </Box>
-
-            <Box component="img" src="/deku.png" alt="Dekus Project" sx={{ width: '25%', objectFit: 'cover', mx: 10, mt: 2 }} />
-
-            <CardContent sx={{ p: 4, position: 'relative' }}>
-                 <Typography
-          variant="h5"
+        <Box
           sx={{
-            fontFamily: "Silkscreen, monospace",
-            mb: 6
+            display: "grid",
+            gap: 5,
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(auto-fill, minmax(300px, 1fr))",
+              md: "repeat(3, 1fr)",
+            },
           }}
-           gutterBottom
         >
-      QUEUEDROID
-        </Typography>
-             <Typography
-  variant="body1"
-  sx={{
-    mb: 2,
-    fontFamily: "ShareTech",
-  }}
->
-  QueueDroid is a powerful, self-hostable SMS API platform built for affordability, flexibility,
-  and local optimization.
-</Typography>
+          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" } }}>
+            <ProjectCard
+              title={t("projects.queuedroid.title")}
+              image="/qdroid.png"
+              description={t("projects.queuedroid.description")}
+              link="https://queuedroid.com/"
+            />
+          </Box>
 
-              <Typography variant="body1"   sx={{
-    mb: 2,
-    fontFamily: "ShareTech",
-  }}>
-              Its core purpose is to enable organizations and developers to queue, 
-               schedule, and deliver bulk SMS messages with intelligent routing and cost-effective delivery.
-              </Typography>
-
-              <ArrowForwardIcon sx={{ position: 'absolute', bottom: 16, right: 16, color: 'white', cursor: 'pointer' }} />
-            </CardContent>
-          </Card>
-
-          {/*section 2, Card 2 */}
-          <Card sx={{ display: 'flex', flexDirection: 'column', boxShadow: 1, color: "white", background: "#2f2f30", overflow: 'hidden', transition: 'transform 0.3s', '&:hover': { transform: 'translateY(-8px)' }, position: 'relative' }}>
-            <Box sx={{ display: 'flex', gap: 1, position: 'absolute', top: 8, right: 8 }}>
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'red' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'yellow' }} />
-              <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'green' }} />
-            </Box>
-
-            <Box component="img" src="/shortmesh.png" alt="Relay Project" sx={{ width: '25%', objectFit: 'cover', mx: 5, mt: 2 }} />
-
-            <CardContent sx={{ p: 4, position: 'relative' }}>
-                <Typography
-          variant="h5"
-          sx={{
-            fontFamily: "Silkscreen, monospace",
-           
-            mb: 6
-          }}
-           gutterBottom
-        >
-   SHORTMESH
-        </Typography>
-              <Typography variant="body1"  sx={{ mb: 2 }}>
-ShortMesh is a Messaging bridge API that lets you send and receive messages across different platforms.
-              </Typography>
-              <ArrowForwardIcon sx={{ position: 'absolute', bottom: 16, right: 16, color: 'white', cursor: 'pointer' }} />
-            </CardContent>
-          </Card>
-
+          <ProjectCard
+            title={t("projects.shortmesh.title")}
+            image="/shortmesh.png"
+            description={t("projects.shortmesh.description")}
+            link="https://shortmesh.com"
+          />
         </Box>
-
-      </Container>
+      </Box>
     </Box>
   );
 }

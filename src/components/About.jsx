@@ -1,86 +1,115 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Typography, Stack } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
-export default function ArticlesSection() {
+export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <Box
-      id="about"
-      component="main"
-      sx={{ py: 2, bgcolor: "#1E1E1E", color: "white" }}
+   id="about"
+      sx={{
+        bgcolor: "#1E1E1E",
+        color: "white",
+        minHeight: "90vh",
+        display: "flex",
+        alignItems: "center",
+        overflowX: "hidden",
+        py: 8,
+      }}
     >
-      <Container>
-               <Typography variant="h4" sx={{ fontFamily: "Silkscreen, monospace",
-                      fontWeight: 200,
-                       color: "#1F6E1F",
-                      mb: 3  }}>
-         afkanerd@afkanerd: ~$ ./AFKANERD
+  <Container maxWidth="lg" sx={{ mb: 2,  py: { xs: 4, md: 8 } }}>
+  <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: 6,
+    fontSize: {
+      xs: "1.4rem",
+      sm: "1.6rem",
+      md: "1.9rem",
+      lg: "2.1rem",
+    },
+  }}
+>
+          {t("hero.terminal")}
         </Typography>
 
-        <Grid
-          container
-          spacing={4}
+        <Stack
+          direction={{ xs: "column", md: "row" }}
+          spacing={6}
+          alignItems="center"
+        >
+
+          <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: -30,
+                right: -30,
+                width: 350,
+                height: 350,
+                backgroundImage: `
+                  radial-gradient(#2F2F30 1px, transparent 1px),
+                  radial-gradient(#2F2F30 1px, transparent 1px)
+                `,
+                backgroundPosition: "0 0, 10px 10px",
+                backgroundSize: "18px 18px",
+                zIndex: 0,
+                pointerEvents: "none"
+              }}
+            />
+
+            <Box
+              component="img"
+              src="/woman.jpg"
+              alt={t("hero.imageAlt")}
+              sx={{
+                width: "100%",
+                borderRadius: 2,
+                position: "relative",
+                zIndex: 1,
+                display: "block",
+              }}
+            />
+          </Box>
+
+          <Box sx={{ maxWidth: 500 }}>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#fcfcfcff",
+                fontFamily: "'Share Tech'",
+                lineHeight: 1.8,
+                textAlign: { xs: "left", md: "left" },
+              }}
+            >
+              {t("hero.description")}
+            </Typography>
+          </Box>
+        </Stack>
+
+        <Box
           sx={{
-            display: "grid",
-            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-            alignItems: "center",
-            gap: 10,
-            pb: 4,
-            mb: 4,
+            py: 6,
+            textAlign: "start",
+            bgcolor: "#1E1E1E",
+            color: "white",
           }}
         >
- 
-          <Grid item xs={12} md={6}>
-            <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
-           
-<Box
-  sx={{
-    position: "absolute",
-    bottom: -30,
-    right: -30,
-    width: 350,
-    height: 350,
-    backgroundImage: `
-      radial-gradient(#2F2F30 1px, transparent 1px),
-      radial-gradient(#2F2F30 1px, transparent 1px)
-    `,
-    backgroundPosition: "0 0, 10px 10px",
-    backgroundSize: "18px 18px",
-    zIndex: 0,
-    pointerEvents: "none"
-  }}
-/>
-
-    
-              <Box
-                component="img"
-                src="/lovelace.jpg"
-                alt="Modern Interior"
-                sx={{
-                  width: "100%",
-                  borderRadius: 2,
-                  position: "relative",
-                  zIndex: 1,
-                  display: "block",
-                }}
-              />
-            </Box>
-          </Grid>
-
-
-          <Grid item xs={12} md={6}>
-            <Typography variant="body1">
-            We are inspired by many great  individuals who take action. We know we can only inspire change and  drive development by leading the way.
-            We build in the open and encourage you to join us on our mission to make the world more open and more  accessible to all.
-            </Typography>
-          </Grid>
-        </Grid>
-
-        <Typography variant="body1" gutterBottom>
-         Source/Los Alamos: ENIAC, the world's first digital computer, unveiled  
-         70 years ago Sunday at the University of Pennsylvania, had six primary 
-          programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, 
-          Fran Bilas and Ruth Lichterman. They were initially called "operators." - phillyvoice.com
-        </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontStyle: "italic",
+              fontWeight: 300,
+              fontFamily: "'Share Tech'",
+            }}
+          >
+            <b>{t("hero.sourceLabel")}</b> {t("hero.sourceText")}
+          </Typography>
+        </Box>
       </Container>
     </Box>
   );

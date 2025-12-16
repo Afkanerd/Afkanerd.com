@@ -1,0 +1,57 @@
+{
+   "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "jobs": "Empleos",
+    "contact": "Contacto"
+  },
+
+  "landing": {
+    "title": "AFKANERD",
+    "subtitle": "PROGRAMAMOS PARA LA GENTE",
+    "p1": "Construimos software abierto, de forma abierta. Creamos tecnología para los derechos digitales, la seguridad y la privacidad. Nuestras herramientas están disponibles libremente para defensa, salud y educación.",
+    "p2": "También asesoramos proyectos e individuos en el mundo open source. Estaremos encantados de ayudarte si tu proyecto beneficia a la comunidad — no dudes en contactarnos."
+  },
+  "hero": {
+    "terminal": "afkanerd: ~$ ./PROJECTS",
+    "imageAlt": "Interior moderno",
+    "description": "Nos inspira una larga tradición de individuos extraordinarios que toman acción. Sabemos que solo podemos inspirar cambio y promover el desarrollo liderando con el ejemplo. Construimos de manera abierta y te invitamos a unirte a nuestra misión de hacer el mundo más abierto y accesible para todos.",
+    "sourceLabel": "Fuente/Los Alamos: ",
+    "sourceText": "ENIAC, la primera computadora digital del mundo, presentada hace 70 años en la Universidad de Pensilvania, tuvo seis programadoras principales: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas y Ruth Lichterman. Inicialmente se las llamaba “operadoras”. - phillyvoice.com"
+  },
+   "projects": {
+    "sectionTitle": "~/PROYECTOS",
+
+    "swb": {
+      "title": "SMSWITHOUTBORDERS",
+      "description": "SMSWithoutBorders se dedica a investigar, desarrollar y promover herramientas de comunicación seguras y accesibles que funcionan incluso sin conexión a Internet. Incluye aplicaciones móviles para Android, iOS y Linux, además de documentos técnicos sobre criptografía, comunicaciones y libertad en Internet."
+    },
+
+    "queuedroid": {
+      "title": "QUEUEDROID",
+      "description": "QueueDroid es una plataforma SMS auto-alojable diseñada para ser económica, flexible y optimizada localmente. Permite a organizaciones y desarrolladores poner en cola, programar y enviar SMS masivos con enrutamiento inteligente y entrega eficiente."
+    },
+
+    "shortmesh": {
+      "title": "SHORTMESH",
+      "description": "Un puente de mensajería multiplataforma que permite enviar y recibir mensajes a través de múltiples protocolos sin esfuerzo."
+    }
+  },
+    "jobs": {
+    "title": "Empleos",
+    "loading": "Cargando ofertas...",
+    "error": "No se pudieron cargar las ofertas de trabajo. Inténtalo de nuevo más tarde.",
+    "noOpenings": "No hay vacantes disponibles en este momento.",
+    "apply": "Aplicar ahora",
+    "location": "Ubicación",
+    "requirements": "Requisitos",
+    "responsibilities": "Responsabilidades",
+    "experience": "Nivel de experiencia",
+    "skills": "Habilidades"
+  },
+  "contact": {
+    "sectionTitle": "~/Contacto",
+    "email": "developers@afkanerd.com"
+  }
+}
