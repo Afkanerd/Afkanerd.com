@@ -7,6 +7,7 @@ export default function LandingPage() {
 
   return (
     <Box
+       id="contact"
       sx={{
         fontFamily: "'Share Tech'",
         color: "white",
@@ -17,20 +18,24 @@ export default function LandingPage() {
     >
       <Container maxWidth="lg" sx={{ py: { xs: 4, md: 1 } }}>
         
-        {/* Title */}
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Silkscreen",
-            fontWeight: 200,
-            color: "#1F6E1F",
-            mb: 6,
-          }}
-        >
+    <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: 6,
+    fontSize: {
+      xs: "1.4rem",
+      sm: "1.6rem",
+      md: "1.9rem",
+      lg: "2.1rem",
+    },
+  }}
+>
           {t("contact.sectionTitle")}
         </Typography>
 
-        {/* Email */}
         <Typography
           variant="body1"
           sx={{ color: "#777777", lineHeight: 2, mb: 4, fontFamily: "'Share Tech'" }}

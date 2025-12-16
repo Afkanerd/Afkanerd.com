@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Paper } from "@mui/material";
+import { Box, Typography, Paper, IconButton } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +22,7 @@ function CardDots() {
   );
 }
 
-function ProjectCard({ title, description, image }) {
+function ProjectCard({ title, description, image, link }) {
   return (
     <Paper
       sx={{
@@ -44,10 +44,13 @@ function ProjectCard({ title, description, image }) {
         component="img"
         src={image}
         alt={title}
-        sx={{ width: 60, height: 60, borderRadius: 2, mb: 2, objectFit: "cover" }}
+        sx={{ width: 40, height: 40, mb: 2 }}
       />
 
-      <Typography variant="h6" sx={{ fontWeight: 400, mb: 1, fontFamily: "Silkscreen" }}>
+      <Typography
+        variant="h6"
+        sx={{ fontWeight: 400, mb: 1, fontFamily: "Silkscreen" }}
+      >
         {title}
       </Typography>
 
@@ -66,9 +69,28 @@ function ProjectCard({ title, description, image }) {
         {description}
       </Typography>
 
-      <ArrowOutwardIcon
-        sx={{ position: "absolute", bottom: 16, right: 16, cursor: "pointer" }}
-      />
+      {link && (
+        <IconButton
+          component="a"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${title}`}
+          sx={{
+            position: "absolute",
+            bottom: 16,
+            right: 16,
+            "& svg": {
+              transition: "transform 0.2s ease",
+            },
+            "&:hover svg": {
+              transform: "translate(2px, -2px)",
+            },
+          }}
+        >
+          <ArrowOutwardIcon sx={{ fontSize: 18, color: "white" }} />
+        </IconButton>
+      )}
     </Paper>
   );
 }
@@ -77,10 +99,8 @@ export default function ProjectSection() {
   const { t } = useTranslation();
 
   return (
-    <Box sx={{ background: "#1E1E1E", overflowX: "hidden" }}>
+    <Box id="projects" sx={{ background: "#1E1E1E", overflowX: "hidden" }}>
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
-
-        {/* SECTION TITLE */}
         <Typography
           variant="h4"
           sx={{
@@ -88,12 +108,17 @@ export default function ProjectSection() {
             fontWeight: 200,
             color: "#1F6E1F",
             mb: 6,
+            fontSize: {
+              xs: "1.4rem",
+              sm: "1.6rem",
+              md: "1.9rem",
+              lg: "2.1rem",
+            },
           }}
         >
           {t("projects.sectionTitle")}
         </Typography>
 
-        {/* MAIN LARGE CARD */}
         <Box
           sx={{
             display: "grid",
@@ -102,16 +127,14 @@ export default function ProjectSection() {
             mb: 8,
           }}
         >
-          <Box sx={{ gridColumn: "1 / -1", fontFamily: "'Share Tech'" }}>
-            <ProjectCard
-              title={t("projects.swb.title")}
-              image="/SWOB.png"
-              description={t("projects.swb.description")}
-            />
-          </Box>
+          <ProjectCard
+            title={t("projects.swb.title")}
+            image="/SWOB.png"
+            description={t("projects.swb.description")}
+            link="https://smswithoutborders.com"
+          />
         </Box>
 
-        {/* GRID OF TWO */}
         <Box
           sx={{
             display: "grid",
@@ -123,12 +146,12 @@ export default function ProjectSection() {
             },
           }}
         >
-
-          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" }, fontFamily: "'Share Tech'" }}>
+          <Box sx={{ gridColumn: { xs: "span 1", md: "span 2" } }}>
             <ProjectCard
               title={t("projects.queuedroid.title")}
               image="/qdroid.png"
               description={t("projects.queuedroid.description")}
+              link="https://queuedroid.com/"
             />
           </Box>
 
@@ -136,6 +159,7 @@ export default function ProjectSection() {
             title={t("projects.shortmesh.title")}
             image="/shortmesh.png"
             description={t("projects.shortmesh.description")}
+            link="https://shortmesh.com"
           />
         </Box>
       </Box>

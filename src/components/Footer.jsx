@@ -12,7 +12,7 @@ export default function Footer() {
         bgcolor: "#1E1E1E",
         color: "white",
         py: 3,
-        mt: 'auto',
+        mt: 'auto'
       }}
     >
       <Divider

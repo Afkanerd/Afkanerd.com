@@ -14,7 +14,7 @@
     "p2": "También asesoramos proyectos e individuos en el mundo open source. Estaremos encantados de ayudarte si tu proyecto beneficia a la comunidad — no dudes en contactarnos."
   },
   "hero": {
-    "terminal": "afkanerd@afkanerd: ~$ ./PROJECTS",
+    "terminal": "afkanerd: ~$ ./PROJECTS",
     "imageAlt": "Interior moderno",
     "description": "Nos inspira una larga tradición de individuos extraordinarios que toman acción. Sabemos que solo podemos inspirar cambio y promover el desarrollo liderando con el ejemplo. Construimos de manera abierta y te invitamos a unirte a nuestra misión de hacer el mundo más abierto y accesible para todos.",
     "sourceLabel": "Fuente/Los Alamos: ",

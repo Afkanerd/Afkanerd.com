@@ -150,6 +150,7 @@ export default function ProjectSection() {
 
   return (
     <Box
+       id="jobs"
       sx={{
         py: 12,
         background: "#1E1E1E",
@@ -159,15 +160,21 @@ export default function ProjectSection() {
       }}
     >
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 2 }}>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Silkscreen",
-            fontWeight: 200,
-            color: "#1F6E1F",
-            mb: 6,
-          }}
-        >
+   <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: 6,
+    fontSize: {
+      xs: "1.4rem",
+      sm: "1.6rem",
+      md: "1.9rem",
+      lg: "2.1rem",
+    },
+  }}
+>
           ~/{t("jobs.title")}
         </Typography>
 

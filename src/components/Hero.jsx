@@ -7,10 +7,12 @@ export default function LandingPage() {
 
   return (
     <Box
+       id="home"
       sx={{
         fontFamily: "'Share Tech'",
         color: "white",
         bgcolor: "#1E1E1E",
+        pt: { xs: 12, sm: 7, md: 10 },
         minHeight: {
           xs: "50vh",
           sm: "60vh",
@@ -23,7 +25,6 @@ export default function LandingPage() {
     >
       <Container maxWidth="lg" sx={{ py: { xs: 4, md: 8 } }}>
         
-        {/* MAIN TITLE */}
         <Typography
           sx={{
             fontFamily: "Silkscreen",
@@ -36,7 +37,6 @@ export default function LandingPage() {
           {t("landing.title")}
         </Typography>
 
-        {/* SUBTITLE */}
         <Typography
           sx={{
             fontFamily: "'Share Tech'",
@@ -49,7 +49,7 @@ export default function LandingPage() {
           {t("landing.subtitle")}
         </Typography>
 
-        {/* PARAGRAPH 1 */}
+      
         <Typography
           sx={{
             maxWidth: 780,
@@ -62,7 +62,6 @@ export default function LandingPage() {
           {t("landing.p1")}
         </Typography>
 
-        {/* PARAGRAPH 2 */}
         <Typography
           sx={{
             maxWidth: 780,

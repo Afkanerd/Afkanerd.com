@@ -21,9 +21,9 @@ export default function LanguageSwitcher() {
     { code: "fr", label: "Français" },
     { code: "fa", label: "فارسی" },
     { code: "es", label: "Español" },
-    { code: "de", label: "Deutsch" },
-    { code: "ru", label: "Русский" },
-    { code: "it", label: "Italiano" },
+    // { code: "de", label: "Deutsch" },
+    // { code: "ru", label: "Русский" },
+    // { code: "it", label: "Italiano" },
   ];
 
   return (

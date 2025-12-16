@@ -7,6 +7,7 @@ export default function Hero() {
 
   return (
     <Box
+   id="about"
       sx={{
         bgcolor: "#1E1E1E",
         color: "white",
@@ -17,18 +18,22 @@ export default function Hero() {
         py: 8,
       }}
     >
-      <Container maxWidth="lg" sx={{ mb: 2 }}>
-        
-        {/* Terminal Title */}
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Silkscreen",
-            fontWeight: 200,
-            color: "#1F6E1F",
-            mb: 6,
-          }}
-        >
+  <Container maxWidth="lg" sx={{ mb: 2,  py: { xs: 4, md: 8 } }}>
+  <Typography
+  variant="h4"
+  sx={{
+    fontFamily: "Silkscreen",
+    fontWeight: 200,
+    color: "#1F6E1F",
+    mb: 6,
+    fontSize: {
+      xs: "1.4rem",
+      sm: "1.6rem",
+      md: "1.9rem",
+      lg: "2.1rem",
+    },
+  }}
+>
           {t("hero.terminal")}
         </Typography>
 
@@ -37,7 +42,7 @@ export default function Hero() {
           spacing={6}
           alignItems="center"
         >
-          {/* IMAGE + BACKGROUND GRID */}
+
           <Box sx={{ position: "relative", borderRadius: 2, overflow: "visible" }}>
             <Box
               sx={{
@@ -71,7 +76,6 @@ export default function Hero() {
             />
           </Box>
 
-          {/* RIGHT TEXT BLOCK */}
           <Box sx={{ maxWidth: 500 }}>
             <Typography
               variant="body1"
@@ -79,7 +83,7 @@ export default function Hero() {
                 color: "#fcfcfcff",
                 fontFamily: "'Share Tech'",
                 lineHeight: 1.8,
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "left", md: "left" },
               }}
             >
               {t("hero.description")}
@@ -87,7 +91,6 @@ export default function Hero() {
           </Box>
         </Stack>
 
-        {/* FOOTNOTE QUOTE */}
         <Box
           sx={{
             py: 6,
