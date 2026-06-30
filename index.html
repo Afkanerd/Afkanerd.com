@@ -9,11 +9,20 @@
 	<!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Google Fonts (Share Tech) -->
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+	<!-- Google Fonts (JetBrains Mono + Share Tech + Silkscreen) -->
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Share+Tech&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <title>AFKANERD</title>
+  <meta name="description" content="Afkanerd is an open source software development company that builds technology for digital rights, security, and privacy. Our tools are openly available for advocacy, healthcare, and educational purposes.">
+  <meta name="keywords" content="Afkanerd, open source, software development, digital rights, security, privacy, advocacy, healthcare, education">
+  <meta name="author" content="Afkanerd">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AFKANERD - We Code For The People">
+  <meta property="og:description" content="Afkanerd is an open source software development company that builds technology for digital rights, security, and privacy. Our tools are openly available for advocacy, healthcare, and educational purposes.">
+  <meta property="og:image" content="/images/logo.png">
+  <meta property="og:url" content="https://afkanerd.com">
+  <meta name="twitter:card" content="summary_large_image">
   
 </head>
 <body>
@@ -21,15 +30,14 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container">
 	  <a class="navbar-brand">
-		<img src="/images/logo.png" alt="Afkanerd" style="width: 35px;">
-		<span class="ms-2 fw-bold" data-i18n="navbar.brand">Afkanerd</span>
+		<img src="/images/logo.png" alt="Afkanerd" style="width: 50px;">
 	  </a>
   
 	  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav ms-auto align-items-center">
+		<ul class="navbar-nav navbar-links me-auto align-items-center">
 		  <li class="nav-item">
 			<a class="nav-link" href="#hero" data-i18n="navbar.home">Home</a>
 		  </li>
@@ -40,16 +48,21 @@
 			<a class="nav-link" href="#project" data-i18n="navbar.projects">Projects</a>
 		  </li>
 		  <li class="nav-item">
+			<a class="nav-link" href="jobs.html" data-i18n="navbar.jobs">Jobs</a>
+		  </li>
+		  <li class="nav-item">
 			<a class="nav-link" href="#blog" data-i18n="navbar.blog">Blogs</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#contact" data-i18n="navbar.contact">Contact Us</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="https://github.com/Afkanerd/Afkanerd.com"><i class="fab fa-github"></i></a>
+			<a class="nav-link" href="https://github.com/Afkanerd/Afkanerd.com">GitHub</a>
 		  </li>
+		</ul>
+		<ul class="navbar-nav ms-auto align-items-center">
 		  <li class="nav-item dropdown">
-		<i class="fas fa-globe" aria-hidden="true"></i>
+			<button class="lang-toggle" type="button" data-i18n="navbar.language">Language</button>
 			<ul class="dropdown-content">
 			  <li>
 				<button class="translate" data-lang="en" data-i18n="navbar.language.en">
@@ -74,14 +87,14 @@
 	</div>
   </nav>
   
-<hr>
+<!-- <hr> -->
 
 <!--============================= Landing Page =====================================  -->
 <section id="hero" class="landing-page py-5">
-	<div class="container text-center">
-		<h1 class="hero-title text-center" data-i18n="hero.title">AFKANERD<br/> <h2>We Code For The People<h2></h1><br>
-				<h4 data-i18n="hero.subtitle1" class="hero-subtitle" style="color: gray">We build open source in the open. <br><br>We build technology for digital rights, security, and privacy. Our tools are openly available for advocacy, healthcare, and educational purposes.</h4>
-	  <h4 data-i18n="hero.subtitle2" class="hero-subtitle text-center" style="color: gray">We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out.</h4>
+	<div class="container text-start">
+		<h1 class="hero-title text-start"><span data-i18n="hero.title">AFKANERD</span> <span class="hero-tagline">- We code for the people</span></h1>
+				<h5 data-i18n="hero.subtitle1" class="hero-subtitle text-start" style="color: gray">We build open source in the open. <br><br>We build technology for digital rights, security, and privacy. Our tools are openly available for advocacy, healthcare, and educational purposes.</h5>
+	  <h5 data-i18n="hero.subtitle2" class="hero-subtitle text-start" style="color: gray">We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out.</h5>
 	</div>
   </section>
   
@@ -91,10 +104,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3 data-i18n="about.title">afkanerd@afkanerd: ~$ ./Afkanerd</h3>
-        <img src="./images/lovelace.jpg" alt="About Image" class="img-fluid mb-4 mt-3">
-	<blockquote data-i18n="about.quote"><i>Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called "operators." - phillyvoice.com</i></blockquote>
-        <h5 data-i18n="about.description">We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all.</h5>
+        <h4><span class="prompt-prefix">afkanerd@afkanerd:</span> ~$ <span data-i18n="about.title">./About</span></h4>
+				<div class="row align-items-end mt-3 g-4 about-layout">
+					<div class="col-lg-6">
+						<img src="./images/lovelace.jpg" alt="About Image" class="img-fluid about-image">
+					</div>
+					<div class="col-lg-6">
+						<h6 data-i18n="about.description" class="about-description">We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all.</h6>
+						<blockquote data-i18n="about.quote" class="about-quote"><i>Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called "operators." - phillyvoice.com</i></blockquote>
+					</div>
+				</div>
       </div>
     </div>
   </div>
@@ -104,21 +123,23 @@
 <!-- =================================== Project Section ============================= -->
 <section id="project" class="project-section py-5">
 	<div class="container">
-	  <h3 data-i18n="project.title" class="text-start mb-4">afkanerd@afkanerd:~$ ./Projects</h3>
-	  <div class="row">
+	  <h4 class="text-start mb-4"><span class="prompt-prefix">afkanerd@afkanerd:</span>~$ <span data-i18n="project.title">./Projects</span></h4>
+	  <div class="row mt-5">
 		<!-- Project 1 -->
-		<div class="col-md-6 mb-4">
-		  <div class="card h-100 d-flex flex-column">
+		<div class="col-md-6 mb-4 project-column">
+		  <div class="card project-card h-100 d-flex flex-column">
 			<div class="card-body d-flex flex-column">
-			  <div class="d-flex align-items-center mb-3">
+			  <p class="project-prompt mb-3"><span class="prompt-prefix">afkanerd@afkanerd:</span><span class="path-segment">~/projects</span>$ cat smswithoutborders.md</p>
+			  <!-- <div class="d-flex align-items-center mb-3">
 				<h5 class="card-title mb-0" data-i18n="project1.title">SMSWithoutBorders</h5>
-			  </div>
-			  <p class="card-text flex-grow-1" data-i18n="project1.description">SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for various platforms such as Android, iOS and Linux systems. Some of the work also includes white papers on topics such as cryptography, communications and internet freedom.</p>
+			  </div> -->
+			  <p class="card-text flex-grow-1" data-i18n="project1.description">
+				SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for various platforms such as Android, iOS and Linux systems. Some of the work also includes white papers on topics such as cryptography, communications and internet freedom.</p>
 			  <div class="row mt-auto">
 				<!-- Social Media Links -->
 				<div class="col-md-6 d-flex align-items-center">
-				  <a data-i18n="project1.readMore" href="https://smswithoutborders.com" class="d-flex align-items-center" style="color: #edf2f6; text-decoration: none;">
-					Read more <span class="ms-1">&rarr;</span>
+				  <a data-i18n="project1.readMore" href="https://smswithoutborders.com" class="d-flex align-items-center project-link">
+					Website <span class="ms-1">&rarr;</span>
 				  </a>
 				</div>
 				<!-- Read More Link -->
@@ -132,21 +153,22 @@
 		</div>
   
 		<!-- Project 2 -->
-		<div class="col-md-6 mb-4">
-		  <div class="card h-100 d-flex flex-column">
+		<!-- <div class="col-md-6 mb-4">
+		  <div class="card project-card h-100 d-flex flex-column">
 			<div class="card-body d-flex flex-column">
+			  <p class="project-prompt mb-3"><span class="prompt-prefix">afkanerd@projects:</span><span class="path-segment">~</span>$ cat dekusms.md</p>
 			  <div class="d-flex align-items-center mb-3">
 				<h5 class="card-title mb-0" data-i18n="project2.title">DekuSMS</h5>
 			  </div>
 			  <p class="card-text flex-grow-1" data-i18n="project2.description">DekuSMS is an Android SMS messaging app. It enables 2 users of the app to communicate using end-to-end encryption over SMS messages. The app also contains message forwarding abilities supporting protocols such as SMTP, FTP, and AMQP. The app is built to integrate with RabbitMQ allowing users with messaging queues to set up and make remote communication requests to their apps.</p>
 			  <div class="row mt-auto">
-				<!-- Social Media Links -->
+				
 				<div class="col-md-6 d-flex align-items-center">
-				  <a data-i18n="project2.readMore" href="https://github.com/deku-messaging/Deku-SMS-Android/blob/master/README.md" class="d-flex align-items-center" style="color: #edf2f6; text-decoration: none;">
+				  <a data-i18n="project2.readMore" href="https://github.com/deku-messaging/Deku-SMS-Android/blob/master/README.md" class="d-flex align-items-center project-link">
 					Read more <span class="ms-1">&rarr;</span>
 				  </a>
 				</div>
-				<!-- Read More Link -->
+				
 				<div class="col-md-6 d-flex justify-content-end">
 				  <a href="https://github.com/deku-messaging/Deku-SMS-Android" class="me-2"><i class="fab fa-github"></i></a>
 				  <a href="https://t.me/deku_sms" class="me-2"><i class="fab fa-telegram"></i></a>
@@ -154,36 +176,80 @@
 			  </div>
 			</div>
 		  </div>
+		</div> -->
+
+		<!-- Project 3 -->
+		<div class="col-md-6 mb-4 project-column">
+		  <div class="card project-card h-100 d-flex flex-column">
+			<div class="card-body d-flex flex-column">
+			  <p class="project-prompt mb-3"><span class="prompt-prefix">afkanerd@afkanerd:</span><span class="path-segment">~/projects</span>$ cat shortmesh.md</p>
+			  <!-- <div class="d-flex align-items-center mb-3">
+				<h5 class="card-title mb-0">Shortmesh</h5>
+			  </div> -->
+			  <p class="card-text flex-grow-1">{ Shortmesh explores resilient, short-format communication workflows for constrained environments, helping communities exchange critical information with low overhead and high reliability. }</p>
+			  <div class="row mt-auto">
+				<div class="col-md-6 d-flex align-items-center">
+				  <a href="https://github.com/Afkanerd" class="d-flex align-items-center project-link">
+					Website <span class="ms-1">&rarr;</span>
+				  </a>
+				</div>
+				<div class="col-md-6 d-flex justify-content-end">
+				  <a href="https://github.com/Afkanerd" class="me-2"><i class="fab fa-github"></i></a>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-	  </div>
+
+		<!-- Project 4 -->
+		<!-- <div class="col-md-6 mb-4">
+		  <div class="card project-card h-100 d-flex flex-column">
+			<div class="card-body d-flex flex-column">
+			  <p class="project-prompt mb-3"><span class="prompt-prefix">afkanerd@projects:</span><span class="path-segment">~</span>$ cat relay.md</p>
+			  <div class="d-flex align-items-center mb-3">
+				<h5 class="card-title mb-0">Relay</h5>
+			  </div>
+			  <p class="card-text flex-grow-1">Relay focuses on practical message routing layers for open communication systems, making it easier to bridge users across limited-connectivity and mixed-channel deployments.</p>
+			  <div class="row mt-auto">
+				<div class="col-md-6 d-flex align-items-center">
+				  <a href="https://x.com/RelaySMS" class="d-flex align-items-center project-link">
+					Read more <span class="ms-1">&rarr;</span>
+				  </a>
+				</div>
+				<div class="col-md-6 d-flex justify-content-end">
+				  <a href="https://x.com/RelaySMS" class="me-2"><i class="fab fa-twitter"></i></a>
+				  <a href="https://github.com/smswithoutborders" class="me-2"><i class="fab fa-github"></i></a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div> -->
  
 	</div>
   </section>
   
 
   <!-- ============================= Blog Section =============================-->
-  <section id="blog" class="blog-section py-5">
+  <!-- <section id="blog" class="blog-section py-5">
 	<div class="container">
-	  <h3 class="text-start" data-i18n="blog.title">afkanerd@afkanerd: ~$ ./Blog/latest</h3>
+	  <h3 class="text-start"><span class="prompt-prefix">afkanerd@afkanerd:</span> ~$ <span data-i18n="blog.title">./Blog/latest</span></h3>
 	  <div class="row">
 
-		<div class="col-md-6">
+		<div class="col-md-6 blog-column">
 			<div class="card">
 			  <div class="card-body">
-				<!-- Blog Title and Content -->
 				<h5 class="card-title" data-i18n="blog1.title">New Alpha Release: Vault 0.1.0</h5>
 				<br>
 				<p class="card-text" data-i18n="blog1.description">SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to 
 				secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.
 			</p>
 				
-				<!-- Author Image and Name Section -->
-				<div class="d-flex align-items-center mb-3">
-				  <img src="/images/author.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+				<div class="d-flex align-items-center mb-3 blog-author">
+				  <span class="blog-avatar-icon" aria-hidden="true"><i class="fas fa-user"></i></span>
 				  <h6 class="mb-0">Promise Fru</h6>
 				</div>
 				
-				<!-- Read More Link and Read Time -->
 				<div class="d-flex justify-content-between align-items-center">
 					<span class="read-time" style="font-size: 10px;">2 min read</span>
 					<a data-i18n="blog1.readMore" href="https://blog.smswithoutborders.com/releases/vault-0-1-0" class="d-flex align-items-center" 
@@ -196,23 +262,20 @@
 		  </div>
 		  
 		  
-		  <div class="col-md-6">
+		  <div class="col-md-6 blog-column">
 			<div class="card">
 			  <div class="card-body">
-				<!-- Blog Title and Content -->
 				<h5 class="card-title" data-i18n="blog2.title">Rebranding</h5>
 				<br>
 				<p class="card-text" data-i18n="blog2.description">SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools.
 				  The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the 
 				  SMSWithoutBorders project.</p>
 		  
-				<!-- Author Image and Name Section -->
-				<div class="d-flex align-items-center mb-3">
-				  <img src="/images/author.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+				<div class="d-flex align-items-center mb-3 blog-author">
+				  <span class="blog-avatar-icon" aria-hidden="true"><i class="fas fa-user"></i></span>
 				  <h6 class="mb-0">Aysha Musa</h6>
 				</div>
 		  
-				<!-- Read More Link and Read Time -->
 				<div class="d-flex justify-content-between align-items-center">
 					<span class="read-time" style="font-size: 10px;">2 min read</span>
 					<a data-i18n="blog2.readMore" href="https://blog.smswithoutborders.com/posts/rebranding" 
@@ -228,7 +291,7 @@
 		  
 	  </div>
 	</div>
-  </section>
+  </section> -->
 
 <!--  =========================== Footer ============================== -->
 <footer id="contact" class="text-center">
@@ -238,26 +301,26 @@
 		<!-- "Follow Us -->
 		<div class="d-flex align-items-center">
 		  <h6 data-i18n="footer.title1" class="align-self-start me-3">Follow Us</h6>
-		  <a href="https://x.com/afkanerd?t=wShmLs6wPw9R2GzqWwT5Ww&s=09" class="me-3" ><i class="fab fa-twitter"></i></a>
+		  <a href="https://x.com/afkanerd?t=wShmLs6wPw9R2GzqWwT5Ww&s=09" class="me-3" ><i class="fa-brands fa-x-twitter"></i></a>
 		  <!-- <a href="#" class="me-4"><i class="fab fa-linkedin"></i></a> -->
 		  <a href="https://github.com/Afkanerd/Afkanerd.com" class="me-3"><i class="fab fa-github"></i></a>
 		</div>
 		<li class="nav-item dropdown">
-			<a class="nav-link" href="#"><i class="fas fa-globe" aria-hidden="true"></i></a>
+			<button class="lang-toggle" type="button" data-i18n="navbar.language">Language</button>
 			<ul class="dropdown-content">
 			  <li>
 				<button class="translate" data-lang="en" data-i18n="navbar.language.en">
-				  🇬🇧 English
+				  English 🇬🇧
 				</button>
 			  </li>
 			  <li>
 				<button class="translate" data-lang="fr" data-i18n="navbar.language.fr">
-				  🇫🇷 Français
+				  Français 🇫🇷
 				</button>
 			  </li>
 			  <li>
 				<button class="translate" data-lang="fa" data-i18n="navbar.language.fa">
-				  🇮🇷 فارسی
+				  فارسی 🇮🇷
 				</button>
 			  </li>
 			</ul>
@@ -273,6 +336,7 @@
 		<div class="d-flex">
 			<a data-i18n="footer.blog" href="#blog" class="me-3" style="text-decoration: none;">Blog</a>
 			<a data-i18n="footer.Project" href="#project" class="me-3" style="text-decoration: none;">Project</a>
+			<a href="jobs.html" class="me-3" style="text-decoration: none;">Jobs</a>
 			<a data-i18n="footer.Policy" href="#" class="me-3" style="text-decoration: none;">Privacy Policy</a>
 			<a class="me-3"  style="text-decoration: none;">&copy; Afkanerd.</a>
 		  </div>

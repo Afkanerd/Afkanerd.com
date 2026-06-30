@@ -4,8 +4,9 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "careers": "Careers",
     "blog": "Blog",
-    "contact": "Contact Us",
+    "contact": "Get in Touch",
     "language": "Language",
     "language.en": "English",
     "language.fr": "French",
@@ -13,33 +14,33 @@
   },
   "hero": {
     "title": "AFKANERD",
-    "subtitle1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
-    "subtitle2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out."
-},
+    "subtitle1": "We are a team of developers, researchers, and nerds building open source software for digital rights, security, and privacy. Our work spans secure messaging, cryptography, decentralized communication, healthcare, and more.",
+    "subtitle2": "We also collaborate with open source projects and individuals. If you're building something that benefits the open source community, we'd be glad to help. Reach out."
+  },
   "about": {
-    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "title": "./About",
     "quote": "Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called \"operators.\" - phillyvoice.com",
     "description": "We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "./Projects"
   },
   "project1": {
     "title": "SMSWithoutBorders",
-    "description": "SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for various platforms such as Android, iOS and Linux systems. Some of the work also includes white papers on topics such as cryptography, communications and internet freedom.",
-    "readMore": "Read more"
+    "description": "{ SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. Some  of SMSWithoutBorders projects include RelaySMS and DekuSMS. We also have white papers and research papers on secure communication and privacy-first infrastructure.}",
+    "readMore": "Website"
   },
   "project2": {
     "title": "DekuSMS",
     "description": "DekuSMS is an Android SMS messaging app. It enables 2 users of the app to communicate using end-to-end encryption over SMS messages. The app also contains message forwarding abilities supporting protocols such as SMTP, FTP, and AMQP. The app is built to integrate with RabbitMQ allowing users with messaging queues to set up and make remote communication requests to their apps.",
-    "readMore": "Read more"
+    "readMore": "Website"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+    "title": "./Blog/latest"
   },
   "blog1": {
     "title": "New Alpha Release: Vault 0.1.0",
-    "description":"SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.",
+    "description": "SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.",
     "readMore": "Read More"
   },
   "blog2": {
@@ -48,10 +49,11 @@
     "readMore": "Read More"
   },
   "footer": {
-    "title": "AFKANERD INFOTECH",
+    "title": "AFKANERD LABS",
     "title1": "Follow Us",
     "Policy": "Privacy Policy",
     "blog": "Blog",
-    "Project": "Projects"
+    "Project": "Projects",
+    "copyright": "copyright © 2024 AFKANERD LABS."
   }
 }

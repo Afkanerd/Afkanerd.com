@@ -4,6 +4,7 @@
     "home": "Accueil",
     "about": "À propos",
     "projects": "Projets",
+    "jobs": "Emplois",
     "blog": "Blog",
     "contact": "Contactez-nous",
     "language": "Langue",
@@ -17,12 +18,12 @@
     "subtitle2": "Nous consultons également des projets open source et des individus. Nous serons heureux de consulter votre projet s'il sert la communauté open source - n'hésitez pas à nous contacter."
   },
   "about": {
-    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
+    "title": "./AFKANERD",
     "quote": "Source/Los Alamos : ENIAC, le premier ordinateur numérique au monde, dévoilé il y a 70 ans dimanche à l'Université de Pennsylvanie, avait six programmeuses principales : Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas et Ruth Lichterman. Elles étaient initialement appelées \"opératrices.\" - phillyvoice.com",
     "description": "Nous nous inspirons de nombreuses grandes personnes qui passent à l'action. Nous savons que nous ne pouvons inspirer le changement et promouvoir le développement qu'en montrant l'exemple. Nous travaillons ouvertement et vous encourageons à nous rejoindre dans notre mission pour un monde plus ouvert et accessible à tous."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projets"
+    "title": "./Projets"
   },
   "project1": {
     "title": "SMSWithoutBorders",
@@ -35,7 +36,7 @@
     "readMore": "Lire la suite"
   },
   "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/derniers"
+    "title": "./Blog/derniers"
   },
   "blog1": {
     "title": "Nouvelle version Alpha : Vault 0.1.0",
