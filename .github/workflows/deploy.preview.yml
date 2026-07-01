@@ -40,7 +40,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "dist/*"
+          source: "out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
           rm: false
