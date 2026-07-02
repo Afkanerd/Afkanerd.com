@@ -26,7 +26,7 @@ const projects = [
     key: "shortmesh",
     prompt: "afkanerd@afkanerd:~/projects$ cat shortmesh.md",
     description:
-      "{ Shortmesh explores resilient, short-format communication workflows for constrained environments, helping communities exchange critical information with low overhead and high reliability. }",
+      "{ ShortMesh Client is a Matrix protocol client that provides messaging capabilities across multiple Matrix bridges. The project is built to work with any Matrix homeserver and any number of Matrix bridges can be configured to work on it. }",
     website: "https://github.com/Afkanerd",
     github: "https://github.com/Afkanerd",
   },
