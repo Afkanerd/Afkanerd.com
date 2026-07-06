@@ -2,7 +2,12 @@ import ContactPage from "@/js/contact";
 
 
 export const metadata = {
-  title: "AFKANERD | Contact",
+  title: "Contact",
+  description:
+    "Contact AFKANERD for collaborations, press inquiries, open-source partnerships, and career discussions.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function Page() {

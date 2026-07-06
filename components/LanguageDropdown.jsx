@@ -12,9 +12,9 @@ export default function LanguageDropdown() {
   const open = Boolean(anchorEl);
 
   const items = [
-    { key: "en", label: "English" },
-    { key: "fr", label: "Français" },
-    { key: "fa", label: "فارسی" },
+    { key: "en", label: t("navbar.language.en", "English") },
+    { key: "fr", label: t("navbar.language.fr", "French") },
+    { key: "fa", label: t("navbar.language.fa", "Farsi") },
   ];
 
   return (

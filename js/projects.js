@@ -1,4 +1,5 @@
 "use client";
+
 import { Box, Container, Stack, Typography, Link } from "@mui/material";
 import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
@@ -6,7 +7,6 @@ import { useI18n } from "@/components/i18n/I18nProvider";
 import SWOBLogo from "../images/SWOB.png";
 import SiteFooter from "@/components/SiteFooter";
 
-// Custom Raycast faded borders & backgrounds
 const fadedLineVertical = {
   width: "1px",
   background:
@@ -55,7 +55,6 @@ const linkSx = {
     pointerEvents: "none",
   },
 
-  // top-left
   "&::before": {
     top: 0,
     left: 0,
@@ -63,7 +62,6 @@ const linkSx = {
     borderLeft: "1px solid rgba(255,255,255,.3)",
   },
 
-  // bottom-right
   "&::after": {
     bottom: 0,
     right: 0,
@@ -83,7 +81,6 @@ export default function Projects() {
     <>
       <SiteHeader />
       <Container maxWidth="lg">
-        {/* Header Block */}
         <Stack spacing={5} py={8} mt={12}>
           <Typography
             variant="h2"
@@ -96,12 +93,10 @@ export default function Projects() {
               color: "#fff",
             }}
           >
-            We have built open-source tools for digital rights, security, and
-            privacy in Africa.
+            {t("projectsPage.heroTitle", "Our open-source projects")}
           </Typography>
         </Stack>
 
-        {/* Terminal Title */}
         <Stack py={2} mt={12}>
           <Typography
             component="h2"
@@ -118,20 +113,13 @@ export default function Projects() {
           </Typography>
         </Stack>
 
-        {/* --- PROJECT SECTION 1: SMSWithoutBorders --- */}
         <Stack
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 4, md: 6 }}
           sx={{ mb: 19, width: "100%" }}
         >
-          {/* Left Column: Anchor Parent Identity */}
           <Box sx={{ width: { xs: "100%", md: "240px" }, flexShrink: 0 }}>
-            <Stack
-              direction="row"
-              alignItems="center"
-              spacing={1.5}
-              sx={{ sticky: "top" }}
-            >
+            <Stack direction="row" alignItems="center" spacing={1.5}>
               <Box
                 sx={{
                   width: 26,
@@ -160,12 +148,10 @@ export default function Projects() {
             </Stack>
           </Box>
 
-          {/* Center Column: Faded Separator Line (Hidden on mobile stack) */}
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             <Box sx={fadedLineVertical} />
           </Box>
 
-          {/* Right Column: Descriptions, Faded Divider, Link & Sub-Projects nested below */}
           <Box sx={{ flexGrow: 1 }}>
             <Typography
               sx={{
@@ -176,12 +162,11 @@ export default function Projects() {
               }}
             >
               {t(
-                "project1.description",
-                "An environment built to enable communication platforms to run SMS backends as alternative communications protocols for keeping users online when internet access is limited or completely blocked.",
+                "projectsPage.sms.description",
+                "An environment built to enable communication platforms to run SMS backends as alternative communication protocols for keeping users online when internet access is limited or completely blocked.",
               )}
             </Typography>
 
-            {/* Horizontal Separating Line with Faded Ends */}
             <Box sx={fadedLineHorizontal} />
 
             <Link
@@ -190,10 +175,10 @@ export default function Projects() {
               rel="noopener"
               sx={linkSx}
             >
-              Visit Website →
+              {t("projectsPage.sms.visit", "Visit website")}{" "}
+              {"->"}
             </Link>
 
-            {/* Nested Sub-projects Container */}
             <Box sx={{ mt: 8 }}>
               <Typography
                 variant="caption"
@@ -206,11 +191,13 @@ export default function Projects() {
                   mb: 2.5,
                 }}
               >
-                Sub Projects under SMSWithoutBorders
+                {t(
+                  "projectsPage.sms.subProjectsTitle",
+                  "Sub projects under SMSWithoutBorders",
+                )}
               </Typography>
 
               <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
-                {/* Left Side: RelaySMS */}
                 <Box
                   component={Link}
                   href="https://relay.smswithoutborders.com"
@@ -229,13 +216,13 @@ export default function Projects() {
                       mb: 1.5,
                     }}
                   >
-                    RelaySMS utilizes SMS messaging to route offline messages
-                    back online. Anyone experiencing poor connectivity should
-                    use it to circumvent shutdowns.
+                    {t(
+                      "projectsPage.sms.relayDescription",
+                      "RelaySMS uses SMS messaging to route offline messages back online. Anyone experiencing poor connectivity can use it to circumvent shutdowns.",
+                    )}
                   </Typography>
                 </Box>
 
-                {/* Right Side: DekuSMS */}
                 <Box
                   component={Link}
                   href="https://deku.smswithoutborders.com"
@@ -253,9 +240,10 @@ export default function Projects() {
                       lineHeight: 1.5,
                     }}
                   >
-                    DekuSMS is an open source SMS app with the ability to
-                    provide end-to-end encrypted SMS messaging between DekuSMS
-                    users.
+                    {t(
+                      "projectsPage.sms.dekuDescription",
+                      "DekuSMS is an open-source SMS app with end-to-end encrypted SMS messaging between DekuSMS users.",
+                    )}
                   </Typography>
                 </Box>
               </Stack>
@@ -263,13 +251,11 @@ export default function Projects() {
           </Box>
         </Stack>
 
-        {/* --- PROJECT SECTION 2: ShortMesh --- */}
         <Stack
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 4, md: 6 }}
           sx={{ mb: 12, width: "100%" }}
         >
-          {/* Left Column */}
           <Box sx={{ width: { xs: "100%", md: "240px" }, flexShrink: 0 }}>
             <Typography
               variant="h6"
@@ -283,12 +269,10 @@ export default function Projects() {
             </Typography>
           </Box>
 
-          {/* Center Column */}
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             <Box sx={fadedLineVertical} />
           </Box>
 
-          {/* Right Column */}
           <Box sx={{ flexGrow: 1 }}>
             <Typography
               sx={{
@@ -298,19 +282,19 @@ export default function Projects() {
                 maxWidth: "700px",
               }}
             >
-              ShortMesh Client is a Matrix protocol client that provides
-              messaging capabilities across multiple Matrix bridges. The project
-              is built to work with any Matrix homeserver and any number of
-              Matrix bridges can be configured to work on it.
+              {t(
+                "projectsPage.shortmesh.description",
+                "ShortMesh builds on Matrix bridges to provide developers with a unified REST API. It supports Signal, Telegram, and WhatsApp bridges and can be self-hosted.",
+              )}
             </Typography>
 
             <Box sx={fadedLineHorizontal} />
 
-            <Link href="#" sx={linkSx}>
-              Explore ShortMesh Protocol →
+            <Link href="https://github.com/Afkanerd" target="_blank" rel="noopener" sx={linkSx}>
+              {t("projectsPage.shortmesh.explore", "Explore ShortMesh protocol")}{" "}
+              {"->"}
             </Link>
 
-            {/* Nested Sub-projects Container */}
             <Box sx={{ mt: 8 }}>
               <Typography
                 variant="caption"
@@ -323,7 +307,10 @@ export default function Projects() {
                   mb: 2.5,
                 }}
               >
-                Sub Projects under ShortMesh
+                {t(
+                  "projectsPage.shortmesh.subProjectsTitle",
+                  "Sub projects under ShortMesh",
+                )}
               </Typography>
 
               <Stack direction={{ xs: "column", md: "row" }} spacing={2.5}>
@@ -349,125 +336,16 @@ export default function Projects() {
                       lineHeight: 1.5,
                     }}
                   >
-                    Authy is an open-source OTP (One-Time Password) service that
-                    generates, delivers, and verifies one-time passwords.
+                    {t(
+                      "projectsPage.shortmesh.authyDescription",
+                      "Authy is an open-source one-time password service that generates, delivers, and verifies one-time passwords.",
+                    )}
                   </Typography>
                 </Box>
               </Stack>
             </Box>
           </Box>
         </Stack>
-
-        {/* <Stack spacing={4} py={4} mt={20}>
-          <Typography variant="h4" sx={{ letterSpacing: "-0.01em" }}>
-            Other Projects
-          </Typography>
-
-          <Typography
-            variant="body1"
-            sx={{
-              color: "text.secondary",
-              fontSize: "1.1rem",
-              lineHeight: 1.75,
-            }}
-          >
-            We have collaborated on several other projects/tools that serve our
-            course - Open communication and Health care.
-          </Typography>
-        </Stack>
-
-        <Stack
-          direction={{ xs: "column", md: "row" }}
-          spacing={{ xs: 4, md: 6 }}
-          sx={{ mb: 12, width: "100%", mt: 8 }}
-        >
-          <Box sx={{ width: { xs: "100%", md: "240px" }, flexShrink: 0 }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: "#edf2f6",
-                fontWeight: 600,
-                letterSpacing: "-0.01em",
-              }}
-            >
-              CHPR - Center for Health Promotion and Research
-            </Typography>
-          </Box>
-
-        
-          <Box sx={{ display: { xs: "none", md: "block" } }}>
-            <Box sx={fadedLineVertical} />
-          </Box>
-
-          
-          <Box sx={{ flexGrow: 1 }}>
-            <Typography
-              sx={{
-                color: "rgba(255,255,255,0.7)",
-                fontSize: "1.1rem",
-                lineHeight: 1.6,
-                maxWidth: "700px",
-              }}
-            >
-              CHPR - Center for Health Promotion and Research is a project
-              focused on advancing health promotion and research initiatives.
-              The project aims to improve public health outcomes through
-              innovative research and community engagement.
-            </Typography>
-
-            <Box sx={fadedLineHorizontal} />
-
-            <Link href="#" sx={linkSx}>
-              Explore CHPR →
-            </Link>
-
-           
-            <Box sx={{ mt: 8 }}>
-              <Typography
-                variant="caption"
-                sx={{
-                  color: "rgba(255,255,255,0.3)",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.04em",
-                  fontWeight: 700,
-                  display: "block",
-                  mb: 2.5,
-                }}
-              >
-                Sub Projects under CHPR
-              </Typography>
-
-              <Stack direction={{ xs: "column", md: "row" }} spacing={2.5}>
-                <Box
-                  component={Link}
-                  href="https://authy.shortmesh.com/demo/"
-                  target="_blank"
-                  rel="noopener"
-                  sx={{
-                    ...subCardSx,
-                    flex: 1,
-                    maxWidth: { md: "50%" },
-                    textDecoration: "none",
-                  }}
-                >
-                  <Typography sx={{ color: "#edf2f6", fontWeight: 600, mb: 1 }}>
-                    Authy
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "rgba(255,255,255,0.5)",
-                      fontSize: "0.875rem",
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    Authy is an open-source OTP (One-Time Password) service that
-                    generates, delivers, and verifies one-time passwords.
-                  </Typography>
-                </Box>
-              </Stack>
-            </Box>
-          </Box>
-        </Stack> */}
       </Container>
       <SiteFooter />
     </>

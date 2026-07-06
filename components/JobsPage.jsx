@@ -1,16 +1,18 @@
 "use client";
 
-import { Box, Container, Stack, Typography, Grid, Button } from "@mui/material";
+import { Box, Container, Stack, Typography, Grid } from "@mui/material";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "./SiteFooter";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function JobsPage() {
+  const { t } = useI18n();
+
   return (
     <>
       <SiteHeader />
 
       <Container maxWidth="md">
-        {/* Hero Section */}
         <Stack spacing={4} pt={16} pb={8}>
           <Typography
             variant="h1"
@@ -20,7 +22,7 @@ export default function JobsPage() {
               lineHeight: 1.1,
             }}
           >
-            Build things that matter.
+            {t("careersPage.heroTitle", "Build things that matter.")}
           </Typography>
 
           <Typography
@@ -32,9 +34,10 @@ export default function JobsPage() {
               maxWidth: "720px",
             }}
           >
-            We don’t do corporate bureaucracy, rigid hours, or endless alignment
-            meetings. We look for autonomous builders who love open-source
-            software and deep engineering challenges.
+            {t(
+              "careersPage.heroBody",
+              "If you love solving challenging problems for your locality, we love to hear from you. Feel free to share your GitHub and what you are working on. We might just have a solution to something you need.",
+            )}
           </Typography>
         </Stack>
 
@@ -46,57 +49,35 @@ export default function JobsPage() {
           }}
         />
 
-        {/* Why Work With Us Section */}
         <Grid container spacing={{ xs: 4, md: 8 }} py={6}>
           <Grid item xs={12} md={4}>
             <Typography
               variant="h6"
               sx={{ letterSpacing: "-0.01em", color: "text.secondary" }}
             >
-              The Culture
+              {t("careersPage.cultureTitle", "The Culture")}
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
             <Stack spacing={5}>
               <Box>
                 <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1 }}>
-                  100% Remote, genuinely async
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ color: "text.secondary", lineHeight: 1.6 }}
-                >
-                  Work from wherever you are most creative. We communicate
-                  through code, clear documentation, and pull requests—not
-                  mandatory 9 AM standups. You own your time.
+                  {t("careersPage.culturePoint1", "100% Remote, genuinely async")}
                 </Typography>
               </Box>
 
               <Box>
                 <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1 }}>
-                  Hacker culture over corporate rigidness
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ color: "text.secondary", lineHeight: 1.6 }}
-                >
-                  We care about shipping functional, secure software that solves
-                  real infrastructure problems. No arbitrary KPIs, no
-                  micromanagement, no useless red tape.
+                  {t(
+                    "careersPage.culturePoint2",
+                    "Work from wherever you are most creative.",
+                  )}
                 </Typography>
               </Box>
 
               <Box>
                 <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1 }}>
-                  Open Source at the core
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ color: "text.secondary", lineHeight: 1.6 }}
-                >
-                  Almost everything you build here will be public facing. Your
-                  contributions will serve the broader developer ecosystem and
-                  protect digital privacy across the continent.
+                  {t("careersPage.culturePoint3", "Open Source first")}
                 </Typography>
               </Box>
             </Stack>
@@ -111,14 +92,13 @@ export default function JobsPage() {
           }}
         />
 
-        {/* Open Roles Section */}
         <Grid container spacing={{ xs: 4, md: 8 }} py={6}>
           <Grid item xs={12} md={4}>
             <Typography
               variant="h6"
               sx={{ letterSpacing: "-0.01em", color: "text.secondary" }}
             >
-              Open Roles
+              {t("careersPage.openRolesTitle", "Open Roles")}
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
@@ -169,23 +149,23 @@ export default function JobsPage() {
 
             <Stack spacing={3}>
               <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                We are fully stacked at the moment.
+                {t("careersPage.fallbackTitle", "Let us hear from you.")}
               </Typography>
               <Typography
                 variant="body1"
                 sx={{ color: "text.secondary", lineHeight: 1.6 }}
               >
-                We aren’t actively hunting for specific roles right now, but we
-                always make room for exceptional talent. If you're an
-                open-source contributor, a security nerd, or a hacker who aligns
-                with our mission, drop us a line with your GitHub at{" "}
+                {t(
+                  "careersPage.fallbackBody",
+                  "We are not actively hiring for specific roles right now, but we always make room for exceptional talent. If you are an open-source contributor who aligns with our mission, drop us a line with your GitHub at",
+                )}{" "}
                 <Box
                   component="span"
                   sx={{ textDecoration: "underline", color: "primary.main" }}
                 >
                   careers@afkanerd.com
                 </Box>
-                .
+                {"."}
               </Typography>
             </Stack>
           </Grid>

@@ -70,23 +70,6 @@ export default function Providers({ children }) {
               scrollBehavior: "smooth",
             },
 
-      //       body: {
-      //         margin: 0,
-      //         minHeight: "100%",
-      //         overflowX: "hidden",
-      //         position: "relative",
-      //         backgroundColor: "#141622",
-      //         color: "#fffefc",
-
-      //         // Background layers
-      //         backgroundImage: `
-      //   radial-gradient(circle at 15% 20%, rgba(137,255,150,.06), transparent 32%),
-      //   radial-gradient(circle at 85% 80%, rgba(35,109,37,.08), transparent 38%)
-      // `,
-      //         backgroundAttachment: "fixed",
-      //       },
-
-            // Grid
             "body::before": {
               content: '""',
               position: "fixed",
@@ -101,7 +84,6 @@ export default function Providers({ children }) {
               backgroundSize: "82px 82px",
             },
 
-            // Noise
             "body::after": {
               content: '""',
               position: "fixed",
@@ -115,16 +97,6 @@ export default function Providers({ children }) {
       `,
               backgroundSize: "6px 6px",
             },
-
-            // a: {
-            //   color: "#edf2f6",
-            //   textDecoration: "none",
-            //   transition: ".2s",
-            // },
-
-            // "a:hover": {
-            //   color: "#89ff96",
-            // },
           }}
         />
         <I18nProvider>{children}</I18nProvider>
