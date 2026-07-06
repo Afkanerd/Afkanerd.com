@@ -1,9 +1,12 @@
 import JobsPage from "@/components/JobsPage";
 
 export const metadata = {
-  title: "AFKANERD | Careers - Join Our Team",
+  title: "Careers",
   description:
-    "Explore career opportunities at AFKANERD Labs. Join our team of passionate developers and innovators dedicated to building open-source software and privacy-first infrastructure.",
+    "Explore career opportunities at AFKANERD Labs.",
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function Page() {

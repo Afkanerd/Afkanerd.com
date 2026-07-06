@@ -14,9 +14,39 @@ const silkscreen = Silkscreen({
 });
 
 export const metadata = {
-  title: "AFKANERD",
+  metadataBase: new URL("https://afkanerd.com"),
+  title: {
+    default: "AFKANERD",
+    template: "%s | AFKANERD",
+  },
   description:
-    "Afkanerd is an open source software development company that builds technology for digital rights, security, and privacy.",
+    "Afkanerd is an open source software development team that builds technology for digital rights, security, and privacy.",
+  keywords: [
+    "AFKANERD",
+    "SMSWithoutBorders",
+    "ShortMesh",
+    "RelaySMS",
+    "DekuSMS",
+    "open source",
+    "digital rights",
+    "privacy",
+    "security",
+    "Africa",
+  ],
+  openGraph: {
+    title: "AFKANERD",
+    description:
+      "Afkanerd builds open technology for digital rights, security, and privacy.",
+    url: "https://afkanerd.com",
+    siteName: "AFKANERD",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AFKANERD",
+    description:
+      "Afkanerd builds open technology for digital rights, security, and privacy.",
+  },
   icons: {
     icon: "/images/favicon1.ico",
   },

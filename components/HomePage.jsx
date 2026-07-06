@@ -1,7 +1,5 @@
 "use client";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
-import XIcon from "@mui/icons-material/X";
 import {
   Box,
   Container,
@@ -25,8 +23,7 @@ const projects = [
   {
     key: "shortmesh",
     prompt: "afkanerd@afkanerd:~/projects$ cat shortmesh.md",
-    description:
-      "{ ShortMesh Client is a Matrix protocol client that provides messaging capabilities across multiple Matrix bridges. The project is built to work with any Matrix homeserver and any number of Matrix bridges can be configured to work on it. }",
+    descriptionKey: "project3.description",
     website: "https://github.com/Afkanerd",
     github: "https://github.com/Afkanerd",
   },
@@ -40,7 +37,6 @@ export default function HomePage() {
     <>
       <SiteHeader />
       <Box component="main">
-        {/* Injecting CSS Keyframes dynamically into the page head */}
         <style>{`
           @keyframes glitch-anim-1 {
             0% { clip-path: inset(40% 0 61% 0); transform: skew(0.3deg); }
@@ -67,7 +63,6 @@ export default function HomePage() {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              // alignItems: "center",
               height: "90vh",
               overflow: "hidden",
               position: "relative",
@@ -78,6 +73,7 @@ export default function HomePage() {
               data-text={titleText}
               sx={{
                 mb: 4,
+                mt: {xs: 12, md: 0},
                 fontFamily: "var(--font-silkscreen)",
                 fontSize: { xs: "3rem", md: "6rem" },
                 fontWeight: 700,
@@ -87,7 +83,6 @@ export default function HomePage() {
                 textTransform: "uppercase",
                 cursor: "default",
 
-                // Base style for glitch pseudo-layers (hidden by default)
                 "&::before, &::after": {
                   content: "attr(data-text)",
                   position: "absolute",
@@ -96,10 +91,9 @@ export default function HomePage() {
                   width: "100%",
                   height: "100%",
                   background: "#121212",
-                  opacity: 0, // Keeps it hidden normally
+                  opacity: 0,
                 },
 
-                // Only activate animations and show layers on hover
                 "&:hover": {
                   "&::before, &::after": {
                     opacity: 1,
@@ -120,26 +114,6 @@ export default function HomePage() {
               }}
             >
               {titleText}
-
-              <Box
-                component="span"
-                sx={{
-                  display: { xs: "block", md: "inline" },
-                  mt: { xs: 1, md: 0 },
-                  fontSize: { xs: "1rem", md: "2rem" },
-                  color: "#d4d4d4",
-                  fontFamily: "var(--font-jetbrains), monospace",
-                  position: "relative",
-                  zIndex: 2,
-                  fontWeight: 300,
-                  letterSpacing: "normal",
-                  // Erase parent text glitch influence for slogan label
-                  textShadow: "none !important",
-                  "&::before, &::after": { display: "none !important" },
-                }}
-              >
-                {" - We code for the people"}
-              </Box>
             </Typography>
 
             <Typography
@@ -184,7 +158,6 @@ export default function HomePage() {
                 gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
               }}
             >
-              {/* Image column - end/right */}
               <Box sx={{ order: { xs: -1, lg: 0 } }}>
                 <Box
                   component="img"
@@ -200,7 +173,6 @@ export default function HomePage() {
                 />
               </Box>
 
-              {/* Text column - content pushed to bottom */}
               <Box
                 sx={{
                   display: "flex",
@@ -211,69 +183,9 @@ export default function HomePage() {
               >
                 <Typography sx={{ lineHeight: 1.7 }}>
                   {t("about.description")}
-                  <MuiLink
-                    href="/about"
-                    underline="hover"
-                    sx={{
-                      color: "inherit",
-                      ml: 2,
-                      fontFamily: "inherit",
-                      fontSize: "inherit",
-                      fontWeight: 500,
-                      "&:hover": {
-                        color: "#236d25",
-                      },
-                    }}
-                  >
-                    Read More
-                  </MuiLink>
                 </Typography>
-                {/* <MuiLink
-                  href="/about"
-                  underline="none"
-                  sx={{
-                    position: "relative",
-                    px: 2,
-                    py: 1,
-                    mt: 2,
-                    minWidth: 0,
-                    alignSelf: "flex-start",
-                    color: "#fff",
-                    textTransform: "none",
-                    fontFamily: "var(--font-jetbrains), monospace",
-                    fontSize: "0.8rem",
-                    backgroundColor: "rgba(255,255,255,.03)",
-                    borderRadius: "0px",
-                    transition: "all .2s ease",
-                    "&::before, &::after": {
-                      content: '""',
-                      position: "absolute",
-                      width: 12,
-                      height: 12,
-                      pointerEvents: "none",
-                    },
-                    "&::before": {
-                      top: 0,
-                      left: 0,
-                      borderTop: "1px solid rgba(255,255,255,.3)",
-                      borderLeft: "1px solid rgba(255,255,255,.3)",
-                    },
-                    "&::after": {
-                      bottom: 0,
-                      right: 0,
-                      borderBottom: "1px solid rgba(255,255,255,.3)",
-                      borderRight: "1px solid rgba(255,255,255,.3)",
-                    },
-                    "&:hover": {
-                      backgroundColor: "rgba(255,255,255,.05)",
-                    },
-                  }}
-                >
-                  Read More
-                </MuiLink> */}
               </Box>
 
-              {/* Quote spans full row, underneath both columns */}
               <Box
                 component="blockquote"
                 sx={{
@@ -292,7 +204,6 @@ export default function HomePage() {
             </Box>
           </Box>
 
-          {/*  */}
           <Box id="project" sx={{ py: 8, mb: 20 }}>
             <Stack direction="row" spacing={5}>
               <Typography component="h2" sx={{ mb: 3.5, fontSize: "1.3rem" }}>
@@ -301,7 +212,6 @@ export default function HomePage() {
                 </Box>{" "}
                 ~$ {t("project.title", "./Projects")}
               </Typography>
-              <Typography sx={{ color: "text.secondary" }}>Projects</Typography>
             </Stack>
             <Box
               sx={{
@@ -315,12 +225,6 @@ export default function HomePage() {
                 <Box
                   key={project.key}
                   sx={{
-                    // position: "relative",
-                    // pl: { xs: 0, md: index > 0 ? 3 : 0 },
-                    // borderLeft: {
-                    //   xs: "none",
-                    //   md: index > 0 ? "1px solid #2c2c2c" : "none",
-                    // },
                     p: 2.5,
                     backgroundColor: "rgba(255,255,255, 0.015)",
                     border: "1px solid rgba(255,255,255, 0.04)",

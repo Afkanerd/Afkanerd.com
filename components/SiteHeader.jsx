@@ -32,10 +32,6 @@ function navItems(t) {
       label: t("navbar.labs", "Labs"),
       children: [
         {
-          href: `/about`,
-          label: t("navbar.about", "About"),
-        },
-        {
           href: "/careers",
           label: t("navbar.careers", "Careers"),
         },
@@ -53,7 +49,6 @@ function navItems(t) {
   ];
 }
 
-// Shared hover/corner styling
 const navLinkSx = {
   position: "relative",
   px: 2,
@@ -266,15 +261,13 @@ export default function SiteHeader() {
           </Stack>
 
           <Stack direction="row" alignItems="center" spacing={0.5}>
-            {/* Desktop Only Language Selector */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               <LanguageDropdown />
             </Box>
 
-            {/* Menu Open Trigger Button inside the Custom Box */}
             <IconButton
               onClick={(e) => setMobileAnchorEl(e.currentTarget)}
-              aria-label="Open navigation"
+              aria-label={t("header.openNavigation", "Open navigation")}
               sx={{
                 ...navLinkSx,
                 backgroundColor: "#1b1b1b",
@@ -286,13 +279,12 @@ export default function SiteHeader() {
                 border: "1px solid rgba(255, 255, 255, 0.08)",
                 display: { xs: "inline-flex", md: "none" },
 
-                // Reapply the explicit corner indicators over the entire floating window box
                 "&::before, &::after": {
                   content: '""',
                   position: "absolute",
                   width: 12,
                   height: 12,
-                  opacity: 1, // Keep corners visible
+                  opacity: 1,
                 },
                 "&::before": {
                   top: 0,
@@ -314,7 +306,6 @@ export default function SiteHeader() {
         </Toolbar>
       </Container>
 
-      {/* Floating Menu Block (Smoother transition scaling down from button origin) */}
       <Menu
         anchorEl={mobileAnchorEl}
         open={isMobileOpen}
@@ -331,7 +322,7 @@ export default function SiteHeader() {
           sx: {
             backgroundColor: "#1b1b1b",
             color: "#fffefc",
-            mt: "12px", // Safe spacing underneath layout icon
+            mt: "12px",
             width: "calc(100vw - 32px)",
             maxWidth: "340px",
             borderRadius: "0px",
@@ -339,8 +330,6 @@ export default function SiteHeader() {
             boxShadow: "0px 16px 40px rgba(0, 0, 0, 0.6)",
             border: "1px solid rgba(255, 255, 255, 0.08)",
             overflow: "visible",
-
-            // Modern Bezier animation scaling outwards directly from anchor origin
             transitionTimingFunction:
               "cubic-bezier(0.16, 1, 0.3, 1) !important",
 
@@ -376,7 +365,7 @@ export default function SiteHeader() {
               letterSpacing: "0.1em",
             }}
           >
-            NAVIGATION
+            {t("header.navigation", "Navigation")}
           </Typography>
 
           <Stack spacing={1}>
@@ -459,7 +448,6 @@ export default function SiteHeader() {
               }}
             />
 
-            {/* Language dropdown wrapped directly inside the menu layer */}
             <Box
               sx={{
                 pt: 0.5,
@@ -476,7 +464,7 @@ export default function SiteHeader() {
                   textTransform: "uppercase",
                 }}
               >
-                Select Language:
+                {t("header.selectLanguage", "Select language")}
               </Typography>
               <LanguageDropdown />
             </Box>
