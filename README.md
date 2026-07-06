@@ -1,26 +1,43 @@
-# AFKANERD (Next.js + MUI)
+# AFKANERD
 
-This repository has been migrated from a static HTML/CSS/JS site to a Next.js application using MUI as the primary UI system.
+Open-source collective building tools for digital rights, privacy, and resilient communication in low-connectivity environments.
 
-## Stack
+The site is built with Next.js App Router and Material UI, supports multiple languages, and is configured for static export deployment.
 
-- Next.js (App Router)
-- React
-- MUI (Material UI)
-- Styling implemented with MUI theme + `sx` props
 
-## Run Locally
+## Featured Initiatives
 
-1. Install dependencies:
+- SMSWithoutBorders
+	- Focus: secure and accessible communication infrastructure that can work when internet access is limited
+	- Related tools: RelaySMS and DekuSMS
+- ShortMesh
+	- Focus: Matrix-bridge-driven communication tooling and protocol ecosystem
+	- Related tool: Authy
+
+
+## Development
+
+Install dependencies:
 
 ```bash
 yarn install
 ```
 
-2. Start development server:
+Run the local dev server:
 
 ```bash
 yarn dev
 ```
 
-3. Open `http://localhost:3000`.
+Build for production:
+
+```bash
+yarn build
+```
+
+Start production server (for non-export/server mode workflows):
+
+```bash
+yarn start
+```
+
