@@ -1,44 +1,43 @@
-# Afkanerd Technologies
+# AFKANERD
 
-#### We Code for the People
+Open-source collective building tools for digital rights, privacy, and resilient communication in low-connectivity environments.
 
-Welcome to Afkanerd Technologies! We are dedicated to creating open-source solutions that empower individuals and communities. Explore our projects, contribute, and join us in making technology more accessible and impactful.
+The site is built with Next.js App Router and Material UI, supports multiple languages, and is configured for static export deployment.
 
-## Our Projects
 
-### [SMSWithoutBorders](https://smswithoutborders.com)
+## Featured Initiatives
 
-Stay connected even without an active internet connection. SMSWithoutBorders allows you to send emails, tweet, and chat on Telegram seamlessly. Our platform is designed to ensure reliable communication under various conditions.
+- SMSWithoutBorders
+	- Focus: secure and accessible communication infrastructure that can work when internet access is limited
+	- Related tools: RelaySMS and DekuSMS
+- ShortMesh
+	- Focus: Matrix-bridge-driven communication tooling and protocol ecosystem
+	- Related tool: Authy
 
-[Read More](https://smswithoutborders.com)
 
-### [SMSWithoutBorders-OpenAPI](https://smswithoutborders-openapi.readthedocs.io/en/latest/)
+## Development
 
-Manage and send single or bulk SMS messages through your own managed gateway systems. SMSWithoutBorders-OpenAPI offers robust capabilities for handling messaging needs efficiently.
+Install dependencies:
 
-[Read More](https://smswithoutborders-openapi.readthedocs.io/en/latest/)
+```bash
+yarn install
+```
 
-## How to Contribute
+Run the local dev server:
 
-We welcome contributions from everyone! Whether you want to improve existing features or add new ones, your involvement can make a significant impact. Check out our ongoing projects and see how you can contribute:
+```bash
+yarn dev
+```
 
-1. **Fork** the repository.
-2. **Clone** it to your local machine.
-3. **Create** a new branch for your changes.
-4. **Make** your changes and test them.
-5. **Submit** a pull request with a detailed description of your changes.
+Build for production:
 
-## Get In Touch
+```bash
+yarn build
+```
 
-- **Email Us**: [contact@afkanerd.com](mailto:contact@afkanerd.com)
-- **GitHub**: [Afkanerd GitHub](https://github.com/afkanerd)
-- **Twitter**: [Afkanerd Twitter](https://twitter.com/afkanerd)
+Start production server (for non-export/server mode workflows):
 
-## Connect With Us
-
-Follow us for updates and news:
-
-- **Website**: [Afkanerd.com](https://afkanerd.com)
-- **GitHub**: [Afkanerd GitHub](https://github.com/afkanerd)
-- **Twitter**: [Afkanerd Twitter](https://twitter.com/afkanerd)
+```bash
+yarn start
+```
 

@@ -2,56 +2,126 @@
   "navbar": {
     "brand": "Afkanerd",
     "home": "Accueil",
-    "about": "À propos",
+    "about": "A propos",
     "projects": "Projets",
+    "careers": "Carrieres",
+    "jobs": "Emplois",
     "blog": "Blog",
-    "contact": "Contactez-nous",
-    "language": "Langue",
-    "language.en": "Anglais",
-    "language.fr": "Français",
-    "language.fa": "Persan"
+    "contact": "Nous contacter",
+    "language": {
+      "label": "Langue",
+      "en": "Anglais",
+      "fr": "Francais",
+      "fa": "Persan"
+    },
+    "labs": "Labos",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "Ouvrir la navigation",
+    "navigation": "Navigation",
+    "selectLanguage": "Choisir la langue"
   },
   "hero": {
-    "title": "AFKANERD",
-    "subtitle1": "Nous créons des logiciels libres de manière ouverte. Nous développons des technologies pour les droits numériques, la sécurité et la vie privée. Nos outils sont librement disponibles pour l'activisme, les soins de santé et l'éducation.",
-    "subtitle2": "Nous consultons également des projets open source et des individus. Nous serons heureux de consulter votre projet s'il sert la communauté open source - n'hésitez pas à nous contacter."
+    "title": "AFKANERD LABS",
+    "subtitle1": "Nous sommes un laboratoire d'idees qui developpe des logiciels et des outils open source necessaires mais rarement mis en avant. Notre travail est ancre dans les problemes quotidiens qui touchent le continent africain, du manque d'infrastructures technologiques au manque d'outils adaptes aux environnements a faibles ressources.",
+    "subtitle2": "Nous publions notre travail en open source et rendons accessibles tous les documents associes. Nous encourageons chacun a ajouter une etoile a nos projets sur GitHub, a faire un don pour soutenir ce travail et a verifier les publications lorsque c'est possible."
   },
   "about": {
-    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
-    "quote": "Source/Los Alamos : ENIAC, le premier ordinateur numérique au monde, dévoilé il y a 70 ans dimanche à l'Université de Pennsylvanie, avait six programmeuses principales : Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas et Ruth Lichterman. Elles étaient initialement appelées \"opératrices.\" - phillyvoice.com",
-    "description": "Nous nous inspirons de nombreuses grandes personnes qui passent à l'action. Nous savons que nous ne pouvons inspirer le changement et promouvoir le développement qu'en montrant l'exemple. Nous travaillons ouvertement et vous encourageons à nous rejoindre dans notre mission pour un monde plus ouvert et accessible à tous."
+    "title": "./A propos",
+    "quote": "Source/Los Alamos: ENIAC, le premier ordinateur numerique du monde, presente il y a 70 ans dimanche a l'Universite de Pennsylvanie, avait six programmeuses principales : Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas et Ruth Lichterman. Elles etaient initialement appelees operatrices. - phillyvoice.com",
+    "description": "Nous sommes inspires par de nombreuses personnes remarquables qui passent a l'action. Nous savons que nous ne pouvons inspirer le changement et stimuler le developpement qu'en montrant l'exemple. Nous construisons en public et vous invitons a rejoindre notre mission pour rendre le monde plus ouvert et plus accessible a toutes et tous."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projets"
+    "title": "./Projets"
   },
   "project1": {
     "title": "SMSWithoutBorders",
-    "description": "SMSWithoutBorders est dédié à la recherche, au développement et à la promotion d'outils de communication sécurisés et accessibles qui fonctionnent même sans connexion internet. Le développement comprend des applications mobiles pour diverses plateformes comme Android, iOS et les systèmes Linux. Certains travaux incluent également des livres blancs sur des sujets tels que la cryptographie, les communications et la liberté sur Internet.",
-    "readMore": "Lire la suite"
+    "description": "SMSWithoutBorders se consacre a la recherche, au developpement et a la promotion d'outils de communication securises et accessibles, capables de fonctionner meme sans connexion Internet. Parmi les projets SMSWithoutBorders figurent RelaySMS et DekuSMS. Nous publions egalement des livres blancs et des articles de recherche sur la communication securisee et les infrastructures centrees sur la vie privee.",
+    "readMore": "Site web"
   },
   "project2": {
     "title": "DekuSMS",
-    "description": "DekuSMS est une application Android de messagerie SMS. Elle permet à deux utilisateurs de l'application de communiquer avec un chiffrement de bout en bout sur des messages SMS. L'application contient également des capacités de transfert de messages, prenant en charge des protocoles comme SMTP, FTP et AMQP. Elle est conçue pour s'intégrer à RabbitMQ, permettant aux utilisateurs de configurer des files d'attente de messages pour effectuer des demandes de communication à distance à leurs applications.",
-    "readMore": "Lire la suite"
+    "description": "DekuSMS est une application Android de messagerie SMS. Elle permet a deux utilisateurs de communiquer avec un chiffrement de bout en bout via SMS. L'application inclut aussi des fonctions de transfert de messages prenant en charge des protocoles comme SMTP, FTP et AMQP.",
+    "readMore": "Site web"
   },
-  "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/derniers"
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ Le client ShortMesh est un client du protocole Matrix qui offre des fonctionnalites de messagerie a travers plusieurs ponts Matrix. Le projet est concu pour fonctionner avec n'importe quel homeserver Matrix, et n'importe quel nombre de ponts Matrix peut y etre configure. }"
   },
-  "blog1": {
-    "title": "Nouvelle version Alpha : Vault 0.1.0",
-    "description": "SMSWithoutBorders Vault 0.1.0 est désormais disponible en version alpha ! Vault est une technologie développée par l'équipe de SMSWithoutBorders pour sécuriser les jetons d'accès des utilisateurs et faciliter l'utilisation sécurisée de ces jetons pour publier leurs messages.",
-    "readMore": "Lire la suite"
+  "projects": {
+    "title": "./Projets"
   },
-  "blog2": {
-    "title": "Rebranding",
-    "description": "SMSWithoutBorders devient le projet principal englobant RelaySMS et d'autres outils de messagerie. Les fonctionnalités principales restent les mêmes, mais les utilisateurs peuvent s'attendre à un nouveau nom, des fonctionnalités de sécurité améliorées et une concentration sur la croissance future sous le projet SMSWithoutBorders.",
-    "readMore": "Lire la suite"
+  "projectsPage": {
+    "heroTitle": "Nos projets open source",
+    "sms": {
+      "description": "Un environnement concu pour permettre aux plateformes de communication d'utiliser des backends SMS comme protocoles alternatifs afin de maintenir les utilisateurs connectes lorsque l'acces a Internet est limite ou totalement bloque.",
+      "visit": "Visiter le site",
+      "subProjectsTitle": "Sous-projets de SMSWithoutBorders",
+      "relayDescription": "RelaySMS utilise les messages SMS pour rerouter des messages hors ligne vers Internet. Toute personne confrontée a une faible connectivite peut l'utiliser pour contourner les coupures.",
+      "dekuDescription": "DekuSMS est une application SMS open source qui propose une messagerie SMS chiffree de bout en bout entre utilisateurs DekuSMS."
+    },
+    "shortmesh": {
+      "description": "ShortMesh s'appuie sur les ponts Matrix pour fournir aux developpeurs une API REST unifiee. Il prend en charge les ponts Signal, Telegram et WhatsApp et peut etre auto-heberge.",
+      "explore": "Explorer le protocole ShortMesh",
+      "subProjectsTitle": "Sous-projets de ShortMesh",
+      "authyDescription": "Authy est un service open source de mot de passe a usage unique qui genere, envoie et verifie des mots de passe a usage unique."
+    }
+  },
+  "aboutPage": {
+    "overline": "Origine et ethos",
+    "heroTitle": "Construire une technologie ouverte pour les droits numeriques, la securite et la vie privee en Afrique.",
+    "heroBody": "Afkanerd est ne d'une idee simple : le nerd africain. Pendant trop longtemps, le recit autour de la tech africaine est reste enferme dans la rigidite corporative, la bureaucratie et des clones fintech repetitifs. Nous avons cree un espace pour autre chose.",
+    "sectionTitle": "Des hackers, pas des institutions.",
+    "sectionBody": "Nous sommes un collectif open source de builders, de hackers et d'optimistes. Nous croyons qu'une collaboration fluide et du code concret sont le meilleur levier pour defendre la vie privee, decentraliser l'acces et resoudre des enjeux d'infrastructure critiques dans le monde.",
+    "principlesTitle": "Principes de fonctionnement",
+    "principle1": {
+      "title": "Ouvert par defaut",
+      "body": "Si un code a un impact sur les droits humains, la securite numerique ou la vie privee, il appartient au monde. Nous construisons de maniere transparente afin que nos outils puissent etre audites, adaptes et dignes de confiance sans compromis."
+    },
+    "principle2": {
+      "title": "Execution fluide plutot que rigidite",
+      "body": "La structure doit servir le produit, pas l'inverse. Nous maintenons une culture plate et tres autonome ou le meilleur argument technique l'emporte, pas le titre le plus fort."
+    },
+    "principle3": {
+      "title": "Infrastructure resiliente",
+      "body": "Nous concevons pour le monde reel. Les systemes simples, legers et hors ligne d'abord survivent toujours mieux que les architectures fragiles et surconçues."
+    },
+    "principle4": {
+      "title": "La vie privee comme fondation",
+      "body": "Nous ne construisons pas de portes derobees et ne collectons pas de telemetrie. La vie privee numerique n'est pas une option premium. C'est un droit humain fondamental que nous integrons des le premier commit."
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Entrer en contact.",
+    "heroBody": "Une question sur nos projets, une envie de collaborer, ou un probleme de securite a signaler ? Ecrivez-nous.",
+    "generalTitle": "General et presse",
+    "generalBody": "Pour les questions generales, les idees de partenariat open source, ou simplement pour dire bonjour. Nous repondons en general sous 24 heures.",
+    "careersTitle": "Rejoindre le collectif",
+    "careersBody": "Vous voulez construire avec nous ? Ignorez le formulaire et envoyez directement vos informations, liens de projets ou pull requests a notre equipe d'ingenierie."
+  },
+  "careersPage": {
+    "heroTitle": "Construire des choses qui comptent.",
+    "heroBody": "Si vous aimez resoudre des problemes complexes lies a votre realite locale, nous serons ravis de vous lire. Partagez votre GitHub et ce sur quoi vous travaillez. Nous avons peut-etre deja une solution a un probleme que vous rencontrez.",
+    "cultureTitle": "La culture",
+    "culturePoint1": "100 % a distance, vraiment asynchrone",
+    "culturePoint2": "Travaillez depuis l'endroit ou vous etes le plus creatif.",
+    "culturePoint3": "Open source d'abord",
+    "openRolesTitle": "Postes ouverts",
+    "fallbackTitle": "Parlez-nous de vous.",
+    "fallbackBody": "Nous ne recrutons pas activement pour des postes precis en ce moment, mais nous faisons toujours de la place aux talents exceptionnels. Si vous contribuez a l'open source et partagez notre mission, ecrivez-nous avec votre GitHub a"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas ou a ete deplacee.",
+    "backHome": "Retour a l'accueil"
   },
   "footer": {
-    "title": "AFKANERD INFOTECH",
+    "title": "AFKANERD LABS",
     "title1": "Suivez-nous",
-    "Policy": "Politique de confidentialité",
+    "Policy": "Politique de confidentialite",
     "blog": "Blog",
-    "Project": "Projets"
+    "Project": "Projets",
+    "copyright": "copyright © 2024 AFKANERD LABS."
   }
 }

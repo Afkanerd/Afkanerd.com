@@ -4,54 +4,124 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "careers": "Careers",
+    "jobs": "Jobs",
     "blog": "Blog",
-    "contact": "Contact Us",
-    "language": "Language",
-    "language.en": "English",
-    "language.fr": "French",
-    "language.fa": "Farsi"
+    "contact": "Get in Touch",
+    "language": {
+      "label": "Language",
+      "en": "English",
+      "fr": "French",
+      "fa": "Farsi"
+    },
+    "labs": "Labs",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "Open navigation",
+    "navigation": "Navigation",
+    "selectLanguage": "Select language"
   },
   "hero": {
-    "title": "AFKANERD",
-    "subtitle1": "We build open source in the open. We build technology for digital rights, security and privacy. Our tools are openly available for advocacy, healthcare and educational purposes.",
-    "subtitle2": "We also consult with open source projects and individuals. We will happily consult on your project if it serves the open source community - feel free to reach out."
-},
+    "title": "AFKANERD LABS",
+    "subtitle1": "We think-tank developing open source software and tools that are needed but not widely talked about. Our work is rooted at the heart of daily issues that plague the African continent. This ranges from lack of technological infrastructure to lack of tools built for low access to resources.",
+    "subtitle2": "We publish our work as open source and all accompanying papers as public knowledge. We encourage everyone to star our projects on GitHub, donate to keep the work going, and verify the published work whenever possible."
+  },
   "about": {
-    "title": "afkanerd@afkanerd: ~$ ./AFKANERD",
-    "quote": "Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called \"operators.\" - phillyvoice.com",
-    "description": "We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join us on our mission to make the world more open and more accessible to all."
+    "title": "./About",
+    "quote": "Source/Los Alamos: ENIAC, the world's first digital computer, unveiled 70 years ago Sunday at the University of Pennsylvania, had six primary programmers: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman. They were initially called operators. - phillyvoice.com",
+    "description": "We are inspired by many great individuals who take action. We know we can only inspire change and drive development by leading the way. We build in the open and encourage you to join our mission to make the world more open and accessible for all."
   },
   "project": {
-    "title": "afkanerd@afkanerd: ~$ ./Projects"
+    "title": "./Projects"
   },
   "project1": {
     "title": "SMSWithoutBorders",
-    "description": "SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. The development includes mobile apps for various platforms such as Android, iOS and Linux systems. Some of the work also includes white papers on topics such as cryptography, communications and internet freedom.",
-    "readMore": "Read more"
+    "description": "SMSWithoutBorders is dedicated to researching, developing and promoting secure and accessible communication tools that function even without an internet connection. Some of SMSWithoutBorders projects include RelaySMS and DekuSMS. We also publish white papers and research papers on secure communication and privacy-first infrastructure.",
+    "readMore": "Website"
   },
   "project2": {
     "title": "DekuSMS",
-    "description": "DekuSMS is an Android SMS messaging app. It enables 2 users of the app to communicate using end-to-end encryption over SMS messages. The app also contains message forwarding abilities supporting protocols such as SMTP, FTP, and AMQP. The app is built to integrate with RabbitMQ allowing users with messaging queues to set up and make remote communication requests to their apps.",
-    "readMore": "Read more"
+    "description": "DekuSMS is an Android SMS messaging app. It enables two users of the app to communicate using end-to-end encryption over SMS messages. The app also contains message forwarding abilities supporting protocols such as SMTP, FTP, and AMQP.",
+    "readMore": "Website"
   },
-  "blog": {
-    "title": "afkanerd@afkanerd: ~$ ./Blog/latest"
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ ShortMesh Client is a Matrix protocol client that provides messaging capabilities across multiple Matrix bridges. The project is built to work with any Matrix homeserver and any number of Matrix bridges can be configured to work on it. }"
   },
-  "blog1": {
-    "title": "New Alpha Release: Vault 0.1.0",
-    "description":"SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages.",
-    "readMore": "Read More"
+  "projects": {
+    "title": "./Projects"
   },
-  "blog2": {
-    "title": "Rebranding",
-    "description": "SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools. The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the SMSWithoutBorders project.",
-    "readMore": "Read More"
+  "projectsPage": {
+    "heroTitle": "Our open-source projects",
+    "sms": {
+      "description": "An environment built to enable communication platforms to run SMS backends as alternative communication protocols for keeping users online when internet access is limited or completely blocked.",
+      "visit": "Visit website",
+      "subProjectsTitle": "Sub projects under SMSWithoutBorders",
+      "relayDescription": "RelaySMS uses SMS messaging to route offline messages back online. Anyone experiencing poor connectivity can use it to circumvent shutdowns.",
+      "dekuDescription": "DekuSMS is an open-source SMS app with end-to-end encrypted SMS messaging between DekuSMS users."
+    },
+    "shortmesh": {
+      "description": "ShortMesh builds on Matrix bridges to provide developers with a unified REST API. It supports Signal, Telegram, and WhatsApp bridges and can be self-hosted.",
+      "explore": "Explore ShortMesh protocol",
+      "subProjectsTitle": "Sub projects under ShortMesh",
+      "authyDescription": "Authy is an open-source one-time password service that generates, delivers, and verifies one-time passwords."
+    }
+  },
+  "aboutPage": {
+    "overline": "Origin & Ethos",
+    "heroTitle": "Building open technology for digital rights, security, and privacy in Africa.",
+    "heroBody": "Afkanerd grew out of a simple idea: the African Nerd. For too long, the narrative around African tech has been boxed into corporate rigidity, bureaucracy, and repetitive fintech clones. We built a space for something different.",
+    "sectionTitle": "Hackers, not institutions.",
+    "sectionBody": "We are an open-source collective of builders, hackers, and optimists. We believe that fluid collaboration and raw, working code are the ultimate leverage for defending privacy, decentralizing access, and solving critical infrastructure challenges across the world.",
+    "principlesTitle": "Operating Principles",
+    "principle1": {
+      "title": "Open by default",
+      "body": "If code impacts human rights, digital security, or personal privacy, it belongs to the world. We build transparently so our tools can be audited, adapted, and trusted without compromises."
+    },
+    "principle2": {
+      "title": "Fluid execution over rigidity",
+      "body": "Structure should serve the product, not the other way around. We maintain a flat, high-autonomy culture where the best technical argument wins, not the loudest title."
+    },
+    "principle3": {
+      "title": "Resilient infrastructure",
+      "body": "We design for the real world. Simple, offline-first, and lightweight systems will always outlive over-engineered, brittle architectures."
+    },
+    "principle4": {
+      "title": "Privacy as a foundation",
+      "body": "We do not build backdoors or harvest telemetry. Digital privacy is not a premium add-on feature. It is a baseline human right that we bake into the first commit."
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Get in touch.",
+    "heroBody": "Have a question about our projects, want to collaborate, or need to report a security vulnerability? Drop us a line.",
+    "generalTitle": "General & Press",
+    "generalBody": "For general questions, open-source partnership ideas, or just to say hi. We usually respond within 24 hours.",
+    "careersTitle": "Join the Collective",
+    "careersBody": "Looking to build with us? Skip the form entirely and email your details, project links, or pull requests directly to our engineering desk."
+  },
+  "careersPage": {
+    "heroTitle": "Build things that matter.",
+    "heroBody": "If you love solving challenging problems for your locality, we love to hear from you. Feel free to share your GitHub and what you are working on. We might just have a solution to something you need.",
+    "cultureTitle": "The Culture",
+    "culturePoint1": "100% Remote, genuinely async",
+    "culturePoint2": "Work from wherever you are most creative.",
+    "culturePoint3": "Open Source first",
+    "openRolesTitle": "Open Roles",
+    "fallbackTitle": "Let us hear from you.",
+    "fallbackBody": "We are not actively hiring for specific roles right now, but we always make room for exceptional talent. If you are an open-source contributor who aligns with our mission, drop us a line with your GitHub at"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to homepage"
   },
   "footer": {
-    "title": "AFKANERD INFOTECH",
+    "title": "AFKANERD LABS",
     "title1": "Follow Us",
     "Policy": "Privacy Policy",
     "blog": "Blog",
-    "Project": "Projects"
+    "Project": "Projects",
+    "copyright": "copyright © 2024 AFKANERD LABS."
   }
 }
