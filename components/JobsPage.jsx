@@ -163,7 +163,7 @@ export default function JobsPage() {
                   component="span"
                   sx={{ textDecoration: "underline", color: "primary.main" }}
                 >
-                  careers@afkanerd.com
+                  career@afkanerd.com
                 </Box>
                 {"."}
               </Typography>
