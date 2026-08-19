@@ -24,8 +24,8 @@ const projects = [
     key: "shortmesh",
     prompt: "afkanerd@afkanerd:~/projects$ cat shortmesh.md",
     descriptionKey: "project3.description",
-    website: "https://github.com/Afkanerd",
-    github: "https://github.com/Afkanerd",
+    website: "https://docs.shortmesh.com",
+    github: "https://github.com/shortmesh",
   },
 ];
 
