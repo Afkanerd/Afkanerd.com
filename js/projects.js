@@ -290,7 +290,7 @@ export default function Projects() {
 
             <Box sx={fadedLineHorizontal} />
 
-            <Link href="https://github.com/Afkanerd" target="_blank" rel="noopener" sx={linkSx}>
+            <Link href="https://docs.shortmesh.com/" target="_blank" rel="noopener" sx={linkSx}>
               {t("projectsPage.shortmesh.explore", "Explore ShortMesh protocol")}{" "}
               {"->"}
             </Link>
