@@ -1,0 +1,131 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Home",
+    "about": "Over ons",
+    "projects": "Projecten",
+    "careers": "Vacatures",
+    "jobs": "Banen",
+    "blog": "Blog",
+    "contact": "Neem contact op",
+    "language": {
+      "label": "Taal",
+      "en": "Engels",
+      "fr": "Frans",
+      "fa": "Perzisch",
+      "nl": "Nederlands",
+      "zh": "Chinees",
+      "sw": "Swahili",
+      "tr": "Turks"
+    },
+    "labs": "Labs",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "Navigatie openen",
+    "navigation": "Navigatie",
+    "selectLanguage": "Taal kiezen"
+  },
+  "hero": {
+    "title": "AFKANERD LABS",
+    "subtitle1": "Wij zijn een denktank die opensourcesoftware en -tools ontwikkelt voor problemen die vaak over het hoofd worden gezien of onvoldoende aandacht krijgen. Ons werk is geworteld in de uitdagingen waar het Afrikaanse continent voor staat, van tekorten in technologische infrastructuur tot het gebrek aan tools die zijn ontworpen voor omgevingen met beperkte toegang tot middelen.",
+    "subtitle2": "We publiceren ons werk als open source en alle bijbehorende papers als openbare kennis. We moedigen iedereen aan om onze projecten een ster te geven op GitHub, te doneren om het werk gaande te houden, en het gepubliceerde werk waar mogelijk te verifiëren."
+  },
+  "about": {
+    "title": "./Over ons",
+    "quote": "Bron/Los Alamos: ENIAC, 's werelds eerste digitale computer, die zondag 70 jaar geleden werd onthuld aan de University of Pennsylvania, had zes hoofdprogrammeurs: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas en Ruth Lichterman. Aanvankelijk werden zij operators genoemd. - phillyvoice.com",
+    "description": "We worden geïnspireerd door vele geweldige mensen die in actie komen. We weten dat we alleen verandering kunnen inspireren en ontwikkeling kunnen stimuleren door het goede voorbeeld te geven. We bouwen in het openbaar en nodigen je uit om mee te doen aan onze missie om de wereld opener en toegankelijker te maken voor iedereen."
+  },
+  "project": {
+    "title": "./Projecten"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders zet zich in voor onderzoek naar, ontwikkeling en promotie van veilige en toegankelijke communicatiemiddelen die zelfs zonder internetverbinding werken. Enkele projecten van SMSWithoutBorders zijn RelaySMS en DekuSMS. We publiceren ook whitepapers en onderzoekspapers over veilige communicatie en privacy-first infrastructuur.",
+    "readMore": "Website"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS is een Android-app voor sms-berichten. Twee gebruikers van de app kunnen met end-to-end-versleuteling via sms communiceren. De app kan berichten ook doorsturen en ondersteunt protocollen zoals SMTP, FTP en AMQP.",
+    "readMore": "Website"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ ShortMesh Client is een Matrix-protocolclient die berichtenfuncties biedt via meerdere Matrix-bridges. Het project werkt met elke Matrix-homeserver, en er kan een willekeurig aantal Matrix-bridges voor worden geconfigureerd. }"
+  },
+  "projects": {
+    "title": "./Projecten"
+  },
+  "projectsPage": {
+    "heroTitle": "Onze opensourceprojecten",
+    "sms": {
+      "description": "Een omgeving waarmee communicatieplatforms sms-backends kunnen draaien als alternatieve communicatieprotocollen, zodat gebruikers online blijven wanneer internettoegang beperkt of volledig geblokkeerd is.",
+      "visit": "Website bezoeken",
+      "subProjectsTitle": "Subprojecten van SMSWithoutBorders",
+      "relayDescription": "RelaySMS gebruikt sms-berichten om offline berichten weer online te brengen. Iedereen met een slechte verbinding kan het gebruiken om internetafsluitingen te omzeilen.",
+      "dekuDescription": "DekuSMS is een opensource-sms-app met end-to-end-versleutelde sms-berichten tussen DekuSMS-gebruikers."
+    },
+    "shortmesh": {
+      "description": "ShortMesh bouwt voort op Matrix-bridges om ontwikkelaars één uniforme REST API te bieden. Het ondersteunt bridges voor Signal, Telegram en WhatsApp en kan zelf worden gehost.",
+      "explore": "Ontdek het ShortMesh-protocol",
+      "subProjectsTitle": "Subprojecten van ShortMesh",
+      "authyDescription": "Authy is een opensourcedienst voor eenmalige wachtwoorden die eenmalige wachtwoorden genereert, verstuurt en verifieert."
+    }
+  },
+  "aboutPage": {
+    "overline": "Oorsprong & ethos",
+    "heroTitle": "Open technologie bouwen voor digitale rechten, veiligheid en privacy in Afrika.",
+    "heroBody": "Afkanerd ontstond uit een eenvoudig idee: de Afrikaanse nerd. Te lang werd het verhaal over Afrikaanse tech in een hokje geplaatst van zakelijke starheid, bureaucratie en eindeloze fintech-klonen. Wij hebben ruimte gemaakt voor iets anders.",
+    "sectionTitle": "Hackers, geen instituties.",
+    "sectionBody": "We zijn een opensourcecollectief van bouwers, hackers en optimisten. We geloven dat soepele samenwerking en rauwe, werkende code de ultieme hefboom zijn om privacy te verdedigen, toegang te decentraliseren en kritieke infrastructuuruitdagingen wereldwijd op te lossen.",
+    "principlesTitle": "Werkprincipes",
+    "principle1": {
+      "title": "Standaard open",
+      "body": "Als code invloed heeft op mensenrechten, digitale veiligheid of persoonlijke privacy, dan hoort die bij de wereld. We bouwen transparant, zodat onze tools zonder compromissen kunnen worden gecontroleerd, aangepast en vertrouwd."
+    },
+    "principle2": {
+      "title": "Soepele uitvoering boven starheid",
+      "body": "Structuur moet het product dienen, niet andersom. We hebben een platte cultuur met veel autonomie, waarin het beste technische argument wint en niet de luidste functietitel."
+    },
+    "principle3": {
+      "title": "Veerkrachtige infrastructuur",
+      "body": "We ontwerpen voor de echte wereld. Eenvoudige, offline-first en lichtgewicht systemen zullen overontworpen, kwetsbare architecturen altijd overleven."
+    },
+    "principle4": {
+      "title": "Privacy als fundament",
+      "body": "We bouwen geen achterdeuren en verzamelen geen telemetrie. Digitale privacy is geen premium extraatje. Het is een fundamenteel mensenrecht dat we vanaf de eerste commit inbouwen."
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Neem contact op.",
+    "heroBody": "Heb je een vraag over onze projecten, wil je samenwerken of wil je een beveiligingsprobleem melden? Laat het ons weten.",
+    "generalTitle": "Algemeen & pers",
+    "generalBody": "Voor algemene vragen, ideeën voor opensourcepartnerschappen of gewoon om hallo te zeggen. We reageren meestal binnen 24 uur.",
+    "careersTitle": "Sluit je aan bij het collectief",
+    "careersBody": "Wil je met ons bouwen? Sla het formulier over en mail je gegevens, projectlinks of pull requests rechtstreeks naar ons engineeringteam."
+  },
+  "careersPage": {
+    "heroTitle": "Bouw dingen die ertoe doen.",
+    "heroBody": "Als je graag uitdagende problemen in je eigen omgeving oplost, horen we graag van je. Deel gerust je GitHub en waar je aan werkt. Misschien hebben we wel een oplossing voor iets wat jij nodig hebt.",
+    "cultureTitle": "De cultuur",
+    "culturePoint1": "100% remote, echt asynchroon",
+    "culturePoint2": "Werk vanaf de plek waar je het meest creatief bent.",
+    "culturePoint3": "Open source eerst",
+    "openRolesTitle": "Openstaande functies",
+    "fallbackTitle": "Laat van je horen.",
+    "fallbackBody": "We werven op dit moment niet actief voor specifieke functies, maar we maken altijd ruimte voor uitzonderlijk talent. Ben je een opensourcebijdrager die achter onze missie staat? Stuur ons een bericht met je GitHub naar"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "De pagina die je zoekt bestaat niet of is verplaatst.",
+    "backHome": "Terug naar de homepage"
+  },
+  "footer": {
+    "title": "AFKANERD LABS",
+    "title1": "Volg ons",
+    "Policy": "Privacybeleid",
+    "blog": "Blog",
+    "Project": "Projecten",
+    "copyright": "copyright © 2024 AFKANERD LABS."
+  }
+}

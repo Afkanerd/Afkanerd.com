@@ -12,7 +12,11 @@
       "label": "Langue",
       "en": "Anglais",
       "fr": "Francais",
-      "fa": "Persan"
+      "fa": "Persan",
+      "nl": "Neerlandais",
+      "zh": "Chinois",
+      "sw": "Swahili",
+      "tr": "Turc"
     },
     "labs": "Labos",
     "github": "GitHub"

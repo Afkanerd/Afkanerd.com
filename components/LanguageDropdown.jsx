@@ -15,6 +15,10 @@ export default function LanguageDropdown() {
     { key: "en", label: t("navbar.language.en", "English") },
     { key: "fr", label: t("navbar.language.fr", "French") },
     { key: "fa", label: t("navbar.language.fa", "Farsi") },
+    { key: "nl", label: t("navbar.language.nl", "Dutch") },
+    { key: "zh", label: t("navbar.language.zh", "Chinese") },
+    { key: "sw", label: t("navbar.language.sw", "Swahili") },
+    { key: "tr", label: t("navbar.language.tr", "Turkish") },
   ];
 
   return (
