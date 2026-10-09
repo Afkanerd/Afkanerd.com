@@ -1,0 +1,131 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Ana sayfa",
+    "about": "Hakkımızda",
+    "projects": "Projeler",
+    "careers": "Kariyer",
+    "jobs": "İş ilanları",
+    "blog": "Blog",
+    "contact": "İletişime geçin",
+    "language": {
+      "label": "Dil",
+      "en": "İngilizce",
+      "fr": "Fransızca",
+      "fa": "Farsça",
+      "nl": "Felemenkçe",
+      "zh": "Çince",
+      "sw": "Svahili",
+      "tr": "Türkçe"
+    },
+    "labs": "Laboratuvarlar",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "Menüyü aç",
+    "navigation": "Menü",
+    "selectLanguage": "Dil seçin"
+  },
+  "hero": {
+    "title": "AFKANERD LABS",
+    "subtitle1": "Sıklıkla göz ardı edilen ya da yeterince ilgilenilmeyen sorunlar için açık kaynak yazılımlar ve araçlar geliştiren bir düşünce kuruluşuyuz. Çalışmalarımız, teknolojik altyapıdaki eksikliklerden kaynaklara erişimin sınırlı olduğu ortamlar için tasarlanmış araçların yokluğuna kadar, Afrika kıtasının karşı karşıya olduğu zorluklara dayanır.",
+    "subtitle2": "Çalışmalarımızı açık kaynak olarak, ilgili tüm makaleleri de kamusal bilgi olarak yayımlıyoruz. Herkesi projelerimize GitHub'da yıldız vermeye, çalışmaların sürmesi için bağış yapmaya ve yayımlanan çalışmaları mümkün olduğunca doğrulamaya davet ediyoruz."
+  },
+  "about": {
+    "title": "./Hakkımızda",
+    "quote": "Kaynak/Los Alamos: Dünyanın ilk dijital bilgisayarı olan ve 70 yıl önce bir pazar günü Pennsylvania Üniversitesi'nde tanıtılan ENIAC'ın altı ana programcısı vardı: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas ve Ruth Lichterman. Başlangıçta onlara operatör deniyordu. - phillyvoice.com",
+    "description": "Harekete geçen pek çok harika insandan ilham alıyoruz. Değişime ancak öncülük ederek ilham verebileceğimizi ve gelişimi ancak böyle yönlendirebileceğimizi biliyoruz. Açık bir şekilde inşa ediyoruz ve sizi dünyayı herkes için daha açık ve erişilebilir kılma misyonumuza katılmaya davet ediyoruz."
+  },
+  "project": {
+    "title": "./Projeler"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders, internet bağlantısı olmadan bile çalışan güvenli ve erişilebilir iletişim araçlarını araştırmaya, geliştirmeye ve yaygınlaştırmaya kendini adamıştır. SMSWithoutBorders projelerinden bazıları RelaySMS ve DekuSMS'tir. Ayrıca güvenli iletişim ve gizlilik öncelikli altyapı üzerine teknik raporlar ve araştırma makaleleri yayımlıyoruz.",
+    "readMore": "Web sitesi"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS bir Android SMS mesajlaşma uygulamasıdır. Uygulamanın iki kullanıcısının SMS mesajları üzerinden uçtan uca şifreleme ile iletişim kurmasını sağlar. Uygulama ayrıca SMTP, FTP ve AMQP gibi protokolleri destekleyen mesaj yönlendirme özelliklerine sahiptir.",
+    "readMore": "Web sitesi"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ ShortMesh Client, birden fazla Matrix köprüsü üzerinden mesajlaşma imkânı sunan bir Matrix protokolü istemcisidir. Proje herhangi bir Matrix ana sunucusuyla çalışacak şekilde geliştirilmiştir ve üzerinde istenilen sayıda Matrix köprüsü yapılandırılabilir. }"
+  },
+  "projects": {
+    "title": "./Projeler"
+  },
+  "projectsPage": {
+    "heroTitle": "Açık kaynak projelerimiz",
+    "sms": {
+      "description": "İletişim platformlarının SMS arka uçlarını alternatif iletişim protokolleri olarak çalıştırmasını sağlayan ve internet erişimi kısıtlandığında ya da tamamen engellendiğinde kullanıcıları çevrimiçi tutan bir ortam.",
+      "visit": "Web sitesini ziyaret et",
+      "subProjectsTitle": "SMSWithoutBorders alt projeleri",
+      "relayDescription": "RelaySMS, çevrimdışı mesajları SMS aracılığıyla yeniden çevrimiçi ortama taşır. Bağlantı sorunu yaşayan herkes internet kesintilerini aşmak için kullanabilir.",
+      "dekuDescription": "DekuSMS, DekuSMS kullanıcıları arasında uçtan uca şifreli SMS mesajlaşması sunan açık kaynak bir SMS uygulamasıdır."
+    },
+    "shortmesh": {
+      "description": "ShortMesh, geliştiricilere birleşik bir REST API sunmak için Matrix köprüleri üzerine inşa edilmiştir. Signal, Telegram ve WhatsApp köprülerini destekler ve kendi sunucunuzda barındırılabilir.",
+      "explore": "ShortMesh protokolünü keşfedin",
+      "subProjectsTitle": "ShortMesh alt projeleri",
+      "authyDescription": "Authy, tek kullanımlık şifreler üreten, ileten ve doğrulayan açık kaynak bir tek kullanımlık şifre hizmetidir."
+    }
+  },
+  "aboutPage": {
+    "overline": "Köken ve değerler",
+    "heroTitle": "Afrika'da dijital haklar, güvenlik ve gizlilik için açık teknoloji geliştiriyoruz.",
+    "heroBody": "Afkanerd basit bir fikirden doğdu: Afrikalı inek (nerd). Afrika teknolojisine dair anlatı çok uzun süre kurumsal katılık, bürokrasi ve birbirini tekrar eden fintech kopyalarıyla sınırlandırıldı. Biz farklı bir şey için alan yarattık.",
+    "sectionTitle": "Kurumlar değil, hackerlar.",
+    "sectionBody": "Biz geliştiricilerden, hackerlardan ve iyimserlerden oluşan açık kaynak bir topluluğuz. Esnek iş birliğinin ve yalın, çalışan kodun; gizliliği savunmak, erişimi merkeziyetsizleştirmek ve dünya genelindeki kritik altyapı sorunlarını çözmek için en güçlü kaldıraç olduğuna inanıyoruz.",
+    "principlesTitle": "Çalışma ilkeleri",
+    "principle1": {
+      "title": "Varsayılan olarak açık",
+      "body": "Kod insan haklarını, dijital güvenliği veya kişisel gizliliği etkiliyorsa, dünyaya aittir. Araçlarımızın taviz vermeden denetlenebilmesi, uyarlanabilmesi ve güvenilebilmesi için şeffaf bir şekilde geliştiriyoruz."
+    },
+    "principle2": {
+      "title": "Katılık yerine esnek uygulama",
+      "body": "Yapı ürüne hizmet etmeli, tersi değil. En yüksek sesli unvanın değil, en iyi teknik argümanın kazandığı, hiyerarşisi düz ve özerkliği yüksek bir kültürü sürdürüyoruz."
+    },
+    "principle3": {
+      "title": "Dayanıklı altyapı",
+      "body": "Gerçek dünya için tasarlıyoruz. Basit, çevrimdışı öncelikli ve hafif sistemler, aşırı mühendislik ürünü kırılgan mimarilerden her zaman daha uzun ömürlü olacaktır."
+    },
+    "principle4": {
+      "title": "Temel olarak gizlilik",
+      "body": "Arka kapı oluşturmuyor, telemetri verisi toplamıyoruz. Dijital gizlilik ücretli bir ek özellik değildir. İlk commit'ten itibaren sistemlerimize yerleştirdiğimiz temel bir insan hakkıdır."
+    }
+  },
+  "contactPage": {
+    "heroTitle": "İletişime geçin.",
+    "heroBody": "Projelerimiz hakkında bir sorunuz mu var, iş birliği yapmak mı istiyorsunuz ya da bir güvenlik açığı mı bildirmeniz gerekiyor? Bize yazın.",
+    "generalTitle": "Genel ve basın",
+    "generalBody": "Genel sorular, açık kaynak iş birliği fikirleri ya da sadece merhaba demek için. Genellikle 24 saat içinde yanıt veriyoruz.",
+    "careersTitle": "Topluluğa katılın",
+    "careersBody": "Bizimle birlikte geliştirmek mi istiyorsunuz? Formu tamamen atlayın; bilgilerinizi, proje bağlantılarınızı veya pull request'lerinizi doğrudan mühendislik ekibimize e-postayla gönderin."
+  },
+  "careersPage": {
+    "heroTitle": "Önemli şeyler inşa edin.",
+    "heroBody": "Bulunduğunuz bölgenin zorlu sorunlarını çözmeyi seviyorsanız, sizden haber almak isteriz. GitHub'ınızı ve üzerinde çalıştığınız şeyleri paylaşmaktan çekinmeyin. Belki de ihtiyacınız olan bir şeye çözümümüz vardır.",
+    "cultureTitle": "Kültürümüz",
+    "culturePoint1": "%100 uzaktan, gerçekten asenkron",
+    "culturePoint2": "En yaratıcı olduğunuz yerden çalışın.",
+    "culturePoint3": "Önce açık kaynak",
+    "openRolesTitle": "Açık pozisyonlar",
+    "fallbackTitle": "Sizden haber almak isteriz.",
+    "fallbackBody": "Şu anda belirli pozisyonlar için aktif olarak işe alım yapmıyoruz, ancak olağanüstü yeteneklere her zaman yer açıyoruz. Misyonumuzu benimseyen bir açık kaynak katkıcısıysanız, GitHub'ınızla birlikte bize şu adresten yazın:"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana sayfaya dön"
+  },
+  "footer": {
+    "title": "AFKANERD LABS",
+    "title1": "Bizi takip edin",
+    "Policy": "Gizlilik politikası",
+    "blog": "Blog",
+    "Project": "Projeler",
+    "copyright": "telif hakkı © 2024 AFKANERD LABS."
+  }
+}

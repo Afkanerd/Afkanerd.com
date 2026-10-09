@@ -1,0 +1,131 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "Nyumbani",
+    "about": "Kuhusu sisi",
+    "projects": "Miradi",
+    "careers": "Ajira",
+    "jobs": "Kazi",
+    "blog": "Blogu",
+    "contact": "Wasiliana nasi",
+    "language": {
+      "label": "Lugha",
+      "en": "Kiingereza",
+      "fr": "Kifaransa",
+      "fa": "Kiajemi",
+      "nl": "Kiholanzi",
+      "zh": "Kichina",
+      "sw": "Kiswahili",
+      "tr": "Kituruki"
+    },
+    "labs": "Maabara",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "Fungua menyu",
+    "navigation": "Menyu",
+    "selectLanguage": "Chagua lugha"
+  },
+  "hero": {
+    "title": "AFKANERD LABS",
+    "subtitle1": "Sisi ni kituo cha fikra kinachotengeneza programu na zana huria kwa matatizo ambayo mara nyingi hupuuzwa au hayahudumiwi ipasavyo. Kazi yetu imejikita katika changamoto zinazoikabili bara la Afrika, kuanzia mapengo katika miundombinu ya teknolojia hadi ukosefu wa zana zilizoundwa kwa mazingira yenye upatikanaji mdogo wa rasilimali.",
+    "subtitle2": "Tunachapisha kazi yetu kama programu huria na makala zote zinazoambatana nayo kama maarifa ya umma. Tunamhimiza kila mtu kuipa miradi yetu nyota kwenye GitHub, kuchangia ili kazi iendelee, na kuthibitisha kazi iliyochapishwa kila inapowezekana."
+  },
+  "about": {
+    "title": "./Kuhusu sisi",
+    "quote": "Chanzo/Los Alamos: ENIAC, kompyuta ya kwanza ya kidijitali duniani, iliyozinduliwa miaka 70 iliyopita Jumapili katika Chuo Kikuu cha Pennsylvania, ilikuwa na waandaaji programu sita wakuu: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas na Ruth Lichterman. Awali waliitwa waendeshaji. - phillyvoice.com",
+    "description": "Tunahamasishwa na watu wengi mashuhuri wanaochukua hatua. Tunajua kwamba tunaweza tu kuhamasisha mabadiliko na kuchochea maendeleo kwa kuongoza njia. Tunajenga kwa uwazi na tunakuhimiza ujiunge na dhamira yetu ya kuifanya dunia iwe wazi zaidi na rahisi kufikiwa na wote."
+  },
+  "project": {
+    "title": "./Miradi"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders imejitolea kutafiti, kutengeneza na kukuza zana salama na rahisi kufikiwa za mawasiliano zinazofanya kazi hata bila muunganisho wa intaneti. Baadhi ya miradi ya SMSWithoutBorders ni pamoja na RelaySMS na DekuSMS. Pia tunachapisha karatasi nyeupe na makala za utafiti kuhusu mawasiliano salama na miundombinu inayotanguliza faragha.",
+    "readMore": "Tovuti"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS ni programu ya ujumbe mfupi (SMS) ya Android. Inawawezesha watumiaji wawili wa programu kuwasiliana kwa usimbaji fiche wa mwisho hadi mwisho kupitia ujumbe wa SMS. Programu pia ina uwezo wa kusambaza ujumbe na inaunga mkono itifaki kama SMTP, FTP na AMQP.",
+    "readMore": "Tovuti"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ ShortMesh Client ni kiteja cha itifaki ya Matrix kinachotoa uwezo wa kutuma ujumbe kupitia madaraja mengi ya Matrix. Mradi umejengwa kufanya kazi na seva yoyote ya nyumbani ya Matrix, na idadi yoyote ya madaraja ya Matrix inaweza kusanidiwa kufanya kazi nao. }"
+  },
+  "projects": {
+    "title": "./Miradi"
+  },
+  "projectsPage": {
+    "heroTitle": "Miradi yetu huria",
+    "sms": {
+      "description": "Mazingira yaliyoundwa kuwezesha majukwaa ya mawasiliano kuendesha mifumo ya nyuma ya SMS kama itifaki mbadala za mawasiliano, ili watumiaji waendelee kuwa mtandaoni wakati upatikanaji wa intaneti umezuiliwa kwa sehemu au kabisa.",
+      "visit": "Tembelea tovuti",
+      "subProjectsTitle": "Miradi midogo chini ya SMSWithoutBorders",
+      "relayDescription": "RelaySMS hutumia ujumbe wa SMS kurudisha ujumbe ulio nje ya mtandao kwenye mtandao. Yeyote mwenye muunganisho dhaifu anaweza kuitumia kukwepa uzimaji wa intaneti.",
+      "dekuDescription": "DekuSMS ni programu huria ya SMS yenye ujumbe wa SMS uliosimbwa kwa njia fiche ya mwisho hadi mwisho kati ya watumiaji wa DekuSMS."
+    },
+    "shortmesh": {
+      "description": "ShortMesh imejengwa juu ya madaraja ya Matrix ili kuwapa wasanidi programu REST API moja iliyounganishwa. Inaunga mkono madaraja ya Signal, Telegram na WhatsApp na inaweza kupangishwa na wewe mwenyewe.",
+      "explore": "Chunguza itifaki ya ShortMesh",
+      "subProjectsTitle": "Miradi midogo chini ya ShortMesh",
+      "authyDescription": "Authy ni huduma huria ya nenosiri la mara moja inayozalisha, kutuma na kuthibitisha manenosiri ya mara moja."
+    }
+  },
+  "aboutPage": {
+    "overline": "Asili na maadili",
+    "heroTitle": "Kujenga teknolojia huria kwa haki za kidijitali, usalama na faragha barani Afrika.",
+    "heroBody": "Afkanerd ilitokana na wazo rahisi: Mjuzi wa teknolojia wa Kiafrika. Kwa muda mrefu sana, simulizi kuhusu teknolojia ya Afrika imefungwa ndani ya ukakamavu wa kikampuni, urasimu na nakala zinazojirudia za fintech. Tulijenga nafasi kwa ajili ya kitu tofauti.",
+    "sectionTitle": "Wadukuzi, si taasisi.",
+    "sectionBody": "Sisi ni jumuiya huria ya wajenzi, wadukuzi na watu wenye matumaini. Tunaamini kwamba ushirikiano unaonyumbulika na msimbo halisi unaofanya kazi ndio nguvu kuu ya kulinda faragha, kugatua upatikanaji na kutatua changamoto muhimu za miundombinu duniani kote.",
+    "principlesTitle": "Kanuni za uendeshaji",
+    "principle1": {
+      "title": "Wazi kwa chaguo-msingi",
+      "body": "Ikiwa msimbo unaathiri haki za binadamu, usalama wa kidijitali au faragha ya mtu binafsi, ni mali ya dunia. Tunajenga kwa uwazi ili zana zetu ziweze kukaguliwa, kurekebishwa na kuaminiwa bila maafikiano."
+    },
+    "principle2": {
+      "title": "Utekelezaji unaonyumbulika badala ya ukakamavu",
+      "body": "Muundo unapaswa kuitumikia bidhaa, si kinyume chake. Tunadumisha utamaduni usio na ngazi nyingi wenye uhuru mkubwa, ambapo hoja bora ya kiufundi ndiyo hushinda, si cheo chenye sauti kubwa zaidi."
+    },
+    "principle3": {
+      "title": "Miundombinu imara",
+      "body": "Tunasanifu kwa ajili ya ulimwengu halisi. Mifumo rahisi, inayotanguliza nje ya mtandao na nyepesi itadumu zaidi ya miundo iliyosanifiwa kupita kiasi na dhaifu."
+    },
+    "principle4": {
+      "title": "Faragha kama msingi",
+      "body": "Hatujengi milango ya nyuma wala kukusanya data za ufuatiliaji. Faragha ya kidijitali si kipengele cha ziada cha malipo. Ni haki ya msingi ya binadamu tunayoijumuisha tangu commit ya kwanza."
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Wasiliana nasi.",
+    "heroBody": "Una swali kuhusu miradi yetu, unataka kushirikiana nasi, au unahitaji kuripoti udhaifu wa kiusalama? Tuandikie.",
+    "generalTitle": "Jumla na vyombo vya habari",
+    "generalBody": "Kwa maswali ya jumla, mawazo ya ushirikiano wa programu huria, au kutusalimia tu. Kwa kawaida tunajibu ndani ya saa 24.",
+    "careersTitle": "Jiunge na jumuiya",
+    "careersBody": "Unataka kujenga pamoja nasi? Usijaze fomu; tuma maelezo yako, viungo vya miradi yako au pull requests moja kwa moja kwa barua pepe kwa timu yetu ya uhandisi."
+  },
+  "careersPage": {
+    "heroTitle": "Jenga vitu vyenye maana.",
+    "heroBody": "Ikiwa unapenda kutatua matatizo yenye changamoto katika eneo lako, tungependa kusikia kutoka kwako. Jisikie huru kushiriki GitHub yako na kile unachofanyia kazi. Huenda tukawa na suluhisho kwa kitu unachohitaji.",
+    "cultureTitle": "Utamaduni wetu",
+    "culturePoint1": "Kazi ya mbali 100%, isiyo ya wakati mmoja kwa kweli",
+    "culturePoint2": "Fanya kazi popote unapokuwa mbunifu zaidi.",
+    "culturePoint3": "Programu huria kwanza",
+    "openRolesTitle": "Nafasi zilizo wazi",
+    "fallbackTitle": "Tungependa kusikia kutoka kwako.",
+    "fallbackBody": "Kwa sasa hatuajiri kwa nafasi maalum, lakini daima tunatoa nafasi kwa vipaji vya kipekee. Ikiwa wewe ni mchangiaji wa programu huria unayeunga mkono dhamira yetu, tuandikie pamoja na GitHub yako kupitia"
+  },
+  "notFound": {
+    "title": "Ukurasa haukupatikana",
+    "description": "Ukurasa unaoutafuta haupo au umehamishwa.",
+    "backHome": "Rudi ukurasa wa nyumbani"
+  },
+  "footer": {
+    "title": "AFKANERD LABS",
+    "title1": "Tufuate",
+    "Policy": "Sera ya faragha",
+    "blog": "Blogu",
+    "Project": "Miradi",
+    "copyright": "hakimiliki © 2024 AFKANERD LABS."
+  }
+}

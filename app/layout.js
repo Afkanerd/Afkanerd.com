@@ -1,4 +1,5 @@
-import { JetBrains_Mono, Silkscreen } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Providers from "@/components/Providers";
 import "./globals.css";
 
@@ -7,9 +8,11 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
 });
 
-const silkscreen = Silkscreen({
-  subsets: ["latin"],
-  weight: ["400", "700"],
+const silkscreen = localFont({
+  src: [
+    { path: "./fonts/Silkscreen-Regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/Silkscreen-Bold.ttf", weight: "700", style: "normal" },
+  ],
   variable: "--font-silkscreen",
 });
 
@@ -48,7 +51,8 @@ export const metadata = {
       "Afkanerd builds open technology for digital rights, security, and privacy.",
   },
   icons: {
-    icon: "/images/favicon1.ico",
+    icon: { url: "/images/logo-new.png", type: "image/png" },
+    apple: "/images/logo-new.png",
   },
 };
 
