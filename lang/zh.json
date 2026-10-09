@@ -1,0 +1,131 @@
+{
+  "navbar": {
+    "brand": "Afkanerd",
+    "home": "首页",
+    "about": "关于我们",
+    "projects": "项目",
+    "careers": "加入我们",
+    "jobs": "职位",
+    "blog": "博客",
+    "contact": "联系我们",
+    "language": {
+      "label": "语言",
+      "en": "英语",
+      "fr": "法语",
+      "fa": "波斯语",
+      "nl": "荷兰语",
+      "zh": "中文",
+      "sw": "斯瓦希里语",
+      "tr": "土耳其语"
+    },
+    "labs": "实验室",
+    "github": "GitHub"
+  },
+  "header": {
+    "openNavigation": "打开导航",
+    "navigation": "导航",
+    "selectLanguage": "选择语言"
+  },
+  "hero": {
+    "title": "AFKANERD LABS",
+    "subtitle1": "我们是一个智库，致力于为常被忽视或服务不足的问题开发开源软件和工具。我们的工作立足于非洲大陆面临的挑战，从技术基础设施的缺口，到缺乏为资源获取有限的环境而设计的工具。",
+    "subtitle2": "我们以开源方式发布我们的成果，所有相关论文均作为公共知识发布。我们鼓励大家在 GitHub 上为我们的项目点星、捐款支持我们的工作，并尽可能验证我们发布的成果。"
+  },
+  "about": {
+    "title": "./关于我们",
+    "quote": "来源/Los Alamos：ENIAC 是世界上第一台数字计算机，于 70 年前的星期日在宾夕法尼亚大学亮相，它有六位主要程序员：Kay McNulty、Betty Jennings、Betty Snyder、Marlyn Wescoff、Fran Bilas 和 Ruth Lichterman。她们最初被称为操作员。- phillyvoice.com",
+    "description": "许多付诸行动的杰出人物激励着我们。我们知道，只有以身作则，才能激发变革、推动发展。我们以开放的方式进行构建，并欢迎你加入我们的使命，让世界对所有人更加开放、更加触手可及。"
+  },
+  "project": {
+    "title": "./项目"
+  },
+  "project1": {
+    "title": "SMSWithoutBorders",
+    "description": "SMSWithoutBorders 致力于研究、开发和推广即使在没有互联网连接时也能使用的安全、易用的通信工具。SMSWithoutBorders 的项目包括 RelaySMS 和 DekuSMS。我们还发布关于安全通信和隐私优先基础设施的白皮书和研究论文。",
+    "readMore": "网站"
+  },
+  "project2": {
+    "title": "DekuSMS",
+    "description": "DekuSMS 是一款 Android 短信应用。它让两位应用用户能够通过短信进行端到端加密通信。该应用还具备消息转发功能，支持 SMTP、FTP 和 AMQP 等协议。",
+    "readMore": "网站"
+  },
+  "project3": {
+    "title": "ShortMesh",
+    "description": "{ ShortMesh Client 是一个 Matrix 协议客户端，可通过多个 Matrix 桥接提供消息功能。该项目适用于任何 Matrix 主服务器，并且可以配置任意数量的 Matrix 桥接。 }"
+  },
+  "projects": {
+    "title": "./项目"
+  },
+  "projectsPage": {
+    "heroTitle": "我们的开源项目",
+    "sms": {
+      "description": "一个让通信平台能够将短信后端作为替代通信协议运行的环境，在互联网访问受限或被完全封锁时让用户保持在线。",
+      "visit": "访问网站",
+      "subProjectsTitle": "SMSWithoutBorders 旗下子项目",
+      "relayDescription": "RelaySMS 利用短信将离线消息传回网络。任何网络连接不佳的人都可以用它来绕过断网。",
+      "dekuDescription": "DekuSMS 是一款开源短信应用，在 DekuSMS 用户之间提供端到端加密的短信通信。"
+    },
+    "shortmesh": {
+      "description": "ShortMesh 基于 Matrix 桥接构建，为开发者提供统一的 REST API。它支持 Signal、Telegram 和 WhatsApp 桥接，并可自行托管。",
+      "explore": "探索 ShortMesh 协议",
+      "subProjectsTitle": "ShortMesh 旗下子项目",
+      "authyDescription": "Authy 是一个开源的一次性密码服务，用于生成、发送和验证一次性密码。"
+    }
+  },
+  "aboutPage": {
+    "overline": "起源与理念",
+    "heroTitle": "为非洲的数字权利、安全和隐私构建开放技术。",
+    "heroBody": "Afkanerd 源于一个简单的想法：非洲极客。长期以来，关于非洲科技的叙事一直被局限于企业的僵化、官僚作风和千篇一律的金融科技模仿品之中。我们为与众不同的事物开辟了一片天地。",
+    "sectionTitle": "黑客，而非机构。",
+    "sectionBody": "我们是一个由建造者、黑客和乐观主义者组成的开源团体。我们相信，灵活的协作和原始而可用的代码，是捍卫隐私、实现访问去中心化、解决全球关键基础设施挑战的终极杠杆。",
+    "principlesTitle": "运作原则",
+    "principle1": {
+      "title": "默认开放",
+      "body": "如果代码影响人权、数字安全或个人隐私，它就属于全世界。我们以透明的方式构建，让我们的工具可以被审计、改编和信任，毫不妥协。"
+    },
+    "principle2": {
+      "title": "灵活执行胜于僵化",
+      "body": "结构应当服务于产品，而不是反过来。我们保持扁平化、高度自主的文化，胜出的是最好的技术论证，而不是最响亮的头衔。"
+    },
+    "principle3": {
+      "title": "有韧性的基础设施",
+      "body": "我们为真实世界而设计。简单、离线优先、轻量级的系统，永远比过度设计、脆弱的架构更长久。"
+    },
+    "principle4": {
+      "title": "隐私是基础",
+      "body": "我们不植入后门，也不收集遥测数据。数字隐私不是付费附加功能，而是一项基本人权，我们从第一次提交起就将其融入其中。"
+    }
+  },
+  "contactPage": {
+    "heroTitle": "联系我们。",
+    "heroBody": "对我们的项目有疑问、想要合作，或需要报告安全漏洞？给我们留言吧。",
+    "generalTitle": "一般咨询与媒体",
+    "generalBody": "一般问题、开源合作想法，或者只是打个招呼。我们通常在 24 小时内回复。",
+    "careersTitle": "加入我们的团体",
+    "careersBody": "想和我们一起构建？不用填写表单，直接将你的个人信息、项目链接或拉取请求通过电子邮件发送给我们的工程团队。"
+  },
+  "careersPage": {
+    "heroTitle": "构建有意义的东西。",
+    "heroBody": "如果你热衷于为身边的地区解决有挑战性的问题，我们很想听到你的声音。欢迎分享你的 GitHub 以及你正在做的事情。也许我们正好有你需要的解决方案。",
+    "cultureTitle": "我们的文化",
+    "culturePoint1": "100% 远程，真正的异步协作",
+    "culturePoint2": "在你最有创造力的地方工作。",
+    "culturePoint3": "开源优先",
+    "openRolesTitle": "开放职位",
+    "fallbackTitle": "期待你的来信。",
+    "fallbackBody": "我们目前没有积极招聘特定职位，但我们始终为杰出人才留有空间。如果你是认同我们使命的开源贡献者，请附上你的 GitHub 发送邮件至"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "你要查找的页面不存在或已被移动。",
+    "backHome": "返回首页"
+  },
+  "footer": {
+    "title": "AFKANERD LABS",
+    "title1": "关注我们",
+    "Policy": "隐私政策",
+    "blog": "博客",
+    "Project": "项目",
+    "copyright": "版权所有 © 2024 AFKANERD LABS."
+  }
+}

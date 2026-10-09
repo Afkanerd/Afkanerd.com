@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import LanguageDropdown from "@/components/LanguageDropdown";
 import { useI18n } from "@/components/i18n/I18nProvider";
-import Logo from "../images/6.svg";
+import Logo from "@/public/images/logo-new.png";
 
 function navItems(t) {
   return [
@@ -209,12 +209,12 @@ export default function SiteHeader() {
               <Image
                 src={Logo}
                 alt="Afkanerd"
-                width={22}
-                height={22}
+                width={40}
+                height={40}
                 priority
               />
-              <Typography
-                variant="body1"
+              {/* <Typography
+                variant="body1"4
                 component="span"
                 sx={{
                   ml: 1,
@@ -224,7 +224,7 @@ export default function SiteHeader() {
                 }}
               >
                 Afkanerd
-              </Typography>
+              </Typography> */}
             </MuiLink>
 
             <Stack
