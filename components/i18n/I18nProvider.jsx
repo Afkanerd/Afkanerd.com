@@ -4,10 +4,14 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import en from "@/lang/en.json";
 import fr from "@/lang/fr.json";
 import fa from "@/lang/fa.json";
+import nl from "@/lang/nl.json";
+import zh from "@/lang/zh.json";
+import sw from "@/lang/sw.json";
+import tr from "@/lang/tr.json";
 
 const I18nContext = createContext(null);
 
-const DICTIONARIES = { en, fr, fa };
+const DICTIONARIES = { en, fr, fa, nl, zh, sw, tr };
 const DEFAULT_LANG = "en";
 
 function getByPath(target, key) {
