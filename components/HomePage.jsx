@@ -75,8 +75,8 @@ export default function HomePage() {
                 mb: 4,
                 mt: {xs: 12, md: 0},
                 fontFamily: "var(--font-silkscreen)",
-                fontSize: { xs: "3rem", md: "6rem" },
-                fontWeight: 700,
+                fontSize: { xs: "3rem", md: "6.5rem" },
+                fontWeight: 800,
                 position: "relative",
                 zIndex: 1,
                 color: "#fff",
@@ -122,7 +122,7 @@ export default function HomePage() {
                 color: "text.secondary",
                 lineHeight: 1.8,
                 mb: 2.4,
-                fontSize: "1.1rem",
+                fontSize: "1.3rem",
                 position: "relative",
                 zIndex: 1,
               }}
@@ -134,7 +134,7 @@ export default function HomePage() {
               sx={{
                 color: "text.secondary",
                 lineHeight: 1.8,
-                fontSize: "1.1rem",
+                fontSize: "1.3rem",
                 position: "relative",
                 zIndex: 1,
               }}
@@ -143,7 +143,7 @@ export default function HomePage() {
             </Typography>
           </Box>
 
-          <Box id="about" sx={{ py: 8, mb: 20 }}>
+          {/* <Box id="about" sx={{ py: 8, mb: 20 }}>
             <Typography component="h2" sx={{ mb: 3.5, fontSize: "1.3rem" }}>
               <Box component="span" sx={{ color: "#236d25" }}>
                 afkanerd@afkanerd:
@@ -202,11 +202,11 @@ export default function HomePage() {
                 {t("about.quote")}
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
           <Box id="project" sx={{ py: 8, mb: 20 }}>
             <Stack direction="row" spacing={5}>
-              <Typography component="h2" sx={{ mb: 3.5, fontSize: "1.3rem" }}>
+              <Typography component="h2" sx={{ mb: 3.5, fontSize: "1.4rem" }}>
                 <Box component="span" sx={{ color: "#236d25" }}>
                   afkanerd@afkanerd:
                 </Box>{" "}
@@ -236,10 +236,10 @@ export default function HomePage() {
                     },
                   }}
                 >
-                  <Typography sx={{ color: "#edf2f6", mb: 2 }}>
+                  <Typography sx={{ color: "#edf2f6", mb: 2, fontSize: "1.1rem" }}>
                     {project.prompt}
                   </Typography>
-                  <Typography sx={{ color: "text.secondary" }}>
+                  <Typography sx={{ color: "text.secondary", fontSize: "1.1rem" }}>
                     {project.description || t(project.descriptionKey, "")}
                   </Typography>
                   <Stack
