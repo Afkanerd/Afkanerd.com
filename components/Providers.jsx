@@ -8,6 +8,7 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import I18nProvider from "@/components/i18n/I18nProvider";
+import SiteLoader from "@/components/SiteLoader";
 
 const muiTheme = createTheme({
   palette: {
@@ -99,6 +100,7 @@ export default function Providers({ children }) {
             },
           }}
         />
+        <SiteLoader />
         <I18nProvider>{children}</I18nProvider>
       </ThemeProvider>
     </AppRouterCacheProvider>
