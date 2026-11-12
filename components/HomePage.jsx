@@ -63,7 +63,7 @@ export default function HomePage() {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              height: "90vh",
+              height: {md: "90vh"},
               overflow: "hidden",
               position: "relative",
             }}
